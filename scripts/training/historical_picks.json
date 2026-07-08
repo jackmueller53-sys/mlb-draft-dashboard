@@ -1,0 +1,6464 @@
+{
+  "_meta": {
+    "source": "Wikipedia year-by-year MLB Draft pages",
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "scope": "First round (1-43) + Round 2 partial (2014-2019) / full (2018-2019, 2020-2025) from Wikipedia year pages",
+    "fetchedAt": "2026-06-11",
+    "notes": "teamId follows src/data/teams.json conventions. Pre-2025 Athletics use ATH. Cleveland Indians normalize to CLE.",
+    "outcomeScale": {
+      "star": 4,
+      "regular": 2,
+      "fringe": 1,
+      "bust": 0,
+      "tbd": null,
+      "note": "Coded from public career data through Jan 2026. Top 15 of each year 2014-2020 covered explicitly; 2021-2022 unannotated; 2023-2025 = tbd. Borderline players (~2 WAR) coded conservatively as regular."
+    },
+    "industryFVNote": "Pre-draft 20-80 FV from public boards (FanGraphs THE BOARD, Baseball America, MLB Pipeline) — best-effort reconstruction. Top 15 of each year covered; deeper picks fall back to the smooth curve + jitter in featurize."
+  },
+  "picks": [
+    {
+      "year": 2014,
+      "pick": 1,
+      "teamId": "HOU",
+      "name": "Brady Aiken",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Cathedral Catholic HS (CA)",
+      "outcome": "bust",
+      "industryFV": 60
+    },
+    {
+      "year": 2014,
+      "pick": 2,
+      "teamId": "MIA",
+      "name": "Tyler Kolek",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Shepherd HS (TX)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 3,
+      "teamId": "CWS",
+      "name": "Carlos Rodón",
+      "pos": "LHP",
+      "level": "College",
+      "school": "NC State",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2014,
+      "pick": 4,
+      "teamId": "CHC",
+      "name": "Kyle Schwarber",
+      "pos": "C",
+      "level": "College",
+      "school": "Indiana",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2014,
+      "pick": 5,
+      "teamId": "MIN",
+      "name": "Nick Gordon",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Olympia HS (FL)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 6,
+      "teamId": "SEA",
+      "name": "Alex Jackson",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Rancho Bernardo HS (CA)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 7,
+      "teamId": "PHI",
+      "name": "Aaron Nola",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2014,
+      "pick": 8,
+      "teamId": "COL",
+      "name": "Kyle Freeland",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Evansville",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 9,
+      "teamId": "TOR",
+      "name": "Jeff Hoffman",
+      "pos": "RHP",
+      "level": "College",
+      "school": "East Carolina",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 10,
+      "teamId": "NYM",
+      "name": "Michael Conforto",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oregon State",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 11,
+      "teamId": "TOR",
+      "name": "Max Pentecost",
+      "pos": "C",
+      "level": "College",
+      "school": "Kennesaw State",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2014,
+      "pick": 12,
+      "teamId": "MIL",
+      "name": "Kodi Medeiros",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Waiakea HS (HI)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 13,
+      "teamId": "SD",
+      "name": "Trea Turner",
+      "pos": "SS",
+      "level": "College",
+      "school": "NC State",
+      "outcome": "star",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 14,
+      "teamId": "SF",
+      "name": "Tyler Beede",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 15,
+      "teamId": "LAA",
+      "name": "Sean Newcomb",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Hartford",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2014,
+      "pick": 16,
+      "teamId": "ARI",
+      "name": "Touki Toussaint",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Coral Springs Christian Academy (FL)"
+    },
+    {
+      "year": 2014,
+      "pick": 17,
+      "teamId": "KC",
+      "name": "Brandon Finnegan",
+      "pos": "LHP",
+      "level": "College",
+      "school": "TCU"
+    },
+    {
+      "year": 2014,
+      "pick": 18,
+      "teamId": "WSH",
+      "name": "Erick Fedde",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UNLV"
+    },
+    {
+      "year": 2014,
+      "pick": 19,
+      "teamId": "CIN",
+      "name": "Nick Howard",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Virginia"
+    },
+    {
+      "year": 2014,
+      "pick": 20,
+      "teamId": "TB",
+      "name": "Casey Gillaspie",
+      "pos": "1B",
+      "level": "College",
+      "school": "Wichita State"
+    },
+    {
+      "year": 2014,
+      "pick": 21,
+      "teamId": "CLE",
+      "name": "Bradley Zimmer",
+      "pos": "OF",
+      "level": "College",
+      "school": "San Francisco"
+    },
+    {
+      "year": 2014,
+      "pick": 22,
+      "teamId": "LAD",
+      "name": "Grant Holmes",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Conway HS (SC)"
+    },
+    {
+      "year": 2014,
+      "pick": 23,
+      "teamId": "DET",
+      "name": "Derek Hill",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Elk Grove HS (CA)"
+    },
+    {
+      "year": 2014,
+      "pick": 24,
+      "teamId": "PIT",
+      "name": "Cole Tucker",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Mountain Pointe HS (AZ)"
+    },
+    {
+      "year": 2014,
+      "pick": 25,
+      "teamId": "ATH",
+      "name": "Matt Chapman",
+      "pos": "3B",
+      "level": "College",
+      "school": "Cal State Fullerton"
+    },
+    {
+      "year": 2014,
+      "pick": 26,
+      "teamId": "BOS",
+      "name": "Michael Chavis",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Sprayberry HS (GA)"
+    },
+    {
+      "year": 2014,
+      "pick": 27,
+      "teamId": "STL",
+      "name": "Luke Weaver",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida State"
+    },
+    {
+      "year": 2014,
+      "pick": 28,
+      "teamId": "KC",
+      "name": "Foster Griffin",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "The First Academy (FL)"
+    },
+    {
+      "year": 2014,
+      "pick": 29,
+      "teamId": "CIN",
+      "name": "Alex Blandino",
+      "pos": "3B",
+      "level": "College",
+      "school": "Stanford"
+    },
+    {
+      "year": 2014,
+      "pick": 30,
+      "teamId": "TEX",
+      "name": "Luis Ortiz",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Sanger HS (CA)"
+    },
+    {
+      "year": 2014,
+      "pick": 31,
+      "teamId": "CLE",
+      "name": "Justus Sheffield",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Tullahoma HS (TN)"
+    },
+    {
+      "year": 2014,
+      "pick": 32,
+      "teamId": "ATL",
+      "name": "Braxton Davidson",
+      "pos": "OF",
+      "level": "HS",
+      "school": "T.C. Roberson HS (NC)"
+    },
+    {
+      "year": 2014,
+      "pick": 33,
+      "teamId": "BOS",
+      "name": "Michael Kopech",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Mount Pleasant HS (TX)"
+    },
+    {
+      "year": 2014,
+      "pick": 34,
+      "teamId": "STL",
+      "name": "Jack Flaherty",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Harvard-Westlake School (CA)"
+    },
+    {
+      "year": 2014,
+      "pick": 35,
+      "teamId": "COL",
+      "name": "Forrest Wall",
+      "pos": "2B",
+      "level": "HS",
+      "school": "Orangewood Christian School (FL)"
+    },
+    {
+      "year": 2014,
+      "pick": 36,
+      "teamId": "MIA",
+      "name": "Blake Anderson",
+      "pos": "C",
+      "level": "HS",
+      "school": "West Lauderdale HS (MS)"
+    },
+    {
+      "year": 2014,
+      "pick": 42,
+      "teamId": "HOU",
+      "name": "A.J. Reed",
+      "pos": "1B",
+      "level": "College",
+      "school": "Kentucky"
+    },
+    {
+      "year": 2014,
+      "pick": 46,
+      "teamId": "MIN",
+      "name": "Nick Burdi",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2014,
+      "pick": 48,
+      "teamId": "COL",
+      "name": "Ryan Castellani",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Brophy Prep HS (AZ)"
+    },
+    {
+      "year": 2014,
+      "pick": 49,
+      "teamId": "TOR",
+      "name": "Sean Reid-Foley",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Sandalwood HS (FL)"
+    },
+    {
+      "year": 2014,
+      "pick": 50,
+      "teamId": "MIL",
+      "name": "Monte Harrison",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Lee's Summit HS (MO)"
+    },
+    {
+      "year": 2014,
+      "pick": 51,
+      "teamId": "SD",
+      "name": "Michael Gettys",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Gainesville HS (GA)"
+    },
+    {
+      "year": 2014,
+      "pick": 52,
+      "teamId": "SF",
+      "name": "Aramis Garcia",
+      "pos": "C",
+      "level": "College",
+      "school": "Florida International"
+    },
+    {
+      "year": 2014,
+      "pick": 55,
+      "teamId": "NYY",
+      "name": "Jacob Lindgren",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2014,
+      "pick": 56,
+      "teamId": "KC",
+      "name": "Scott Blewett",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Baker HS (NY)"
+    },
+    {
+      "year": 2014,
+      "pick": 57,
+      "teamId": "WSH",
+      "name": "Andrew Suarez",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Miami"
+    },
+    {
+      "year": 2014,
+      "pick": 62,
+      "teamId": "LAD",
+      "name": "Alex Verdugo",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Sahuaro HS (AZ)"
+    },
+    {
+      "year": 2014,
+      "pick": 63,
+      "teamId": "DET",
+      "name": "Spencer Turnbull",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Alabama"
+    },
+    {
+      "year": 2014,
+      "pick": 64,
+      "teamId": "PIT",
+      "name": "Mitch Keller",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Xavier HS (IA)"
+    },
+    {
+      "year": 2014,
+      "pick": 65,
+      "teamId": "ATH",
+      "name": "Daniel Gossett",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Clemson"
+    },
+    {
+      "year": 2014,
+      "pick": 67,
+      "teamId": "BOS",
+      "name": "Sam Travis",
+      "pos": "1B",
+      "level": "College",
+      "school": "Indiana"
+    },
+    {
+      "year": 2014,
+      "pick": 70,
+      "teamId": "ARI",
+      "name": "Isan Díaz",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Springfield Central HS (MA)"
+    },
+    {
+      "year": 2014,
+      "pick": 72,
+      "teamId": "SEA",
+      "name": "Gareth Morgan",
+      "pos": "OF",
+      "level": "HS",
+      "school": "North Toronto CI (ON)"
+    },
+    {
+      "year": 2015,
+      "pick": 1,
+      "teamId": "ARI",
+      "name": "Dansby Swanson",
+      "pos": "SS",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2015,
+      "pick": 2,
+      "teamId": "HOU",
+      "name": "Alex Bregman",
+      "pos": "SS",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2015,
+      "pick": 3,
+      "teamId": "COL",
+      "name": "Brendan Rodgers",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Lake Mary HS (FL)",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2015,
+      "pick": 4,
+      "teamId": "TEX",
+      "name": "Dillon Tate",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UC Santa Barbara",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2015,
+      "pick": 5,
+      "teamId": "HOU",
+      "name": "Kyle Tucker",
+      "pos": "OF",
+      "level": "HS",
+      "school": "H.B. Plant HS (FL)",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2015,
+      "pick": 6,
+      "teamId": "MIN",
+      "name": "Tyler Jay",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Illinois",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2015,
+      "pick": 7,
+      "teamId": "BOS",
+      "name": "Andrew Benintendi",
+      "pos": "OF",
+      "level": "College",
+      "school": "Arkansas",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2015,
+      "pick": 8,
+      "teamId": "CWS",
+      "name": "Carson Fulmer",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2015,
+      "pick": 9,
+      "teamId": "CHC",
+      "name": "Ian Happ",
+      "pos": "OF",
+      "level": "College",
+      "school": "Cincinnati",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2015,
+      "pick": 10,
+      "teamId": "PHI",
+      "name": "Cornelius Randolph",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Griffin HS (GA)",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2015,
+      "pick": 11,
+      "teamId": "CIN",
+      "name": "Tyler Stephenson",
+      "pos": "C",
+      "level": "HS",
+      "school": "Kennesaw Mountain HS (GA)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2015,
+      "pick": 12,
+      "teamId": "MIA",
+      "name": "Josh Naylor",
+      "pos": "1B",
+      "level": "HS",
+      "school": "St. Joan of Arc CSS (ON)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2015,
+      "pick": 13,
+      "teamId": "TB",
+      "name": "Garrett Whitley",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Niskayuna HS (NY)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2015,
+      "pick": 14,
+      "teamId": "ATL",
+      "name": "Kolby Allard",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "San Clemente HS (CA)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2015,
+      "pick": 15,
+      "teamId": "MIL",
+      "name": "Trent Grisham",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Richland HS (TX)",
+      "outcome": "regular",
+      "industryFV": 50
+    },
+    {
+      "year": 2015,
+      "pick": 16,
+      "teamId": "NYY",
+      "name": "James Kaprielian",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UCLA"
+    },
+    {
+      "year": 2015,
+      "pick": 17,
+      "teamId": "CLE",
+      "name": "Brady Aiken",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "IMG Academy (FL)"
+    },
+    {
+      "year": 2015,
+      "pick": 18,
+      "teamId": "SF",
+      "name": "Phil Bickford",
+      "pos": "RHP",
+      "level": "JC",
+      "school": "College of Southern Nevada (NV)"
+    },
+    {
+      "year": 2015,
+      "pick": 19,
+      "teamId": "PIT",
+      "name": "Kevin Newman",
+      "pos": "SS",
+      "level": "College",
+      "school": "Arizona"
+    },
+    {
+      "year": 2015,
+      "pick": 20,
+      "teamId": "ATH",
+      "name": "Richie Martin",
+      "pos": "SS",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2015,
+      "pick": 21,
+      "teamId": "KC",
+      "name": "Ashe Russell",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Cathedral HS (IN)"
+    },
+    {
+      "year": 2015,
+      "pick": 22,
+      "teamId": "DET",
+      "name": "Beau Burrows",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Weatherford HS (TX)"
+    },
+    {
+      "year": 2015,
+      "pick": 23,
+      "teamId": "STL",
+      "name": "Nick Plummer",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Brother Rice HS (MI)"
+    },
+    {
+      "year": 2015,
+      "pick": 24,
+      "teamId": "LAD",
+      "name": "Walker Buehler",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt"
+    },
+    {
+      "year": 2015,
+      "pick": 25,
+      "teamId": "BAL",
+      "name": "D.J. Stewart",
+      "pos": "OF",
+      "level": "College",
+      "school": "Florida State"
+    },
+    {
+      "year": 2015,
+      "pick": 26,
+      "teamId": "LAA",
+      "name": "Taylor Ward",
+      "pos": "C",
+      "level": "College",
+      "school": "Fresno State"
+    },
+    {
+      "year": 2015,
+      "pick": 27,
+      "teamId": "COL",
+      "name": "Mike Nikorak",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Stroudsburg HS (PA)"
+    },
+    {
+      "year": 2015,
+      "pick": 28,
+      "teamId": "ATL",
+      "name": "Mike Soroka",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Bishop Carroll HS (AB)"
+    },
+    {
+      "year": 2015,
+      "pick": 29,
+      "teamId": "TB",
+      "name": "Jon Harris",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Missouri State"
+    },
+    {
+      "year": 2015,
+      "pick": 30,
+      "teamId": "NYY",
+      "name": "Kyle Holder",
+      "pos": "SS",
+      "level": "College",
+      "school": "San Diego"
+    },
+    {
+      "year": 2015,
+      "pick": 31,
+      "teamId": "SF",
+      "name": "Chris Shaw",
+      "pos": "1B",
+      "level": "College",
+      "school": "Boston College"
+    },
+    {
+      "year": 2015,
+      "pick": 32,
+      "teamId": "PIT",
+      "name": "Ke'Bryan Hayes",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Concordia Lutheran HS (TX)"
+    },
+    {
+      "year": 2015,
+      "pick": 33,
+      "teamId": "KC",
+      "name": "Nolan Watson",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Lawrence North HS (IN)"
+    },
+    {
+      "year": 2015,
+      "pick": 34,
+      "teamId": "DET",
+      "name": "Christin Stewart",
+      "pos": "OF",
+      "level": "College",
+      "school": "Tennessee"
+    },
+    {
+      "year": 2015,
+      "pick": 35,
+      "teamId": "LAD",
+      "name": "Kyle Funkhouser",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2015,
+      "pick": 36,
+      "teamId": "BAL",
+      "name": "Ryan Mountcastle",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Hagerty HS (FL)"
+    },
+    {
+      "year": 2015,
+      "pick": 43,
+      "teamId": "ARI",
+      "name": "Alex Young",
+      "pos": "LHP",
+      "level": "College",
+      "school": "TCU"
+    },
+    {
+      "year": 2015,
+      "pick": 44,
+      "teamId": "COL",
+      "name": "Peter Lambert",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "San Dimas HS (CA)"
+    },
+    {
+      "year": 2015,
+      "pick": 46,
+      "teamId": "HOU",
+      "name": "Tom Eshelman",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Cal State Fullerton"
+    },
+    {
+      "year": 2015,
+      "pick": 47,
+      "teamId": "CHC",
+      "name": "Donnie Dewees",
+      "pos": "OF",
+      "level": "College",
+      "school": "North Florida"
+    },
+    {
+      "year": 2015,
+      "pick": 48,
+      "teamId": "PHI",
+      "name": "Scott Kingery",
+      "pos": "2B",
+      "level": "College",
+      "school": "Arizona"
+    },
+    {
+      "year": 2015,
+      "pick": 55,
+      "teamId": "MIL",
+      "name": "Cody Ponce",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Cal Poly Pomona"
+    },
+    {
+      "year": 2015,
+      "pick": 56,
+      "teamId": "TOR",
+      "name": "Brady Singer",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Eustis HS (FL)"
+    },
+    {
+      "year": 2015,
+      "pick": 58,
+      "teamId": "WSH",
+      "name": "Andrew Stevenson",
+      "pos": "OF",
+      "level": "College",
+      "school": "LSU"
+    },
+    {
+      "year": 2015,
+      "pick": 60,
+      "teamId": "SEA",
+      "name": "Nick Neidert",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Peachtree Ridge HS (GA)"
+    },
+    {
+      "year": 2015,
+      "pick": 61,
+      "teamId": "SF",
+      "name": "Andrew Suarez",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Miami"
+    },
+    {
+      "year": 2015,
+      "pick": 62,
+      "teamId": "PIT",
+      "name": "Kevin Kramer",
+      "pos": "2B",
+      "level": "College",
+      "school": "UCLA"
+    },
+    {
+      "year": 2015,
+      "pick": 64,
+      "teamId": "KC",
+      "name": "Josh Staumont",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Azusa Pacific"
+    },
+    {
+      "year": 2015,
+      "pick": 65,
+      "teamId": "DET",
+      "name": "Tyler Alexander",
+      "pos": "LHP",
+      "level": "College",
+      "school": "TCU"
+    },
+    {
+      "year": 2016,
+      "pick": 1,
+      "teamId": "PHI",
+      "name": "Mickey Moniak",
+      "pos": "OF",
+      "level": "HS",
+      "school": "La Costa Canyon HS (CA)",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2016,
+      "pick": 2,
+      "teamId": "CIN",
+      "name": "Nick Senzel",
+      "pos": "3B",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2016,
+      "pick": 3,
+      "teamId": "ATL",
+      "name": "Ian Anderson",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Shenendehowa HS (NY)",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2016,
+      "pick": 4,
+      "teamId": "COL",
+      "name": "Riley Pint",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "St. Thomas Aquinas HS (KS)",
+      "outcome": "bust",
+      "industryFV": 60
+    },
+    {
+      "year": 2016,
+      "pick": 5,
+      "teamId": "MIL",
+      "name": "Corey Ray",
+      "pos": "OF",
+      "level": "College",
+      "school": "Louisville",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 6,
+      "teamId": "ATH",
+      "name": "A.J. Puk",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Florida",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2016,
+      "pick": 7,
+      "teamId": "MIA",
+      "name": "Braxton Garrett",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Florence HS (AL)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 8,
+      "teamId": "SD",
+      "name": "Cal Quantrill",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Stanford",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 9,
+      "teamId": "DET",
+      "name": "Matt Manning",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Sheldon HS (CA)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 10,
+      "teamId": "CWS",
+      "name": "Zack Collins",
+      "pos": "C",
+      "level": "College",
+      "school": "Miami",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 11,
+      "teamId": "SEA",
+      "name": "Kyle Lewis",
+      "pos": "OF",
+      "level": "College",
+      "school": "Mercer",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 12,
+      "teamId": "BOS",
+      "name": "Jason Groome",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Barnegat HS (NJ)",
+      "outcome": "bust",
+      "industryFV": 60
+    },
+    {
+      "year": 2016,
+      "pick": 13,
+      "teamId": "TB",
+      "name": "Josh Lowe",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Pope HS (GA)",
+      "outcome": "regular",
+      "industryFV": 50
+    },
+    {
+      "year": 2016,
+      "pick": 14,
+      "teamId": "CLE",
+      "name": "Will Benson",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Westminster Schools (GA)",
+      "outcome": "fringe",
+      "industryFV": 50
+    },
+    {
+      "year": 2016,
+      "pick": 15,
+      "teamId": "MIN",
+      "name": "Alex Kirilloff",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Plum HS (PA)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2016,
+      "pick": 16,
+      "teamId": "LAA",
+      "name": "Matt Thaiss",
+      "pos": "C",
+      "level": "College",
+      "school": "Virginia"
+    },
+    {
+      "year": 2016,
+      "pick": 17,
+      "teamId": "HOU",
+      "name": "Forrest Whitley",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Alamo Heights HS (TX)"
+    },
+    {
+      "year": 2016,
+      "pick": 18,
+      "teamId": "NYY",
+      "name": "Blake Rutherford",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Chaminade College Prep (CA)"
+    },
+    {
+      "year": 2016,
+      "pick": 19,
+      "teamId": "NYM",
+      "name": "Justin Dunn",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Boston College"
+    },
+    {
+      "year": 2016,
+      "pick": 20,
+      "teamId": "LAD",
+      "name": "Gavin Lux",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Indian Trail Academy (WI)"
+    },
+    {
+      "year": 2016,
+      "pick": 21,
+      "teamId": "TOR",
+      "name": "T.J. Zeuch",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Pittsburgh"
+    },
+    {
+      "year": 2016,
+      "pick": 22,
+      "teamId": "PIT",
+      "name": "Will Craig",
+      "pos": "3B",
+      "level": "College",
+      "school": "Wake Forest"
+    },
+    {
+      "year": 2016,
+      "pick": 23,
+      "teamId": "STL",
+      "name": "Delvin Pérez",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Int'l Baseball Academy (PR)"
+    },
+    {
+      "year": 2016,
+      "pick": 24,
+      "teamId": "SD",
+      "name": "Hudson Sanchez",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Carroll Senior HS (TX)"
+    },
+    {
+      "year": 2016,
+      "pick": 25,
+      "teamId": "SD",
+      "name": "Eric Lauer",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Kent State"
+    },
+    {
+      "year": 2016,
+      "pick": 26,
+      "teamId": "CWS",
+      "name": "Zack Burdi",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2016,
+      "pick": 27,
+      "teamId": "BAL",
+      "name": "Cody Sedlock",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Illinois"
+    },
+    {
+      "year": 2016,
+      "pick": 28,
+      "teamId": "WSH",
+      "name": "Carter Kieboom",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Walton HS (GA)"
+    },
+    {
+      "year": 2016,
+      "pick": 29,
+      "teamId": "WSH",
+      "name": "Dane Dunning",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2016,
+      "pick": 30,
+      "teamId": "TEX",
+      "name": "Cole Ragans",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "North Florida Christian HS (FL)"
+    },
+    {
+      "year": 2016,
+      "pick": 31,
+      "teamId": "NYM",
+      "name": "Anthony Kay",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Connecticut"
+    },
+    {
+      "year": 2016,
+      "pick": 32,
+      "teamId": "LAD",
+      "name": "Will Smith",
+      "pos": "C",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2016,
+      "pick": 33,
+      "teamId": "STL",
+      "name": "Dylan Carlson",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Elk Grove HS (CA)"
+    },
+    {
+      "year": 2016,
+      "pick": 34,
+      "teamId": "STL",
+      "name": "Dakota Hudson",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2016,
+      "pick": 35,
+      "teamId": "CIN",
+      "name": "Taylor Trammell",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Mount Paran Christian (GA)"
+    },
+    {
+      "year": 2016,
+      "pick": 36,
+      "teamId": "LAD",
+      "name": "Jordan Sheffield",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt"
+    },
+    {
+      "year": 2016,
+      "pick": 37,
+      "teamId": "ATH",
+      "name": "Daulton Jefferies",
+      "pos": "RHP",
+      "level": "College",
+      "school": "California"
+    },
+    {
+      "year": 2016,
+      "pick": 38,
+      "teamId": "COL",
+      "name": "Robert Tyler",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Georgia"
+    },
+    {
+      "year": 2016,
+      "pick": 39,
+      "teamId": "ARI",
+      "name": "Anfernee Grier",
+      "pos": "OF",
+      "level": "College",
+      "school": "Auburn"
+    },
+    {
+      "year": 2016,
+      "pick": 40,
+      "teamId": "ATL",
+      "name": "Joey Wentz",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Shawnee Mission East HS (KS)"
+    },
+    {
+      "year": 2016,
+      "pick": 41,
+      "teamId": "PIT",
+      "name": "Nick Lodolo",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Damien HS (CA)"
+    },
+    {
+      "year": 2016,
+      "pick": 42,
+      "teamId": "PHI",
+      "name": "Kevin Gowdy",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Santa Barbara HS (CA)"
+    },
+    {
+      "year": 2016,
+      "pick": 43,
+      "teamId": "CIN",
+      "name": "Chris Okey",
+      "pos": "C",
+      "level": "College",
+      "school": "Clemson"
+    },
+    {
+      "year": 2016,
+      "pick": 44,
+      "teamId": "ATL",
+      "name": "Kyle Muller",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Jesuit College Prep (TX)"
+    },
+    {
+      "year": 2017,
+      "pick": 1,
+      "teamId": "MIN",
+      "name": "Royce Lewis",
+      "pos": "SS",
+      "level": "HS",
+      "school": "JSerra Catholic HS (CA)",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2017,
+      "pick": 2,
+      "teamId": "CIN",
+      "name": "Hunter Greene",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Notre Dame HS (CA)",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2017,
+      "pick": 3,
+      "teamId": "SD",
+      "name": "MacKenzie Gore",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Whiteville HS (NC)",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2017,
+      "pick": 4,
+      "teamId": "TB",
+      "name": "Brendan McKay",
+      "pos": "1B",
+      "level": "College",
+      "school": "Louisville",
+      "outcome": "bust",
+      "industryFV": 60
+    },
+    {
+      "year": 2017,
+      "pick": 5,
+      "teamId": "ATL",
+      "name": "Kyle Wright",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 6,
+      "teamId": "ATH",
+      "name": "Austin Beck",
+      "pos": "OF",
+      "level": "HS",
+      "school": "North Davidson HS (NC)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 7,
+      "teamId": "ARI",
+      "name": "Pavin Smith",
+      "pos": "1B",
+      "level": "College",
+      "school": "Virginia",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 8,
+      "teamId": "PHI",
+      "name": "Adam Haseley",
+      "pos": "OF",
+      "level": "College",
+      "school": "Virginia",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 9,
+      "teamId": "MIL",
+      "name": "Keston Hiura",
+      "pos": "2B",
+      "level": "College",
+      "school": "UC Irvine",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 10,
+      "teamId": "LAA",
+      "name": "Jo Adell",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Ballard HS (KY)",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2017,
+      "pick": 11,
+      "teamId": "CWS",
+      "name": "Jake Burger",
+      "pos": "3B",
+      "level": "College",
+      "school": "Missouri State",
+      "outcome": "regular",
+      "industryFV": 50
+    },
+    {
+      "year": 2017,
+      "pick": 12,
+      "teamId": "PIT",
+      "name": "Shane Baz",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Concordia Lutheran HS (TX)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 13,
+      "teamId": "MIA",
+      "name": "Trevor Rogers",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Carlsbad HS (NM)",
+      "outcome": "fringe",
+      "industryFV": 50
+    },
+    {
+      "year": 2017,
+      "pick": 14,
+      "teamId": "KC",
+      "name": "Nick Pratto",
+      "pos": "1B",
+      "level": "HS",
+      "school": "Huntington Beach HS (CA)",
+      "outcome": "fringe",
+      "industryFV": 50
+    },
+    {
+      "year": 2017,
+      "pick": 15,
+      "teamId": "HOU",
+      "name": "J.B. Bukauskas",
+      "pos": "RHP",
+      "level": "College",
+      "school": "North Carolina",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2017,
+      "pick": 16,
+      "teamId": "NYY",
+      "name": "Clarke Schmidt",
+      "pos": "RHP",
+      "level": "College",
+      "school": "South Carolina"
+    },
+    {
+      "year": 2017,
+      "pick": 17,
+      "teamId": "SEA",
+      "name": "Evan White",
+      "pos": "1B",
+      "level": "College",
+      "school": "Kentucky"
+    },
+    {
+      "year": 2017,
+      "pick": 18,
+      "teamId": "DET",
+      "name": "Alex Faedo",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2017,
+      "pick": 19,
+      "teamId": "SF",
+      "name": "Heliot Ramos",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Leadership Christian Academy (PR)"
+    },
+    {
+      "year": 2017,
+      "pick": 20,
+      "teamId": "NYM",
+      "name": "David Peterson",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Oregon"
+    },
+    {
+      "year": 2017,
+      "pick": 21,
+      "teamId": "BAL",
+      "name": "DL Hall",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Valdosta HS (GA)"
+    },
+    {
+      "year": 2017,
+      "pick": 22,
+      "teamId": "TOR",
+      "name": "Logan Warmoth",
+      "pos": "SS",
+      "level": "College",
+      "school": "North Carolina"
+    },
+    {
+      "year": 2017,
+      "pick": 23,
+      "teamId": "LAD",
+      "name": "Jeren Kendall",
+      "pos": "OF",
+      "level": "College",
+      "school": "Vanderbilt"
+    },
+    {
+      "year": 2017,
+      "pick": 24,
+      "teamId": "BOS",
+      "name": "Tanner Houck",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Missouri"
+    },
+    {
+      "year": 2017,
+      "pick": 25,
+      "teamId": "WSH",
+      "name": "Seth Romero",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Houston"
+    },
+    {
+      "year": 2017,
+      "pick": 26,
+      "teamId": "TEX",
+      "name": "Bubba Thompson",
+      "pos": "OF",
+      "level": "HS",
+      "school": "McGill-Toolen Catholic HS (AL)"
+    },
+    {
+      "year": 2017,
+      "pick": 27,
+      "teamId": "CHC",
+      "name": "Brendon Little",
+      "pos": "LHP",
+      "level": "JC",
+      "school": "State College of Florida (FL)"
+    },
+    {
+      "year": 2017,
+      "pick": 28,
+      "teamId": "TOR",
+      "name": "Nate Pearson",
+      "pos": "RHP",
+      "level": "JC",
+      "school": "College of Central Florida (FL)"
+    },
+    {
+      "year": 2017,
+      "pick": 29,
+      "teamId": "TEX",
+      "name": "Christopher Seise",
+      "pos": "SS",
+      "level": "HS",
+      "school": "West Orange HS (FL)"
+    },
+    {
+      "year": 2017,
+      "pick": 30,
+      "teamId": "CHC",
+      "name": "Alex Lange",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU"
+    },
+    {
+      "year": 2017,
+      "pick": 31,
+      "teamId": "TB",
+      "name": "Drew Rasmussen",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oregon State"
+    },
+    {
+      "year": 2017,
+      "pick": 32,
+      "teamId": "CIN",
+      "name": "Jeter Downs",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Monsignor Edward Pace HS (FL)"
+    },
+    {
+      "year": 2017,
+      "pick": 33,
+      "teamId": "ATH",
+      "name": "Kevin Merrell",
+      "pos": "SS",
+      "level": "College",
+      "school": "South Florida"
+    },
+    {
+      "year": 2017,
+      "pick": 34,
+      "teamId": "MIL",
+      "name": "Tristen Lutz",
+      "pos": "OF",
+      "level": "HS",
+      "school": "James Martin HS (TX)"
+    },
+    {
+      "year": 2017,
+      "pick": 35,
+      "teamId": "MIN",
+      "name": "Brent Rooker",
+      "pos": "OF",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2017,
+      "pick": 36,
+      "teamId": "MIA",
+      "name": "Brian Miller",
+      "pos": "OF",
+      "level": "College",
+      "school": "North Carolina"
+    },
+    {
+      "year": 2018,
+      "pick": 1,
+      "teamId": "DET",
+      "name": "Casey Mize",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Auburn",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2018,
+      "pick": 2,
+      "teamId": "SF",
+      "name": "Joey Bart",
+      "pos": "C",
+      "level": "College",
+      "school": "Georgia Tech",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 3,
+      "teamId": "PHI",
+      "name": "Alec Bohm",
+      "pos": "3B",
+      "level": "College",
+      "school": "Wichita State",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 4,
+      "teamId": "CWS",
+      "name": "Nick Madrigal",
+      "pos": "SS",
+      "level": "College",
+      "school": "Oregon State",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2018,
+      "pick": 5,
+      "teamId": "CIN",
+      "name": "Jonathan India",
+      "pos": "3B",
+      "level": "College",
+      "school": "Florida",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 6,
+      "teamId": "NYM",
+      "name": "Jarred Kelenic",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Waukesha West HS (WI)",
+      "outcome": "fringe",
+      "industryFV": 60
+    },
+    {
+      "year": 2018,
+      "pick": 7,
+      "teamId": "SD",
+      "name": "Ryan Weathers",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Loretto HS (TN)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 8,
+      "teamId": "ATL",
+      "name": "Carter Stewart",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Eau Gallie HS (FL)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 9,
+      "teamId": "ATH",
+      "name": "Kyler Murray",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oklahoma",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 10,
+      "teamId": "PIT",
+      "name": "Travis Swaggerty",
+      "pos": "OF",
+      "level": "College",
+      "school": "South Alabama",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 11,
+      "teamId": "BAL",
+      "name": "Grayson Rodriguez",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Central Heights HS (TX)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 12,
+      "teamId": "TOR",
+      "name": "Jordan Groshans",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Magnolia HS (TX)",
+      "outcome": "fringe",
+      "industryFV": 50
+    },
+    {
+      "year": 2018,
+      "pick": 13,
+      "teamId": "MIA",
+      "name": "Connor Scott",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Plant HS (FL)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 14,
+      "teamId": "SEA",
+      "name": "Logan Gilbert",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Stetson",
+      "outcome": "star",
+      "industryFV": 50
+    },
+    {
+      "year": 2018,
+      "pick": 15,
+      "teamId": "TEX",
+      "name": "Cole Winn",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Lutheran HS (CO)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2018,
+      "pick": 16,
+      "teamId": "TB",
+      "name": "Matthew Liberatore",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Mountain Ridge HS (AZ)"
+    },
+    {
+      "year": 2018,
+      "pick": 17,
+      "teamId": "LAA",
+      "name": "Jordyn Adams",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Green Hope HS (NC)"
+    },
+    {
+      "year": 2018,
+      "pick": 18,
+      "teamId": "KC",
+      "name": "Brady Singer",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2018,
+      "pick": 19,
+      "teamId": "STL",
+      "name": "Nolan Gorman",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Sandra Day O'Connor HS (AZ)"
+    },
+    {
+      "year": 2018,
+      "pick": 20,
+      "teamId": "MIN",
+      "name": "Trevor Larnach",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oregon State"
+    },
+    {
+      "year": 2018,
+      "pick": 21,
+      "teamId": "MIL",
+      "name": "Brice Turang",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Santiago HS (CA)"
+    },
+    {
+      "year": 2018,
+      "pick": 22,
+      "teamId": "COL",
+      "name": "Ryan Rolison",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Ole Miss"
+    },
+    {
+      "year": 2018,
+      "pick": 23,
+      "teamId": "NYY",
+      "name": "Anthony Seigler",
+      "pos": "C",
+      "level": "HS",
+      "school": "Cartersville HS (GA)"
+    },
+    {
+      "year": 2018,
+      "pick": 24,
+      "teamId": "CHC",
+      "name": "Nico Hoerner",
+      "pos": "SS",
+      "level": "College",
+      "school": "Stanford"
+    },
+    {
+      "year": 2018,
+      "pick": 25,
+      "teamId": "ARI",
+      "name": "Matt McLain",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Beckman HS (CA)"
+    },
+    {
+      "year": 2018,
+      "pick": 26,
+      "teamId": "BOS",
+      "name": "Triston Casas",
+      "pos": "3B",
+      "level": "HS",
+      "school": "American Heritage (FL)"
+    },
+    {
+      "year": 2018,
+      "pick": 27,
+      "teamId": "WSH",
+      "name": "Mason Denaburg",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Merritt Island HS (FL)"
+    },
+    {
+      "year": 2018,
+      "pick": 28,
+      "teamId": "HOU",
+      "name": "Seth Beer",
+      "pos": "OF",
+      "level": "College",
+      "school": "Clemson"
+    },
+    {
+      "year": 2018,
+      "pick": 29,
+      "teamId": "CLE",
+      "name": "Bo Naylor",
+      "pos": "C",
+      "level": "HS",
+      "school": "St. Joan of Arc (ON)"
+    },
+    {
+      "year": 2018,
+      "pick": 30,
+      "teamId": "LAD",
+      "name": "J.T. Ginn",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Brandon HS (MS)"
+    },
+    {
+      "year": 2018,
+      "pick": 31,
+      "teamId": "TB",
+      "name": "Shane McClanahan",
+      "pos": "LHP",
+      "level": "College",
+      "school": "South Florida"
+    },
+    {
+      "year": 2018,
+      "pick": 32,
+      "teamId": "TB",
+      "name": "Nick Schnell",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Roncalli HS (IN)"
+    },
+    {
+      "year": 2018,
+      "pick": 33,
+      "teamId": "KC",
+      "name": "Jackson Kowar",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2018,
+      "pick": 34,
+      "teamId": "KC",
+      "name": "Daniel Lynch",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Virginia"
+    },
+    {
+      "year": 2018,
+      "pick": 35,
+      "teamId": "CLE",
+      "name": "Ethan Hankins",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Forsyth Central HS (GA)"
+    },
+    {
+      "year": 2018,
+      "pick": 36,
+      "teamId": "PIT",
+      "name": "Gunnar Hoglund",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Fivay HS (FL)"
+    },
+    {
+      "year": 2018,
+      "pick": 37,
+      "teamId": "BAL",
+      "name": "Cadyn Grenier",
+      "pos": "SS",
+      "level": "College",
+      "school": "Oregon State"
+    },
+    {
+      "year": 2018,
+      "pick": 38,
+      "teamId": "SD",
+      "name": "Xavier Edwards",
+      "pos": "SS",
+      "level": "HS",
+      "school": "North Broward Prep (FL)"
+    },
+    {
+      "year": 2018,
+      "pick": 39,
+      "teamId": "ARI",
+      "name": "Jake McCarthy",
+      "pos": "OF",
+      "level": "College",
+      "school": "Virginia"
+    },
+    {
+      "year": 2018,
+      "pick": 40,
+      "teamId": "KC",
+      "name": "Kris Bubic",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Stanford"
+    },
+    {
+      "year": 2018,
+      "pick": 41,
+      "teamId": "CLE",
+      "name": "Lenny Torres",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Beacon HS (NY)"
+    },
+    {
+      "year": 2018,
+      "pick": 42,
+      "teamId": "COL",
+      "name": "Grant Lavigne",
+      "pos": "1B",
+      "level": "HS",
+      "school": "Bedford HS (NH)"
+    },
+    {
+      "year": 2018,
+      "pick": 43,
+      "teamId": "STL",
+      "name": "Griffin Roberts",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Wake Forest"
+    },
+    {
+      "year": 2018,
+      "pick": 44,
+      "teamId": "DET",
+      "name": "Parker Meadows",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Grayson HS (GA)"
+    },
+    {
+      "year": 2018,
+      "pick": 45,
+      "teamId": "SF",
+      "name": "Sean Hjelle",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Kentucky"
+    },
+    {
+      "year": 2018,
+      "pick": 46,
+      "teamId": "CWS",
+      "name": "Steele Walker",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oklahoma"
+    },
+    {
+      "year": 2018,
+      "pick": 47,
+      "teamId": "CIN",
+      "name": "Lyon Richardson",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Jensen Beach HS (FL)"
+    },
+    {
+      "year": 2018,
+      "pick": 48,
+      "teamId": "NYM",
+      "name": "Simeon Woods Richardson",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Kempner HS (TX)"
+    },
+    {
+      "year": 2018,
+      "pick": 49,
+      "teamId": "ATL",
+      "name": "Greyson Jenista",
+      "pos": "OF",
+      "level": "College",
+      "school": "Wichita State"
+    },
+    {
+      "year": 2018,
+      "pick": 51,
+      "teamId": "PIT",
+      "name": "Braxton Ashcraft",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Robinson HS (TX)"
+    },
+    {
+      "year": 2018,
+      "pick": 52,
+      "teamId": "TOR",
+      "name": "Griffin Conine",
+      "pos": "OF",
+      "level": "College",
+      "school": "Duke"
+    },
+    {
+      "year": 2018,
+      "pick": 54,
+      "teamId": "SEA",
+      "name": "Josh Stowers",
+      "pos": "OF",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2018,
+      "pick": 55,
+      "teamId": "TEX",
+      "name": "Owen White",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Jesse C. Carson HS (NC)"
+    },
+    {
+      "year": 2018,
+      "pick": 56,
+      "teamId": "TB",
+      "name": "Tyler Frank",
+      "pos": "2B",
+      "level": "College",
+      "school": "Florida Atlantic"
+    },
+    {
+      "year": 2018,
+      "pick": 57,
+      "teamId": "LAA",
+      "name": "Jeremiah Jackson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "St. Luke's Episcopal HS (AL)"
+    },
+    {
+      "year": 2018,
+      "pick": 58,
+      "teamId": "KC",
+      "name": "Jonathan Bowlan",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Memphis"
+    },
+    {
+      "year": 2018,
+      "pick": 59,
+      "teamId": "MIN",
+      "name": "Ryan Jeffers",
+      "pos": "C",
+      "level": "College",
+      "school": "UNC Wilmington"
+    },
+    {
+      "year": 2018,
+      "pick": 61,
+      "teamId": "NYY",
+      "name": "Josh Breaux",
+      "pos": "C",
+      "level": "JC",
+      "school": "McLennan CC (TX)"
+    },
+    {
+      "year": 2018,
+      "pick": 62,
+      "teamId": "CHC",
+      "name": "Brennen Davis",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Basha HS (AZ)"
+    },
+    {
+      "year": 2018,
+      "pick": 63,
+      "teamId": "ARI",
+      "name": "Alek Thomas",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Mount Carmel HS (IL)"
+    },
+    {
+      "year": 2018,
+      "pick": 65,
+      "teamId": "WSH",
+      "name": "Tim Cate",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Connecticut"
+    },
+    {
+      "year": 2018,
+      "pick": 67,
+      "teamId": "CLE",
+      "name": "Nick Sandlin",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Southern Miss"
+    },
+    {
+      "year": 2018,
+      "pick": 68,
+      "teamId": "LAD",
+      "name": "Michael Grove",
+      "pos": "RHP",
+      "level": "College",
+      "school": "West Virginia"
+    },
+    {
+      "year": 2019,
+      "pick": 1,
+      "teamId": "BAL",
+      "name": "Adley Rutschman",
+      "pos": "C",
+      "level": "College",
+      "school": "Oregon State",
+      "outcome": "star",
+      "industryFV": 65
+    },
+    {
+      "year": 2019,
+      "pick": 2,
+      "teamId": "KC",
+      "name": "Bobby Witt Jr.",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Colleyville Heritage HS (TX)",
+      "outcome": "star",
+      "industryFV": 60
+    },
+    {
+      "year": 2019,
+      "pick": 3,
+      "teamId": "CWS",
+      "name": "Andrew Vaughn",
+      "pos": "1B",
+      "level": "College",
+      "school": "California",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2019,
+      "pick": 4,
+      "teamId": "MIA",
+      "name": "JJ Bleday",
+      "pos": "OF",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 5,
+      "teamId": "DET",
+      "name": "Riley Greene",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Hagerty HS (FL)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 6,
+      "teamId": "SD",
+      "name": "CJ Abrams",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Blessed Trinity HS (GA)",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2019,
+      "pick": 7,
+      "teamId": "CIN",
+      "name": "Nick Lodolo",
+      "pos": "RHP",
+      "level": "College",
+      "school": "TCU",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 8,
+      "teamId": "TEX",
+      "name": "Josh Jung",
+      "pos": "3B",
+      "level": "College",
+      "school": "Texas Tech",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 9,
+      "teamId": "ATL",
+      "name": "Shea Langeliers",
+      "pos": "C",
+      "level": "College",
+      "school": "Baylor",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 10,
+      "teamId": "SF",
+      "name": "Hunter Bishop",
+      "pos": "OF",
+      "level": "College",
+      "school": "Arizona State",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 11,
+      "teamId": "TOR",
+      "name": "Alek Manoah",
+      "pos": "RHP",
+      "level": "College",
+      "school": "West Virginia",
+      "outcome": "regular",
+      "industryFV": 50
+    },
+    {
+      "year": 2019,
+      "pick": 12,
+      "teamId": "NYM",
+      "name": "Brett Baty",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Lake Travis HS (TX)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2019,
+      "pick": 13,
+      "teamId": "MIN",
+      "name": "Keoni Cavaco",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Eastlake HS (CA)",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2019,
+      "pick": 14,
+      "teamId": "PHI",
+      "name": "Bryson Stott",
+      "pos": "SS",
+      "level": "College",
+      "school": "UNLV",
+      "outcome": "regular",
+      "industryFV": 50
+    },
+    {
+      "year": 2019,
+      "pick": 15,
+      "teamId": "LAA",
+      "name": "Will Wilson",
+      "pos": "SS",
+      "level": "College",
+      "school": "NC State",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2019,
+      "pick": 16,
+      "teamId": "ARI",
+      "name": "Corbin Carroll",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Lakeside School (WA)"
+    },
+    {
+      "year": 2019,
+      "pick": 17,
+      "teamId": "WSH",
+      "name": "Jackson Rutledge",
+      "pos": "RHP",
+      "level": "JC",
+      "school": "San Jacinto JC (TX)"
+    },
+    {
+      "year": 2019,
+      "pick": 18,
+      "teamId": "PIT",
+      "name": "Quinn Priester",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Cary-Grove HS (IL)"
+    },
+    {
+      "year": 2019,
+      "pick": 19,
+      "teamId": "STL",
+      "name": "Zack Thompson",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Kentucky"
+    },
+    {
+      "year": 2019,
+      "pick": 20,
+      "teamId": "SEA",
+      "name": "George Kirby",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Elon"
+    },
+    {
+      "year": 2019,
+      "pick": 21,
+      "teamId": "ATL",
+      "name": "Braden Shewmake",
+      "pos": "SS",
+      "level": "College",
+      "school": "Texas A&M"
+    },
+    {
+      "year": 2019,
+      "pick": 22,
+      "teamId": "TB",
+      "name": "Greg Jones",
+      "pos": "SS",
+      "level": "College",
+      "school": "UNC Wilmington"
+    },
+    {
+      "year": 2019,
+      "pick": 23,
+      "teamId": "COL",
+      "name": "Michael Toglia",
+      "pos": "1B",
+      "level": "College",
+      "school": "UCLA"
+    },
+    {
+      "year": 2019,
+      "pick": 24,
+      "teamId": "CLE",
+      "name": "Daniel Espino",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Georgia Premier Academy (GA)"
+    },
+    {
+      "year": 2019,
+      "pick": 25,
+      "teamId": "LAD",
+      "name": "Kody Hoese",
+      "pos": "3B",
+      "level": "College",
+      "school": "Tulane"
+    },
+    {
+      "year": 2019,
+      "pick": 26,
+      "teamId": "ARI",
+      "name": "Blake Walston",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "New Hanover HS (NC)"
+    },
+    {
+      "year": 2019,
+      "pick": 27,
+      "teamId": "CHC",
+      "name": "Ryan Jensen",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Fresno State"
+    },
+    {
+      "year": 2019,
+      "pick": 28,
+      "teamId": "MIL",
+      "name": "Ethan Small",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2019,
+      "pick": 29,
+      "teamId": "ATH",
+      "name": "Logan Davidson",
+      "pos": "SS",
+      "level": "College",
+      "school": "Clemson"
+    },
+    {
+      "year": 2019,
+      "pick": 30,
+      "teamId": "NYY",
+      "name": "Anthony Volpe",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Delbarton School (NJ)"
+    },
+    {
+      "year": 2019,
+      "pick": 31,
+      "teamId": "LAD",
+      "name": "Michael Busch",
+      "pos": "2B",
+      "level": "College",
+      "school": "North Carolina"
+    },
+    {
+      "year": 2019,
+      "pick": 32,
+      "teamId": "HOU",
+      "name": "Korey Lee",
+      "pos": "C",
+      "level": "College",
+      "school": "California"
+    },
+    {
+      "year": 2019,
+      "pick": 33,
+      "teamId": "ARI",
+      "name": "Brennan Malone",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "IMG Academy (FL)"
+    },
+    {
+      "year": 2019,
+      "pick": 34,
+      "teamId": "ARI",
+      "name": "Drey Jameson",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Ball State"
+    },
+    {
+      "year": 2019,
+      "pick": 35,
+      "teamId": "MIA",
+      "name": "Kameron Misner",
+      "pos": "OF",
+      "level": "College",
+      "school": "Missouri"
+    },
+    {
+      "year": 2019,
+      "pick": 36,
+      "teamId": "TB",
+      "name": "J.J. Goss",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Cypress Ranch HS (TX)"
+    },
+    {
+      "year": 2019,
+      "pick": 37,
+      "teamId": "PIT",
+      "name": "Sammy Siani",
+      "pos": "OF",
+      "level": "HS",
+      "school": "William Penn Charter (PA)"
+    },
+    {
+      "year": 2019,
+      "pick": 38,
+      "teamId": "NYY",
+      "name": "T.J. Sikkema",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Missouri"
+    },
+    {
+      "year": 2019,
+      "pick": 39,
+      "teamId": "MIN",
+      "name": "Matt Wallner",
+      "pos": "OF",
+      "level": "College",
+      "school": "Southern Mississippi"
+    },
+    {
+      "year": 2019,
+      "pick": 40,
+      "teamId": "TB",
+      "name": "Seth Johnson",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Campbell"
+    },
+    {
+      "year": 2019,
+      "pick": 41,
+      "teamId": "TEX",
+      "name": "Davis Wendzel",
+      "pos": "3B",
+      "level": "College",
+      "school": "Baylor"
+    },
+    {
+      "year": 2019,
+      "pick": 42,
+      "teamId": "BAL",
+      "name": "Gunnar Henderson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "John T. Morgan Academy (AL)"
+    },
+    {
+      "year": 2019,
+      "pick": 45,
+      "teamId": "CWS",
+      "name": "Matthew Thompson",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Cypress Ranch HS (TX)"
+    },
+    {
+      "year": 2019,
+      "pick": 46,
+      "teamId": "MIA",
+      "name": "Nasim Nuñez",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Collins Hill HS (GA)"
+    },
+    {
+      "year": 2019,
+      "pick": 47,
+      "teamId": "DET",
+      "name": "Nick Quintana",
+      "pos": "3B",
+      "level": "College",
+      "school": "Arizona"
+    },
+    {
+      "year": 2019,
+      "pick": 49,
+      "teamId": "CIN",
+      "name": "Rece Hinds",
+      "pos": "SS",
+      "level": "HS",
+      "school": "IMG Academy (FL)"
+    },
+    {
+      "year": 2019,
+      "pick": 50,
+      "teamId": "TEX",
+      "name": "Ryan Garcia",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UCLA"
+    },
+    {
+      "year": 2019,
+      "pick": 51,
+      "teamId": "SF",
+      "name": "Logan Wyatt",
+      "pos": "1B",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2019,
+      "pick": 52,
+      "teamId": "TOR",
+      "name": "Kendall Williams",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "IMG Academy (FL)"
+    },
+    {
+      "year": 2019,
+      "pick": 53,
+      "teamId": "NYM",
+      "name": "Josh Wolf",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "St. Thomas HS (TX)"
+    },
+    {
+      "year": 2019,
+      "pick": 54,
+      "teamId": "MIN",
+      "name": "Matt Canterino",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Rice"
+    },
+    {
+      "year": 2019,
+      "pick": 55,
+      "teamId": "LAA",
+      "name": "Kyren Paris",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Freedom HS (CA)"
+    },
+    {
+      "year": 2019,
+      "pick": 56,
+      "teamId": "ARI",
+      "name": "Ryne Nelson",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oregon"
+    },
+    {
+      "year": 2019,
+      "pick": 57,
+      "teamId": "PIT",
+      "name": "Matt Gorski",
+      "pos": "OF",
+      "level": "College",
+      "school": "Indiana"
+    },
+    {
+      "year": 2019,
+      "pick": 59,
+      "teamId": "SEA",
+      "name": "Brandon Williamson",
+      "pos": "RHP",
+      "level": "College",
+      "school": "TCU"
+    },
+    {
+      "year": 2019,
+      "pick": 61,
+      "teamId": "TB",
+      "name": "John Doxakis",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Texas A&M"
+    },
+    {
+      "year": 2019,
+      "pick": 62,
+      "teamId": "COL",
+      "name": "Aaron Schunk",
+      "pos": "3B",
+      "level": "College",
+      "school": "Georgia"
+    },
+    {
+      "year": 2019,
+      "pick": 64,
+      "teamId": "CHC",
+      "name": "Chase Strumpf",
+      "pos": "2B",
+      "level": "College",
+      "school": "UCLA"
+    },
+    {
+      "year": 2019,
+      "pick": 65,
+      "teamId": "MIL",
+      "name": "Antoine Kelly",
+      "pos": "RHP",
+      "level": "JC",
+      "school": "Wabash Valley (IL)"
+    },
+    {
+      "year": 2019,
+      "pick": 66,
+      "teamId": "ATH",
+      "name": "Tyler Baum",
+      "pos": "RHP",
+      "level": "College",
+      "school": "North Carolina"
+    },
+    {
+      "year": 2019,
+      "pick": 67,
+      "teamId": "NYY",
+      "name": "Josh Smith",
+      "pos": "SS",
+      "level": "College",
+      "school": "LSU"
+    },
+    {
+      "year": 2019,
+      "pick": 68,
+      "teamId": "HOU",
+      "name": "Grae Kessinger",
+      "pos": "SS",
+      "level": "College",
+      "school": "Ole Miss"
+    },
+    {
+      "year": 2019,
+      "pick": 69,
+      "teamId": "BOS",
+      "name": "Matthew Lugo",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Carlos Beltrán Academy (PR)"
+    },
+    {
+      "year": 2019,
+      "pick": 70,
+      "teamId": "KC",
+      "name": "Alec Marsh",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Arizona State"
+    },
+    {
+      "year": 2019,
+      "pick": 71,
+      "teamId": "BAL",
+      "name": "Kyle Stowers",
+      "pos": "OF",
+      "level": "College",
+      "school": "Stanford"
+    },
+    {
+      "year": 2019,
+      "pick": 72,
+      "teamId": "PIT",
+      "name": "Jared Triolo",
+      "pos": "3B",
+      "level": "College",
+      "school": "Houston"
+    },
+    {
+      "year": 2019,
+      "pick": 73,
+      "teamId": "SD",
+      "name": "Logan Driscoll",
+      "pos": "C",
+      "level": "College",
+      "school": "George Mason"
+    },
+    {
+      "year": 2019,
+      "pick": 74,
+      "teamId": "ARI",
+      "name": "Tommy Henry",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Michigan"
+    },
+    {
+      "year": 2019,
+      "pick": 75,
+      "teamId": "ARI",
+      "name": "Dominic Fletcher",
+      "pos": "OF",
+      "level": "College",
+      "school": "Arkansas"
+    },
+    {
+      "year": 2019,
+      "pick": 76,
+      "teamId": "SEA",
+      "name": "Isaiah Campbell",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Arkansas"
+    },
+    {
+      "year": 2019,
+      "pick": 77,
+      "teamId": "COL",
+      "name": "Karl Kauffmann",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Michigan"
+    },
+    {
+      "year": 2020,
+      "pick": 1,
+      "teamId": "DET",
+      "name": "Spencer Torkelson",
+      "pos": "3B",
+      "level": "College",
+      "school": "Arizona State",
+      "outcome": "regular",
+      "industryFV": 60
+    },
+    {
+      "year": 2020,
+      "pick": 2,
+      "teamId": "BAL",
+      "name": "Heston Kjerstad",
+      "pos": "OF",
+      "level": "College",
+      "school": "Arkansas",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 3,
+      "teamId": "MIA",
+      "name": "Max Meyer",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Minnesota",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 4,
+      "teamId": "KC",
+      "name": "Asa Lacy",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Texas A&M",
+      "outcome": "bust",
+      "industryFV": 60
+    },
+    {
+      "year": 2020,
+      "pick": 5,
+      "teamId": "TOR",
+      "name": "Austin Martin",
+      "pos": "SS",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 6,
+      "teamId": "SEA",
+      "name": "Emerson Hancock",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Georgia",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 7,
+      "teamId": "PIT",
+      "name": "Nick Gonzales",
+      "pos": "2B",
+      "level": "College",
+      "school": "New Mexico State",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 8,
+      "teamId": "SD",
+      "name": "Robert Hassell",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Independence HS (TN)",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 9,
+      "teamId": "COL",
+      "name": "Zac Veen",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Spruce Creek HS (FL)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 10,
+      "teamId": "LAA",
+      "name": "Reid Detmers",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Louisville",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 11,
+      "teamId": "CWS",
+      "name": "Garrett Crochet",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Tennessee"
+    },
+    {
+      "year": 2020,
+      "pick": 12,
+      "teamId": "CIN",
+      "name": "Austin Hendrick",
+      "pos": "OF",
+      "level": "HS",
+      "school": "West Allegheny HS (PA)",
+      "outcome": "bust",
+      "industryFV": 50
+    },
+    {
+      "year": 2020,
+      "pick": 13,
+      "teamId": "SF",
+      "name": "Patrick Bailey",
+      "pos": "C",
+      "level": "College",
+      "school": "NC State"
+    },
+    {
+      "year": 2020,
+      "pick": 14,
+      "teamId": "TEX",
+      "name": "Justin Foscue",
+      "pos": "2B",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2020,
+      "pick": 15,
+      "teamId": "PHI",
+      "name": "Mick Abel",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Jesuit HS (OR)",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 16,
+      "teamId": "CHC",
+      "name": "Ed Howard",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Mt. Carmel HS (IL)",
+      "outcome": "bust",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 17,
+      "teamId": "BOS",
+      "name": "Nick Yorke",
+      "pos": "2B",
+      "level": "HS",
+      "school": "Archbishop Mitty HS (CA)"
+    },
+    {
+      "year": 2020,
+      "pick": 18,
+      "teamId": "ARI",
+      "name": "Bryce Jarvis",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Duke"
+    },
+    {
+      "year": 2020,
+      "pick": 19,
+      "teamId": "NYM",
+      "name": "Pete Crow-Armstrong",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Harvard-Westlake (CA)",
+      "outcome": "regular",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 20,
+      "teamId": "MIL",
+      "name": "Garrett Mitchell",
+      "pos": "OF",
+      "level": "College",
+      "school": "UCLA",
+      "outcome": "fringe",
+      "industryFV": 55
+    },
+    {
+      "year": 2020,
+      "pick": 21,
+      "teamId": "STL",
+      "name": "Jordan Walker",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Decatur HS (GA)"
+    },
+    {
+      "year": 2020,
+      "pick": 22,
+      "teamId": "WSH",
+      "name": "Cade Cavalli",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oklahoma"
+    },
+    {
+      "year": 2020,
+      "pick": 23,
+      "teamId": "CLE",
+      "name": "Carson Tucker",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Mountain Pointe HS (AZ)"
+    },
+    {
+      "year": 2020,
+      "pick": 24,
+      "teamId": "TB",
+      "name": "Nick Bitsko",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Central Bucks East HS (PA)"
+    },
+    {
+      "year": 2020,
+      "pick": 25,
+      "teamId": "ATL",
+      "name": "Jared Shuster",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Wake Forest"
+    },
+    {
+      "year": 2020,
+      "pick": 26,
+      "teamId": "ATH",
+      "name": "Tyler Soderstrom",
+      "pos": "C",
+      "level": "HS",
+      "school": "Turlock HS (CA)"
+    },
+    {
+      "year": 2020,
+      "pick": 27,
+      "teamId": "MIN",
+      "name": "Aaron Sabato",
+      "pos": "1B",
+      "level": "College",
+      "school": "North Carolina"
+    },
+    {
+      "year": 2020,
+      "pick": 28,
+      "teamId": "NYY",
+      "name": "Austin Wells",
+      "pos": "C",
+      "level": "College",
+      "school": "Arizona"
+    },
+    {
+      "year": 2020,
+      "pick": 29,
+      "teamId": "LAD",
+      "name": "Bobby Miller",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2020,
+      "pick": 38,
+      "teamId": "DET",
+      "name": "Dillon Dingler",
+      "pos": "C",
+      "level": "College",
+      "school": "Ohio State"
+    },
+    {
+      "year": 2020,
+      "pick": 39,
+      "teamId": "BAL",
+      "name": "Hudson Haskin",
+      "pos": "OF",
+      "level": "College",
+      "school": "Tulane"
+    },
+    {
+      "year": 2020,
+      "pick": 40,
+      "teamId": "MIA",
+      "name": "Dax Fulton",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Mustang HS (OK)"
+    },
+    {
+      "year": 2020,
+      "pick": 41,
+      "teamId": "KC",
+      "name": "Ben Hernandez",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "De La Salle Institute (IL)"
+    },
+    {
+      "year": 2020,
+      "pick": 42,
+      "teamId": "TOR",
+      "name": "CJ Van Eyk",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida State"
+    },
+    {
+      "year": 2020,
+      "pick": 43,
+      "teamId": "SEA",
+      "name": "Zach DeLoach",
+      "pos": "OF",
+      "level": "College",
+      "school": "Texas A&M"
+    },
+    {
+      "year": 2020,
+      "pick": 44,
+      "teamId": "PIT",
+      "name": "Jared Jones",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "La Mirada HS (CA)"
+    },
+    {
+      "year": 2020,
+      "pick": 45,
+      "teamId": "SD",
+      "name": "Owen Caissie",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Notre Dame Secondary School (ON)"
+    },
+    {
+      "year": 2020,
+      "pick": 46,
+      "teamId": "COL",
+      "name": "Chris McMahon",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Miami"
+    },
+    {
+      "year": 2020,
+      "pick": 47,
+      "teamId": "CWS",
+      "name": "Jared Kelley",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Refugio HS (TX)"
+    },
+    {
+      "year": 2020,
+      "pick": 48,
+      "teamId": "CIN",
+      "name": "Christian Roa",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Texas A&M"
+    },
+    {
+      "year": 2020,
+      "pick": 49,
+      "teamId": "SF",
+      "name": "Casey Schmitt",
+      "pos": "3B",
+      "level": "College",
+      "school": "San Diego State"
+    },
+    {
+      "year": 2020,
+      "pick": 50,
+      "teamId": "TEX",
+      "name": "Evan Carter",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Elizabethton HS (TN)"
+    },
+    {
+      "year": 2020,
+      "pick": 51,
+      "teamId": "CHC",
+      "name": "Burl Carraway",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Dallas Baptist"
+    },
+    {
+      "year": 2020,
+      "pick": 52,
+      "teamId": "NYM",
+      "name": "J.T. Ginn",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2020,
+      "pick": 53,
+      "teamId": "MIL",
+      "name": "Freddy Zamora",
+      "pos": "SS",
+      "level": "College",
+      "school": "Miami"
+    },
+    {
+      "year": 2020,
+      "pick": 54,
+      "teamId": "STL",
+      "name": "Masyn Winn",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Kingwood HS (TX)"
+    },
+    {
+      "year": 2020,
+      "pick": 55,
+      "teamId": "WSH",
+      "name": "Cole Henry",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU"
+    },
+    {
+      "year": 2020,
+      "pick": 56,
+      "teamId": "CLE",
+      "name": "Logan Allen",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Florida International"
+    },
+    {
+      "year": 2020,
+      "pick": 57,
+      "teamId": "TB",
+      "name": "Ian Seymour",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Virginia Tech"
+    },
+    {
+      "year": 2020,
+      "pick": 58,
+      "teamId": "ATH",
+      "name": "Jeff Criswell",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Michigan"
+    },
+    {
+      "year": 2020,
+      "pick": 59,
+      "teamId": "MIN",
+      "name": "Alerick Soularie",
+      "pos": "OF",
+      "level": "College",
+      "school": "Tennessee"
+    },
+    {
+      "year": 2020,
+      "pick": 60,
+      "teamId": "LAD",
+      "name": "Landon Knack",
+      "pos": "RHP",
+      "level": "College",
+      "school": "East Tennessee State"
+    },
+    {
+      "year": 2021,
+      "pick": 1,
+      "teamId": "PIT",
+      "name": "Henry Davis",
+      "pos": "C",
+      "level": "College",
+      "school": "Louisville",
+      "industryFV": 55,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2021,
+      "pick": 2,
+      "teamId": "TEX",
+      "name": "Jack Leiter",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "industryFV": 60,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2021,
+      "pick": 3,
+      "teamId": "DET",
+      "name": "Jackson Jobe",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Heritage Hall (OK)",
+      "industryFV": 55,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2021,
+      "pick": 4,
+      "teamId": "BOS",
+      "name": "Marcelo Mayer",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Eastlake HS (CA)",
+      "industryFV": 60,
+      "outcome": "regular"
+    },
+    {
+      "year": 2021,
+      "pick": 5,
+      "teamId": "BAL",
+      "name": "Colton Cowser",
+      "pos": "OF",
+      "level": "College",
+      "school": "Sam Houston State",
+      "industryFV": 55,
+      "outcome": "regular"
+    },
+    {
+      "year": 2021,
+      "pick": 6,
+      "teamId": "ARI",
+      "name": "Jordan Lawlar",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Jesuit Dallas (TX)",
+      "industryFV": 60,
+      "outcome": "regular"
+    },
+    {
+      "year": 2021,
+      "pick": 7,
+      "teamId": "KC",
+      "name": "Frank Mozzicato",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "East Catholic HS (CT)"
+    },
+    {
+      "year": 2021,
+      "pick": 8,
+      "teamId": "COL",
+      "name": "Benny Montgomery",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Red Land HS (PA)"
+    },
+    {
+      "year": 2021,
+      "pick": 9,
+      "teamId": "LAA",
+      "name": "Sam Bachman",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Miami (OH)"
+    },
+    {
+      "year": 2021,
+      "pick": 10,
+      "teamId": "NYM",
+      "name": "Kumar Rocker",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "industryFV": 60,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2021,
+      "pick": 11,
+      "teamId": "WSH",
+      "name": "Brady House",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Winder-Barrow HS (GA)",
+      "industryFV": 55,
+      "outcome": "regular"
+    },
+    {
+      "year": 2021,
+      "pick": 12,
+      "teamId": "SEA",
+      "name": "Harry Ford",
+      "pos": "C",
+      "level": "HS",
+      "school": "North Cobb HS (GA)"
+    },
+    {
+      "year": 2021,
+      "pick": 13,
+      "teamId": "PHI",
+      "name": "Andrew Painter",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Calvary Christian (FL)"
+    },
+    {
+      "year": 2021,
+      "pick": 14,
+      "teamId": "SF",
+      "name": "Will Bednar",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Mississippi State",
+      "industryFV": 50,
+      "outcome": "bust"
+    },
+    {
+      "year": 2021,
+      "pick": 15,
+      "teamId": "MIL",
+      "name": "Sal Frelick",
+      "pos": "OF",
+      "level": "College",
+      "school": "Boston College",
+      "industryFV": 55,
+      "outcome": "regular"
+    },
+    {
+      "year": 2021,
+      "pick": 16,
+      "teamId": "MIA",
+      "name": "Kahlil Watson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Wake Forest HS (NC)",
+      "industryFV": 55,
+      "outcome": "bust"
+    },
+    {
+      "year": 2021,
+      "pick": 17,
+      "teamId": "CIN",
+      "name": "Matt McLain",
+      "pos": "SS",
+      "level": "College",
+      "school": "UCLA",
+      "industryFV": 55,
+      "outcome": "regular"
+    },
+    {
+      "year": 2021,
+      "pick": 18,
+      "teamId": "STL",
+      "name": "Michael McGreevy",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UC Santa Barbara"
+    },
+    {
+      "year": 2021,
+      "pick": 19,
+      "teamId": "TOR",
+      "name": "Gunnar Hoglund",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Ole Miss"
+    },
+    {
+      "year": 2021,
+      "pick": 20,
+      "teamId": "NYY",
+      "name": "Trey Sweeney",
+      "pos": "SS",
+      "level": "College",
+      "school": "Eastern Illinois"
+    },
+    {
+      "year": 2021,
+      "pick": 21,
+      "teamId": "CHC",
+      "name": "Jordan Wicks",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Kansas State",
+      "industryFV": 50,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2021,
+      "pick": 22,
+      "teamId": "CWS",
+      "name": "Colson Montgomery",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Southridge HS (IN)"
+    },
+    {
+      "year": 2021,
+      "pick": 23,
+      "teamId": "CLE",
+      "name": "Gavin Williams",
+      "pos": "RHP",
+      "level": "College",
+      "school": "East Carolina"
+    },
+    {
+      "year": 2021,
+      "pick": 24,
+      "teamId": "ATL",
+      "name": "Ryan Cusick",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Wake Forest"
+    },
+    {
+      "year": 2021,
+      "pick": 25,
+      "teamId": "ATH",
+      "name": "Max Muncy",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Thousand Oaks HS (CA)"
+    },
+    {
+      "year": 2021,
+      "pick": 26,
+      "teamId": "MIN",
+      "name": "Chase Petty",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Mainland Regional HS (NJ)"
+    },
+    {
+      "year": 2021,
+      "pick": 27,
+      "teamId": "SD",
+      "name": "Jackson Merrill",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Severna Park HS (MD)"
+    },
+    {
+      "year": 2021,
+      "pick": 28,
+      "teamId": "TB",
+      "name": "Carson Williams",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Torrey Pines HS (CA)"
+    },
+    {
+      "year": 2021,
+      "pick": 29,
+      "teamId": "LAD",
+      "name": "Maddux Bruns",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "UMS-Wright Prep (AL)"
+    },
+    {
+      "year": 2021,
+      "pick": 30,
+      "teamId": "CIN",
+      "name": "Jay Allen",
+      "pos": "OF",
+      "level": "HS",
+      "school": "John Carroll Catholic (FL)"
+    },
+    {
+      "year": 2021,
+      "pick": 37,
+      "teamId": "PIT",
+      "name": "Anthony Solometo",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Bishop Eustace Prep (NJ)"
+    },
+    {
+      "year": 2021,
+      "pick": 38,
+      "teamId": "TEX",
+      "name": "Aaron Zavala",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oregon"
+    },
+    {
+      "year": 2021,
+      "pick": 39,
+      "teamId": "DET",
+      "name": "Izaac Pacheco",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Friendswood HS (TX)"
+    },
+    {
+      "year": 2021,
+      "pick": 40,
+      "teamId": "BOS",
+      "name": "Jud Fabian",
+      "pos": "OF",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2021,
+      "pick": 41,
+      "teamId": "BAL",
+      "name": "Connor Norby",
+      "pos": "2B",
+      "level": "College",
+      "school": "East Carolina"
+    },
+    {
+      "year": 2021,
+      "pick": 42,
+      "teamId": "ARI",
+      "name": "Ryan Bliss",
+      "pos": "SS",
+      "level": "College",
+      "school": "Auburn"
+    },
+    {
+      "year": 2021,
+      "pick": 43,
+      "teamId": "KC",
+      "name": "Ben Kudrna",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Blue Valley SW HS (KS)"
+    },
+    {
+      "year": 2021,
+      "pick": 44,
+      "teamId": "COL",
+      "name": "Jaden Hill",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU"
+    },
+    {
+      "year": 2021,
+      "pick": 45,
+      "teamId": "LAA",
+      "name": "Ky Bush",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Saint Mary's"
+    },
+    {
+      "year": 2021,
+      "pick": 46,
+      "teamId": "NYM",
+      "name": "Calvin Ziegler",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "TNXL Academy (FL)"
+    },
+    {
+      "year": 2021,
+      "pick": 47,
+      "teamId": "WSH",
+      "name": "Daylen Lile",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Trinity HS (KY)"
+    },
+    {
+      "year": 2021,
+      "pick": 48,
+      "teamId": "SEA",
+      "name": "Edwin Arroyo",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Arecibo Academy (PR)"
+    },
+    {
+      "year": 2021,
+      "pick": 49,
+      "teamId": "PHI",
+      "name": "Ethan Wilson",
+      "pos": "OF",
+      "level": "College",
+      "school": "South Alabama"
+    },
+    {
+      "year": 2021,
+      "pick": 50,
+      "teamId": "SF",
+      "name": "Matt Mikulski",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Fordham"
+    },
+    {
+      "year": 2021,
+      "pick": 51,
+      "teamId": "MIL",
+      "name": "Russell Smith",
+      "pos": "LHP",
+      "level": "College",
+      "school": "TCU"
+    },
+    {
+      "year": 2021,
+      "pick": 52,
+      "teamId": "MIA",
+      "name": "Cody Morissette",
+      "pos": "SS",
+      "level": "College",
+      "school": "Boston College"
+    },
+    {
+      "year": 2021,
+      "pick": 53,
+      "teamId": "CIN",
+      "name": "Andrew Abbott",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Virginia"
+    },
+    {
+      "year": 2021,
+      "pick": 54,
+      "teamId": "STL",
+      "name": "Joshua Báez",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Dexter Southfield (MA)"
+    },
+    {
+      "year": 2021,
+      "pick": 55,
+      "teamId": "NYY",
+      "name": "Brendan Beck",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Stanford"
+    },
+    {
+      "year": 2021,
+      "pick": 56,
+      "teamId": "CHC",
+      "name": "James Triantos",
+      "pos": "3B",
+      "level": "HS",
+      "school": "James Madison HS (VA)"
+    },
+    {
+      "year": 2021,
+      "pick": 57,
+      "teamId": "CWS",
+      "name": "Wes Kath",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Desert Mountain HS (AZ)"
+    },
+    {
+      "year": 2021,
+      "pick": 58,
+      "teamId": "CLE",
+      "name": "Doug Nikhazy",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Ole Miss"
+    },
+    {
+      "year": 2021,
+      "pick": 59,
+      "teamId": "ATL",
+      "name": "Spencer Schwellenbach",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Nebraska"
+    },
+    {
+      "year": 2021,
+      "pick": 60,
+      "teamId": "ATH",
+      "name": "Zack Gelof",
+      "pos": "3B",
+      "level": "College",
+      "school": "Virginia"
+    },
+    {
+      "year": 2021,
+      "pick": 61,
+      "teamId": "MIN",
+      "name": "Steve Hajjar",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Michigan"
+    },
+    {
+      "year": 2021,
+      "pick": 62,
+      "teamId": "SD",
+      "name": "James Wood",
+      "pos": "OF",
+      "level": "HS",
+      "school": "IMG Academy (FL)"
+    },
+    {
+      "year": 2021,
+      "pick": 63,
+      "teamId": "TB",
+      "name": "Kyle Manzardo",
+      "pos": "1B",
+      "level": "College",
+      "school": "Washington State"
+    },
+    {
+      "year": 2022,
+      "pick": 1,
+      "teamId": "BAL",
+      "name": "Jackson Holliday",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Stillwater HS (OK)",
+      "industryFV": 65,
+      "outcome": "regular"
+    },
+    {
+      "year": 2022,
+      "pick": 2,
+      "teamId": "ARI",
+      "name": "Druw Jones",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Wesleyan School (GA)",
+      "industryFV": 60,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 3,
+      "teamId": "TEX",
+      "name": "Kumar Rocker",
+      "pos": "RHP",
+      "level": "Other",
+      "school": "Tri-City ValleyCats"
+    },
+    {
+      "year": 2022,
+      "pick": 4,
+      "teamId": "PIT",
+      "name": "Termarr Johnson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Mays HS (GA)",
+      "industryFV": 55,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 5,
+      "teamId": "WSH",
+      "name": "Elijah Green",
+      "pos": "OF",
+      "level": "HS",
+      "school": "IMG Academy (FL)",
+      "industryFV": 55,
+      "outcome": "bust"
+    },
+    {
+      "year": 2022,
+      "pick": 6,
+      "teamId": "MIA",
+      "name": "Jacob Berry",
+      "pos": "OF",
+      "level": "College",
+      "school": "LSU",
+      "industryFV": 55,
+      "outcome": "bust"
+    },
+    {
+      "year": 2022,
+      "pick": 7,
+      "teamId": "CHC",
+      "name": "Cade Horton",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oklahoma"
+    },
+    {
+      "year": 2022,
+      "pick": 8,
+      "teamId": "MIN",
+      "name": "Brooks Lee",
+      "pos": "3B",
+      "level": "College",
+      "school": "Cal Poly",
+      "industryFV": 55,
+      "outcome": "regular"
+    },
+    {
+      "year": 2022,
+      "pick": 9,
+      "teamId": "KC",
+      "name": "Gavin Cross",
+      "pos": "OF",
+      "level": "College",
+      "school": "Virginia Tech"
+    },
+    {
+      "year": 2022,
+      "pick": 10,
+      "teamId": "COL",
+      "name": "Gabriel Hughes",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Gonzaga",
+      "industryFV": 50,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 11,
+      "teamId": "NYM",
+      "name": "Kevin Parada",
+      "pos": "C",
+      "level": "College",
+      "school": "Georgia Tech",
+      "industryFV": 55,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 12,
+      "teamId": "DET",
+      "name": "Jace Jung",
+      "pos": "2B",
+      "level": "College",
+      "school": "Texas Tech"
+    },
+    {
+      "year": 2022,
+      "pick": 13,
+      "teamId": "LAA",
+      "name": "Zach Neto",
+      "pos": "SS",
+      "level": "College",
+      "school": "Campbell"
+    },
+    {
+      "year": 2022,
+      "pick": 14,
+      "teamId": "NYM",
+      "name": "Jett Williams",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Rockwall-Heath HS (TX)"
+    },
+    {
+      "year": 2022,
+      "pick": 15,
+      "teamId": "SD",
+      "name": "Dylan Lesko",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Buford HS (GA)",
+      "industryFV": 55,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 16,
+      "teamId": "CLE",
+      "name": "Chase DeLauter",
+      "pos": "OF",
+      "level": "College",
+      "school": "James Madison"
+    },
+    {
+      "year": 2022,
+      "pick": 17,
+      "teamId": "PHI",
+      "name": "Justin Crawford",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Bishop Gorman HS (NV)",
+      "industryFV": 50,
+      "outcome": "regular"
+    },
+    {
+      "year": 2022,
+      "pick": 18,
+      "teamId": "CIN",
+      "name": "Cam Collier",
+      "pos": "3B",
+      "level": "College",
+      "school": "Chipola College",
+      "industryFV": 55,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 19,
+      "teamId": "ATH",
+      "name": "Daniel Susac",
+      "pos": "C",
+      "level": "College",
+      "school": "Arizona",
+      "industryFV": 50,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 20,
+      "teamId": "ATL",
+      "name": "Owen Murphy",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Riverside Brookfield HS (IL)"
+    },
+    {
+      "year": 2022,
+      "pick": 21,
+      "teamId": "SEA",
+      "name": "Cole Young",
+      "pos": "SS",
+      "level": "HS",
+      "school": "North Allegheny HS (PA)",
+      "industryFV": 55,
+      "outcome": "regular"
+    },
+    {
+      "year": 2022,
+      "pick": 22,
+      "teamId": "STL",
+      "name": "Cooper Hjerpe",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oregon State"
+    },
+    {
+      "year": 2022,
+      "pick": 23,
+      "teamId": "TOR",
+      "name": "Brandon Barriera",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "American Heritage School (FL)"
+    },
+    {
+      "year": 2022,
+      "pick": 24,
+      "teamId": "BOS",
+      "name": "Mikey Romero",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Orange Lutheran HS (CA)"
+    },
+    {
+      "year": 2022,
+      "pick": 25,
+      "teamId": "NYY",
+      "name": "Spencer Jones",
+      "pos": "OF",
+      "level": "College",
+      "school": "Vanderbilt"
+    },
+    {
+      "year": 2022,
+      "pick": 26,
+      "teamId": "CWS",
+      "name": "Noah Schultz",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Oswego East HS (IL)"
+    },
+    {
+      "year": 2022,
+      "pick": 27,
+      "teamId": "MIL",
+      "name": "Eric Brown",
+      "pos": "SS",
+      "level": "College",
+      "school": "Coastal Carolina"
+    },
+    {
+      "year": 2022,
+      "pick": 28,
+      "teamId": "HOU",
+      "name": "Drew Gilbert",
+      "pos": "OF",
+      "level": "College",
+      "school": "Tennessee",
+      "industryFV": 50,
+      "outcome": "fringe"
+    },
+    {
+      "year": 2022,
+      "pick": 29,
+      "teamId": "TB",
+      "name": "Xavier Isaac",
+      "pos": "1B",
+      "level": "HS",
+      "school": "East Forsyth HS (NC)"
+    },
+    {
+      "year": 2022,
+      "pick": 30,
+      "teamId": "SF",
+      "name": "Reggie Crawford",
+      "pos": "LHP",
+      "level": "College",
+      "school": "UConn"
+    },
+    {
+      "year": 2022,
+      "pick": 31,
+      "teamId": "COL",
+      "name": "Sterlin Thompson",
+      "pos": "OF",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2022,
+      "pick": 32,
+      "teamId": "CIN",
+      "name": "Sal Stewart",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Westminster Christian (FL)"
+    },
+    {
+      "year": 2022,
+      "pick": 40,
+      "teamId": "LAD",
+      "name": "Dalton Rushing",
+      "pos": "C",
+      "level": "College",
+      "school": "Louisville"
+    },
+    {
+      "year": 2022,
+      "pick": 41,
+      "teamId": "BOS",
+      "name": "Cutter Coffey",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Liberty HS (CA)"
+    },
+    {
+      "year": 2022,
+      "pick": 42,
+      "teamId": "BAL",
+      "name": "Max Wagner",
+      "pos": "3B",
+      "level": "College",
+      "school": "Clemson"
+    },
+    {
+      "year": 2022,
+      "pick": 43,
+      "teamId": "ARI",
+      "name": "Ivan Melendez",
+      "pos": "1B",
+      "level": "College",
+      "school": "Texas"
+    },
+    {
+      "year": 2022,
+      "pick": 44,
+      "teamId": "PIT",
+      "name": "Hunter Barco",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2022,
+      "pick": 45,
+      "teamId": "WSH",
+      "name": "Jake Bennett",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Oklahoma"
+    },
+    {
+      "year": 2022,
+      "pick": 46,
+      "teamId": "MIA",
+      "name": "Jacob Miller",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Liberty Union HS (OH)"
+    },
+    {
+      "year": 2022,
+      "pick": 47,
+      "teamId": "CHC",
+      "name": "Jackson Ferris",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "IMG Academy (FL)"
+    },
+    {
+      "year": 2022,
+      "pick": 48,
+      "teamId": "MIN",
+      "name": "Connor Prielipp",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Alabama"
+    },
+    {
+      "year": 2022,
+      "pick": 49,
+      "teamId": "KC",
+      "name": "Cayden Wallace",
+      "pos": "3B",
+      "level": "College",
+      "school": "Arkansas"
+    },
+    {
+      "year": 2022,
+      "pick": 50,
+      "teamId": "COL",
+      "name": "Jackson Cox",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Toutle Lake HS (WA)"
+    },
+    {
+      "year": 2022,
+      "pick": 51,
+      "teamId": "DET",
+      "name": "Peyton Graham",
+      "pos": "SS",
+      "level": "College",
+      "school": "Oklahoma"
+    },
+    {
+      "year": 2022,
+      "pick": 52,
+      "teamId": "NYM",
+      "name": "Blade Tidwell",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Tennessee"
+    },
+    {
+      "year": 2022,
+      "pick": 53,
+      "teamId": "SD",
+      "name": "Adam Mazur",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Iowa"
+    },
+    {
+      "year": 2022,
+      "pick": 54,
+      "teamId": "CLE",
+      "name": "Parker Messick",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Florida State"
+    },
+    {
+      "year": 2022,
+      "pick": 55,
+      "teamId": "CIN",
+      "name": "Logan Tanner",
+      "pos": "C",
+      "level": "College",
+      "school": "Mississippi State"
+    },
+    {
+      "year": 2022,
+      "pick": 56,
+      "teamId": "ATH",
+      "name": "Henry Bolte",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Palo Alto HS (CA)"
+    },
+    {
+      "year": 2022,
+      "pick": 57,
+      "teamId": "ATL",
+      "name": "Cole Phillips",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Boerne HS (TX)"
+    },
+    {
+      "year": 2022,
+      "pick": 58,
+      "teamId": "SEA",
+      "name": "Tyler Locklear",
+      "pos": "1B",
+      "level": "College",
+      "school": "VCU"
+    },
+    {
+      "year": 2022,
+      "pick": 59,
+      "teamId": "STL",
+      "name": "Brycen Mautz",
+      "pos": "LHP",
+      "level": "College",
+      "school": "San Diego"
+    },
+    {
+      "year": 2022,
+      "pick": 60,
+      "teamId": "TOR",
+      "name": "Josh Kasevich",
+      "pos": "SS",
+      "level": "College",
+      "school": "Oregon"
+    },
+    {
+      "year": 2022,
+      "pick": 61,
+      "teamId": "NYY",
+      "name": "Drew Thorpe",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Cal Poly"
+    },
+    {
+      "year": 2022,
+      "pick": 62,
+      "teamId": "CWS",
+      "name": "Peyton Pallette",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Arkansas"
+    },
+    {
+      "year": 2022,
+      "pick": 63,
+      "teamId": "MIL",
+      "name": "Jacob Misiorowski",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Crowder College (MO)"
+    },
+    {
+      "year": 2022,
+      "pick": 64,
+      "teamId": "HOU",
+      "name": "Jacob Melton",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oregon State"
+    },
+    {
+      "year": 2022,
+      "pick": 65,
+      "teamId": "TB",
+      "name": "Brock Jones",
+      "pos": "OF",
+      "level": "College",
+      "school": "Stanford",
+      "industryFV": 50,
+      "outcome": "bust"
+    },
+    {
+      "year": 2022,
+      "pick": 66,
+      "teamId": "SF",
+      "name": "Carson Whisenhunt",
+      "pos": "LHP",
+      "level": "College",
+      "school": "East Carolina"
+    },
+    {
+      "year": 2022,
+      "pick": 67,
+      "teamId": "BAL",
+      "name": "Jud Fabian",
+      "pos": "OF",
+      "level": "College",
+      "school": "Florida"
+    },
+    {
+      "year": 2022,
+      "pick": 68,
+      "teamId": "MIN",
+      "name": "Tanner Schobel",
+      "pos": "SS",
+      "level": "College",
+      "school": "Virginia Tech"
+    },
+    {
+      "year": 2022,
+      "pick": 69,
+      "teamId": "ATH",
+      "name": "Clark Elliott",
+      "pos": "OF",
+      "level": "College",
+      "school": "Michigan"
+    },
+    {
+      "year": 2022,
+      "pick": 70,
+      "teamId": "TB",
+      "name": "Chandler Simpson",
+      "pos": "SS",
+      "level": "College",
+      "school": "Georgia Tech"
+    },
+    {
+      "year": 2022,
+      "pick": 71,
+      "teamId": "TB",
+      "name": "Ryan Cermak",
+      "pos": "OF",
+      "level": "College",
+      "school": "Illinois State"
+    },
+    {
+      "year": 2022,
+      "pick": 72,
+      "teamId": "MIL",
+      "name": "Robert Moore",
+      "pos": "SS",
+      "level": "College",
+      "school": "Arkansas"
+    },
+    {
+      "year": 2022,
+      "pick": 73,
+      "teamId": "CIN",
+      "name": "Justin Boyd",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oregon State"
+    },
+    {
+      "year": 2022,
+      "pick": 74,
+      "teamId": "SEA",
+      "name": "Walter Ford",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Pace HS (FL)"
+    },
+    {
+      "year": 2022,
+      "pick": 75,
+      "teamId": "NYM",
+      "name": "Nick Morabito",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Gonzaga College HS (DC)"
+    },
+    {
+      "year": 2022,
+      "pick": 76,
+      "teamId": "ATL",
+      "name": "Blake Burkhalter",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Auburn"
+    },
+    {
+      "year": 2022,
+      "pick": 77,
+      "teamId": "TOR",
+      "name": "Tucker Toman",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Hammond School (SC)"
+    },
+    {
+      "year": 2022,
+      "pick": 78,
+      "teamId": "TOR",
+      "name": "Cade Doughty",
+      "pos": "2B",
+      "level": "College",
+      "school": "LSU"
+    },
+    {
+      "year": 2022,
+      "pick": 79,
+      "teamId": "BOS",
+      "name": "Roman Anthony",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Marjory Stoneman Douglas HS (FL)"
+    },
+    {
+      "year": 2022,
+      "pick": 80,
+      "teamId": "HOU",
+      "name": "Andrew Taylor",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Central Michigan"
+    },
+    {
+      "year": 2023,
+      "pick": 1,
+      "teamId": "PIT",
+      "name": "Paul Skenes",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "tbd",
+      "industryFV": 65
+    },
+    {
+      "year": 2023,
+      "pick": 2,
+      "teamId": "WSH",
+      "name": "Dylan Crews",
+      "pos": "OF",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "tbd",
+      "industryFV": 65
+    },
+    {
+      "year": 2023,
+      "pick": 3,
+      "teamId": "DET",
+      "name": "Max Clark",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Franklin Community HS (IN)",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2023,
+      "pick": 4,
+      "teamId": "TEX",
+      "name": "Wyatt Langford",
+      "pos": "OF",
+      "level": "College",
+      "school": "Florida",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2023,
+      "pick": 5,
+      "teamId": "MIN",
+      "name": "Walker Jenkins",
+      "pos": "OF",
+      "level": "HS",
+      "school": "South Brunswick HS (NC)",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2023,
+      "pick": 6,
+      "teamId": "ATH",
+      "name": "Jacob Wilson",
+      "pos": "SS",
+      "level": "College",
+      "school": "Grand Canyon",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 7,
+      "teamId": "CIN",
+      "name": "Rhett Lowder",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 8,
+      "teamId": "KC",
+      "name": "Blake Mitchell",
+      "pos": "C",
+      "level": "HS",
+      "school": "Sinton HS (TX)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 9,
+      "teamId": "COL",
+      "name": "Chase Dollander",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 10,
+      "teamId": "MIA",
+      "name": "Noble Meyer",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Jesuit HS (OR)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 11,
+      "teamId": "LAA",
+      "name": "Nolan Schanuel",
+      "pos": "1B",
+      "level": "College",
+      "school": "Florida Atlantic",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 12,
+      "teamId": "ARI",
+      "name": "Tommy Troy",
+      "pos": "SS",
+      "level": "College",
+      "school": "Stanford",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 13,
+      "teamId": "CHC",
+      "name": "Matt Shaw",
+      "pos": "SS",
+      "level": "College",
+      "school": "Maryland",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 14,
+      "teamId": "BOS",
+      "name": "Kyle Teel",
+      "pos": "C",
+      "level": "College",
+      "school": "Virginia",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 15,
+      "teamId": "CWS",
+      "name": "Jacob Gonzalez",
+      "pos": "SS",
+      "level": "College",
+      "school": "Ole Miss",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 16,
+      "teamId": "SF",
+      "name": "Bryce Eldridge",
+      "pos": "2B",
+      "level": "HS",
+      "school": "James Madison HS (VA)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 17,
+      "teamId": "BAL",
+      "name": "Enrique Bradfield",
+      "pos": "OF",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 18,
+      "teamId": "MIL",
+      "name": "Brock Wilken",
+      "pos": "3B",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 19,
+      "teamId": "TB",
+      "name": "Brayden Taylor",
+      "pos": "SS",
+      "level": "College",
+      "school": "TCU",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 20,
+      "teamId": "TOR",
+      "name": "Arjun Nimmala",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Strawberry Crest HS (FL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 21,
+      "teamId": "STL",
+      "name": "Chase Davis",
+      "pos": "OF",
+      "level": "College",
+      "school": "Arizona",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 22,
+      "teamId": "SEA",
+      "name": "Colt Emerson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "John Glenn HS (OH)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 23,
+      "teamId": "CLE",
+      "name": "Ralphy Velazquez",
+      "pos": "C",
+      "level": "HS",
+      "school": "Huntington Beach HS (CA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 24,
+      "teamId": "ATL",
+      "name": "Hurston Waldrep",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 25,
+      "teamId": "SD",
+      "name": "Dillon Head",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Homewood-Flossmoor HS (IL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 26,
+      "teamId": "NYY",
+      "name": "George Lombard Jr.",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Gulliver Prep (FL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 27,
+      "teamId": "PHI",
+      "name": "Aidan Miller",
+      "pos": "SS",
+      "level": "HS",
+      "school": "J.W. Mitchell HS (FL)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2023,
+      "pick": 28,
+      "teamId": "HOU",
+      "name": "Brice Matthews",
+      "pos": "SS",
+      "level": "College",
+      "school": "Nebraska",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 29,
+      "teamId": "SEA",
+      "name": "Jonny Farmelo",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Westfield HS (VA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 30,
+      "teamId": "SEA",
+      "name": "Tai Peete",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Trinity Christian (GA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 40,
+      "teamId": "WSH",
+      "name": "Yohandy Morales",
+      "pos": "3B",
+      "level": "College",
+      "school": "Miami",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 41,
+      "teamId": "ATH",
+      "name": "Ryan Lasko",
+      "pos": "OF",
+      "level": "College",
+      "school": "Rutgers",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 42,
+      "teamId": "PIT",
+      "name": "Mitch Jebb",
+      "pos": "SS",
+      "level": "College",
+      "school": "Michigan State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 43,
+      "teamId": "CIN",
+      "name": "Sammy Stafura",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Walter Panas HS (NY)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 44,
+      "teamId": "KC",
+      "name": "Blake Wolters",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Mahomet-Seymour HS (IL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 45,
+      "teamId": "DET",
+      "name": "Max Anderson",
+      "pos": "2B",
+      "level": "College",
+      "school": "Nebraska",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 46,
+      "teamId": "COL",
+      "name": "Sean Sullivan",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 47,
+      "teamId": "MIA",
+      "name": "Kemp Alderman",
+      "pos": "OF",
+      "level": "College",
+      "school": "Ole Miss",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 48,
+      "teamId": "ARI",
+      "name": "Gino Groover",
+      "pos": "3B",
+      "level": "College",
+      "school": "NC State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 49,
+      "teamId": "MIN",
+      "name": "Luke Keaschall",
+      "pos": "2B",
+      "level": "College",
+      "school": "Arizona State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 50,
+      "teamId": "BOS",
+      "name": "Nazzan Zanetello",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Christian Brothers College HS (MO)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 51,
+      "teamId": "CWS",
+      "name": "Grant Taylor",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 52,
+      "teamId": "SF",
+      "name": "Walker Martin",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Eaton HS (CO)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 53,
+      "teamId": "BAL",
+      "name": "Mac Horvath",
+      "pos": "OF",
+      "level": "College",
+      "school": "North Carolina",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 54,
+      "teamId": "MIL",
+      "name": "Mike Boeve",
+      "pos": "3B",
+      "level": "College",
+      "school": "Omaha",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 55,
+      "teamId": "TB",
+      "name": "Colton Ledbetter",
+      "pos": "OF",
+      "level": "College",
+      "school": "Mississippi State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 56,
+      "teamId": "NYM",
+      "name": "Brandon Sproat",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 57,
+      "teamId": "SEA",
+      "name": "Ben Williamson",
+      "pos": "3B",
+      "level": "College",
+      "school": "William & Mary",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 58,
+      "teamId": "CLE",
+      "name": "Alex Clemmey",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Bishop Hendricken HS (RI)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 59,
+      "teamId": "ATL",
+      "name": "Drue Hackenberg",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Virginia Tech",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 60,
+      "teamId": "LAD",
+      "name": "Jake Gelof",
+      "pos": "3B",
+      "level": "College",
+      "school": "Virginia",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 61,
+      "teamId": "HOU",
+      "name": "Alonzo Tredwell",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UCLA",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 62,
+      "teamId": "CLE",
+      "name": "Andrew Walters",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Miami",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 63,
+      "teamId": "BAL",
+      "name": "Jackson Baumeister",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 64,
+      "teamId": "ARI",
+      "name": "Caden Grice",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Clemson",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 65,
+      "teamId": "COL",
+      "name": "Cole Carrigg",
+      "pos": "C",
+      "level": "College",
+      "school": "San Diego State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 66,
+      "teamId": "KC",
+      "name": "Carson Roccaforte",
+      "pos": "OF",
+      "level": "College",
+      "school": "Louisiana",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2023,
+      "pick": 67,
+      "teamId": "PIT",
+      "name": "Zander Mueth",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Belleville HS-East (IL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 1,
+      "teamId": "CLE",
+      "name": "Travis Bazzana",
+      "pos": "2B",
+      "level": "College",
+      "school": "Oregon State",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2024,
+      "pick": 2,
+      "teamId": "CIN",
+      "name": "Chase Burns",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2024,
+      "pick": 3,
+      "teamId": "COL",
+      "name": "Charlie Condon",
+      "pos": "OF",
+      "level": "College",
+      "school": "Georgia",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2024,
+      "pick": 4,
+      "teamId": "ATH",
+      "name": "Nick Kurtz",
+      "pos": "1B",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2024,
+      "pick": 5,
+      "teamId": "CWS",
+      "name": "Hagen Smith",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Arkansas",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 6,
+      "teamId": "KC",
+      "name": "Jac Caglianone",
+      "pos": "2B",
+      "level": "College",
+      "school": "Florida",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2024,
+      "pick": 7,
+      "teamId": "STL",
+      "name": "JJ Wetherholt",
+      "pos": "SS",
+      "level": "College",
+      "school": "West Virginia",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 8,
+      "teamId": "LAA",
+      "name": "Christian Moore",
+      "pos": "2B",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 9,
+      "teamId": "PIT",
+      "name": "Konnor Griffin",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Jackson Prep (MS)",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2024,
+      "pick": 10,
+      "teamId": "WSH",
+      "name": "Seaver King",
+      "pos": "SS",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 11,
+      "teamId": "DET",
+      "name": "Bryce Rainer",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Harvard-Westlake (CA)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 12,
+      "teamId": "BOS",
+      "name": "Braden Montgomery",
+      "pos": "OF",
+      "level": "College",
+      "school": "Texas A&M",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 13,
+      "teamId": "SF",
+      "name": "James Tibbs III",
+      "pos": "OF",
+      "level": "College",
+      "school": "Florida State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 14,
+      "teamId": "CHC",
+      "name": "Cam Smith",
+      "pos": "3B",
+      "level": "College",
+      "school": "Florida State",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 15,
+      "teamId": "SEA",
+      "name": "Jurrangelo Cijntje",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Mississippi State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 16,
+      "teamId": "MIA",
+      "name": "PJ Morlando",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Summerville (SC)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 17,
+      "teamId": "MIL",
+      "name": "Braylon Payne",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Elkins (TX)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 18,
+      "teamId": "TB",
+      "name": "Theo Gillen",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Westlake (TX)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 19,
+      "teamId": "NYM",
+      "name": "Carson Benge",
+      "pos": "OF",
+      "level": "College",
+      "school": "Oklahoma State",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 20,
+      "teamId": "TOR",
+      "name": "Trey Yesavage",
+      "pos": "RHP",
+      "level": "College",
+      "school": "East Carolina",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 21,
+      "teamId": "MIN",
+      "name": "Kaelen Culpepper",
+      "pos": "SS",
+      "level": "College",
+      "school": "Kansas State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 22,
+      "teamId": "BAL",
+      "name": "Vance Honeycutt",
+      "pos": "OF",
+      "level": "College",
+      "school": "North Carolina",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 23,
+      "teamId": "LAD",
+      "name": "Kellon Lindsey",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Hardee (FL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 24,
+      "teamId": "ATL",
+      "name": "Cam Caminiti",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Saguaro (AZ)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2024,
+      "pick": 25,
+      "teamId": "SD",
+      "name": "Kash Mayfield",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Elk City (OK)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 26,
+      "teamId": "NYY",
+      "name": "Ben Hess",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Alabama",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 27,
+      "teamId": "PHI",
+      "name": "Dante Nori",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Northville (MI)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 28,
+      "teamId": "HOU",
+      "name": "Walker Janek",
+      "pos": "C",
+      "level": "College",
+      "school": "Sam Houston",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 29,
+      "teamId": "ARI",
+      "name": "Slade Caldwell",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Valley View (AR)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 30,
+      "teamId": "TEX",
+      "name": "Malcolm Moore",
+      "pos": "C",
+      "level": "College",
+      "school": "Stanford",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 40,
+      "teamId": "ATH",
+      "name": "Tommy White",
+      "pos": "3B",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 41,
+      "teamId": "KC",
+      "name": "David Shields",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Mt. Lebanon HS (PA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 42,
+      "teamId": "COL",
+      "name": "Jared Thomas",
+      "pos": "OF",
+      "level": "College",
+      "school": "Texas",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 43,
+      "teamId": "CWS",
+      "name": "Caleb Bonemer",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Okemos HS (MI)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 44,
+      "teamId": "WSH",
+      "name": "Luke Dickerson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Morris Knolls HS (NJ)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 45,
+      "teamId": "LAA",
+      "name": "Chris Cortez",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Texas A&M",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 46,
+      "teamId": "NYM",
+      "name": "Jonathan Santucci",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Duke",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 47,
+      "teamId": "PIT",
+      "name": "Wyatt Sanford",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Independence HS (TX)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 48,
+      "teamId": "CLE",
+      "name": "Jacob Cozart",
+      "pos": "C",
+      "level": "College",
+      "school": "NC State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 49,
+      "teamId": "DET",
+      "name": "Owen Hall",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Edmond North HS (OK)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 50,
+      "teamId": "BOS",
+      "name": "Payton Tolle",
+      "pos": "LHP",
+      "level": "College",
+      "school": "TCU",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 51,
+      "teamId": "CIN",
+      "name": "Tyson Lewis",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Millard West HS (NE)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 52,
+      "teamId": "SD",
+      "name": "Boston Bateman",
+      "pos": "LHP",
+      "level": "HS",
+      "school": "Adolfo Camarillo HS (CA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 53,
+      "teamId": "NYY",
+      "name": "Bryce Cunningham",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 54,
+      "teamId": "CHC",
+      "name": "Cole Mathis",
+      "pos": "3B",
+      "level": "College",
+      "school": "Charleston",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 55,
+      "teamId": "SEA",
+      "name": "Ryan Sloan",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "York Community HS (IL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 56,
+      "teamId": "MIA",
+      "name": "Carter Johnson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Oxford HS (AL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 57,
+      "teamId": "MIL",
+      "name": "Bryce Meccage",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "The Pennington School (NJ)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 58,
+      "teamId": "TB",
+      "name": "Emilien Pitre",
+      "pos": "2B",
+      "level": "College",
+      "school": "Kentucky",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 59,
+      "teamId": "TOR",
+      "name": "Khal Stephen",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Mississippi State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 60,
+      "teamId": "MIN",
+      "name": "Billy Amick",
+      "pos": "3B",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 61,
+      "teamId": "BAL",
+      "name": "Ethan Anderson",
+      "pos": "C",
+      "level": "College",
+      "school": "Virginia",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 62,
+      "teamId": "ATL",
+      "name": "Carter Holton",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 63,
+      "teamId": "PHI",
+      "name": "Griffin Burkholder",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Freedom HS (VA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 64,
+      "teamId": "ARI",
+      "name": "Ivan Luciano",
+      "pos": "C",
+      "level": "HS",
+      "school": "El Shaddai Christian Academy (DR)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2024,
+      "pick": 65,
+      "teamId": "TEX",
+      "name": "Dylan Dreiling",
+      "pos": "OF",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 1,
+      "teamId": "WSH",
+      "name": "Eli Willits",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Fort Cobb-Broxton HS (OK)",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2025,
+      "pick": 2,
+      "teamId": "LAA",
+      "name": "Tyler Bremner",
+      "pos": "RHP",
+      "level": "College",
+      "school": "UC Santa Barbara",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 3,
+      "teamId": "SEA",
+      "name": "Kade Anderson",
+      "pos": "RHP",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 4,
+      "teamId": "COL",
+      "name": "Ethan Holliday",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Stillwater HS (OK)",
+      "outcome": "tbd",
+      "industryFV": 60
+    },
+    {
+      "year": 2025,
+      "pick": 5,
+      "teamId": "STL",
+      "name": "Liam Doyle",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 6,
+      "teamId": "PIT",
+      "name": "Seth Hernandez",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Corona HS (CA)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 7,
+      "teamId": "MIA",
+      "name": "Aiva Arquette",
+      "pos": "SS",
+      "level": "College",
+      "school": "Oregon State",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 8,
+      "teamId": "TOR",
+      "name": "JoJo Parker",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Purvis HS (MS)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 9,
+      "teamId": "CIN",
+      "name": "Steele Hall",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Hewitt-Trussville HS (AL)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 10,
+      "teamId": "CWS",
+      "name": "Billy Carlson",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Corona HS (CA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 11,
+      "teamId": "ATH",
+      "name": "Jamie Arnold",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida State",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 12,
+      "teamId": "TEX",
+      "name": "Gavin Fien",
+      "pos": "3B",
+      "level": "HS",
+      "school": "Great Oak HS (CA)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 13,
+      "teamId": "SF",
+      "name": "Gavin Kilen",
+      "pos": "SS",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 14,
+      "teamId": "TB",
+      "name": "Daniel Pierce",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Mill Creek HS (GA)",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 15,
+      "teamId": "BOS",
+      "name": "Kyson Witherspoon",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oklahoma",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 16,
+      "teamId": "MIN",
+      "name": "Marek Houston",
+      "pos": "SS",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 17,
+      "teamId": "CHC",
+      "name": "Ethan Conrad",
+      "pos": "OF",
+      "level": "College",
+      "school": "Wake Forest",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 18,
+      "teamId": "ARI",
+      "name": "Kayson Cunningham",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Johnson HS (TX)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 19,
+      "teamId": "BAL",
+      "name": "Ike Irish",
+      "pos": "C",
+      "level": "College",
+      "school": "Auburn",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 20,
+      "teamId": "MIL",
+      "name": "Andrew Fischer",
+      "pos": "3B",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd",
+      "industryFV": 55
+    },
+    {
+      "year": 2025,
+      "pick": 21,
+      "teamId": "HOU",
+      "name": "Xavier Neyens",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Mount Vernon HS (WA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 22,
+      "teamId": "ATL",
+      "name": "Tate Southisene",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Basic HS (NV)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 23,
+      "teamId": "KC",
+      "name": "Sean Gamble",
+      "pos": "OF",
+      "level": "HS",
+      "school": "IMG Academy (FL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 24,
+      "teamId": "DET",
+      "name": "Jordan Yost",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Sickles HS (FL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 25,
+      "teamId": "SD",
+      "name": "Kruz Schoolcraft",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Sunset HS (OR)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 26,
+      "teamId": "PHI",
+      "name": "Gage Wood",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Arkansas",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 27,
+      "teamId": "CLE",
+      "name": "Jace LaViolette",
+      "pos": "OF",
+      "level": "College",
+      "school": "Texas A&M",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 28,
+      "teamId": "KC",
+      "name": "Josh Hammond",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Wesleyan Christian Academy (NC)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 44,
+      "teamId": "CWS",
+      "name": "Jaden Fauske",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Nazareth Academy (IL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 45,
+      "teamId": "COL",
+      "name": "JB Middleton",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Southern Mississippi",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 46,
+      "teamId": "MIA",
+      "name": "Brandon Compton",
+      "pos": "OF",
+      "level": "College",
+      "school": "Arizona State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 47,
+      "teamId": "LAA",
+      "name": "Chase Shores",
+      "pos": "LHP",
+      "level": "College",
+      "school": "LSU",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 48,
+      "teamId": "ATH",
+      "name": "Devin Taylor",
+      "pos": "OF",
+      "level": "College",
+      "school": "Indiana",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 49,
+      "teamId": "WSH",
+      "name": "Ethan Petry",
+      "pos": "OF",
+      "level": "College",
+      "school": "South Carolina",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 50,
+      "teamId": "PIT",
+      "name": "Angel Cervantes",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Warren HS (CA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 51,
+      "teamId": "CIN",
+      "name": "Aaron Watson",
+      "pos": "RHP",
+      "level": "HS",
+      "school": "Trinity Christian Academy (FL)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 52,
+      "teamId": "TEX",
+      "name": "AJ Russell",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 53,
+      "teamId": "TB",
+      "name": "Cooper Flemming",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Ganesha HS (CA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 54,
+      "teamId": "MIN",
+      "name": "Quentin Young",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Oaks Christian HS (CA)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 55,
+      "teamId": "STL",
+      "name": "Ryan Mitchell",
+      "pos": "OF",
+      "level": "HS",
+      "school": "Houston HS (TN)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 56,
+      "teamId": "CHC",
+      "name": "Kane Kepley",
+      "pos": "OF",
+      "level": "College",
+      "school": "North Carolina",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 57,
+      "teamId": "SEA",
+      "name": "Nick Becker",
+      "pos": "SS",
+      "level": "HS",
+      "school": "Don Bosco Prep HS (NJ)",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 58,
+      "teamId": "BAL",
+      "name": "Joseph Dzierwa",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Michigan State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 59,
+      "teamId": "MIL",
+      "name": "J.D. Thompson",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Vanderbilt",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 60,
+      "teamId": "ATL",
+      "name": "Alex Lodise",
+      "pos": "SS",
+      "level": "College",
+      "school": "Florida State",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 61,
+      "teamId": "KC",
+      "name": "Michael Lombardi",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Tulane",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 62,
+      "teamId": "DET",
+      "name": "Malachi Witherspoon",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Oklahoma",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 63,
+      "teamId": "PHI",
+      "name": "Cade Obermueller",
+      "pos": "LHP",
+      "level": "College",
+      "school": "Iowa",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 64,
+      "teamId": "CLE",
+      "name": "Dean Curley",
+      "pos": "SS",
+      "level": "College",
+      "school": "Tennessee",
+      "outcome": "tbd"
+    },
+    {
+      "year": 2025,
+      "pick": 65,
+      "teamId": "LAD",
+      "name": "Cam Leiter",
+      "pos": "RHP",
+      "level": "College",
+      "school": "Florida State",
+      "outcome": "tbd"
+    }
+  ]
+}

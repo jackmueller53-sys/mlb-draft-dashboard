@@ -1,0 +1,1038 @@
+{
+  "_meta": {
+    "note": "Per-team bonus behavior model. Trained on 2012-2022 R1-deep picks with valid signing bonus + pick value. Held out 2023-2024.",
+    "features": [
+      "isHS",
+      "isCollege",
+      "posC",
+      "posSS",
+      "posCF",
+      "isPitcher",
+      "pickNorm"
+    ],
+    "target": "overSlotRatio = (signing_bonus - pick_value) / pick_value",
+    "trainedAt": "2026-06-18",
+    "n": 2342,
+    "bestValMSE": 0.38
+  },
+  "betaGlobal": [
+    -0.06362929392150979,
+    -0.22784455658449718,
+    0.15964860814976953,
+    0.04394254712272022,
+    0.24767899429634052,
+    0.05957240771157634,
+    -0.5316202656123583
+  ],
+  "alphaTeam": {
+    "ARI": 0.40883222394045643,
+    "ATH": 0.45037691527638823,
+    "ATL": 0.5105814325867368,
+    "BAL": 0.5138759786380317,
+    "BOS": 0.42770275305986577,
+    "CHC": 0.5728521322193799,
+    "CIN": 0.3044668619527917,
+    "CLE": 0.5931262361560573,
+    "COL": 0.4602864443444084,
+    "CWS": 0.29015971723417716,
+    "DET": 0.5056593274502901,
+    "HOU": 0.36845883913423483,
+    "KC": 0.3680343158765922,
+    "LAA": 0.2883800530736817,
+    "LAD": 0.3518941642441198,
+    "MIA": 0.3739501323303734,
+    "MIL": 0.35285850742726094,
+    "MIN": 0.5066541592183332,
+    "NYM": 0.25306640501556266,
+    "NYY": 0.39030422060540626,
+    "PHI": 0.5039464618906345,
+    "PIT": 0.4047827786690885,
+    "SD": 0.3396165541149171,
+    "SEA": 0.3462292623034417,
+    "SF": 0.5059024451140351,
+    "STL": 0.45960914817393034,
+    "TB": 0.397144105544009,
+    "TEX": 0.39722553167309743,
+    "TOR": 0.3834861875346255,
+    "WSH": 0.41227686635284266
+  },
+  "perTeam": {
+    "ARI": {
+      "n": 63,
+      "learnedIntercept": 0.4088,
+      "rawMean": -0.0659,
+      "rawMedian": -0.0944,
+      "overSlotPct": 0.2063,
+      "underSlotPct": 0.5556
+    },
+    "ATH": {
+      "n": 57,
+      "learnedIntercept": 0.4504,
+      "rawMean": -0.0461,
+      "rawMedian": -0.0329,
+      "overSlotPct": 0.2982,
+      "underSlotPct": 0.5263
+    },
+    "ATL": {
+      "n": 56,
+      "learnedIntercept": 0.5106,
+      "rawMean": 0.0351,
+      "rawMedian": -0.1071,
+      "overSlotPct": 0.3036,
+      "underSlotPct": 0.5893
+    },
+    "BAL": {
+      "n": 59,
+      "learnedIntercept": 0.5139,
+      "rawMean": 0.0058,
+      "rawMedian": -0.0497,
+      "overSlotPct": 0.2373,
+      "underSlotPct": 0.5593
+    },
+    "BOS": {
+      "n": 54,
+      "learnedIntercept": 0.4277,
+      "rawMean": -0.0414,
+      "rawMedian": -0.1025,
+      "overSlotPct": 0.2222,
+      "underSlotPct": 0.5926
+    },
+    "CHC": {
+      "n": 57,
+      "learnedIntercept": 0.5729,
+      "rawMean": 0.1043,
+      "rawMedian": 0,
+      "overSlotPct": 0.3158,
+      "underSlotPct": 0.4737
+    },
+    "CIN": {
+      "n": 62,
+      "learnedIntercept": 0.3045,
+      "rawMean": -0.1209,
+      "rawMedian": -0.1091,
+      "overSlotPct": 0.1613,
+      "underSlotPct": 0.6935
+    },
+    "CLE": {
+      "n": 59,
+      "learnedIntercept": 0.5931,
+      "rawMean": 0.0889,
+      "rawMedian": -0.0324,
+      "overSlotPct": 0.2881,
+      "underSlotPct": 0.5085
+    },
+    "COL": {
+      "n": 61,
+      "learnedIntercept": 0.4603,
+      "rawMean": -0.0478,
+      "rawMedian": 0,
+      "overSlotPct": 0.1803,
+      "underSlotPct": 0.2787
+    },
+    "CWS": {
+      "n": 55,
+      "learnedIntercept": 0.2902,
+      "rawMean": -0.2382,
+      "rawMedian": -0.1189,
+      "overSlotPct": 0.2545,
+      "underSlotPct": 0.5636
+    },
+    "DET": {
+      "n": 56,
+      "learnedIntercept": 0.5057,
+      "rawMean": 0.0305,
+      "rawMedian": 0,
+      "overSlotPct": 0.25,
+      "underSlotPct": 0.2679
+    },
+    "HOU": {
+      "n": 54,
+      "learnedIntercept": 0.3685,
+      "rawMean": -0.1229,
+      "rawMedian": -0.1145,
+      "overSlotPct": 0.1667,
+      "underSlotPct": 0.6852
+    },
+    "KC": {
+      "n": 62,
+      "learnedIntercept": 0.368,
+      "rawMean": -0.122,
+      "rawMedian": -0.017,
+      "overSlotPct": 0.2581,
+      "underSlotPct": 0.5
+    },
+    "LAA": {
+      "n": 52,
+      "learnedIntercept": 0.2884,
+      "rawMean": -0.191,
+      "rawMedian": -0.1165,
+      "overSlotPct": 0.2308,
+      "underSlotPct": 0.5769
+    },
+    "LAD": {
+      "n": 54,
+      "learnedIntercept": 0.3519,
+      "rawMean": -0.1395,
+      "rawMedian": -0.093,
+      "overSlotPct": 0.2222,
+      "underSlotPct": 0.5741
+    },
+    "MIA": {
+      "n": 60,
+      "learnedIntercept": 0.374,
+      "rawMean": -0.1444,
+      "rawMedian": -0.0665,
+      "overSlotPct": 0.2,
+      "underSlotPct": 0.55
+    },
+    "MIL": {
+      "n": 57,
+      "learnedIntercept": 0.3529,
+      "rawMean": -0.0956,
+      "rawMedian": -0.0982,
+      "overSlotPct": 0.2105,
+      "underSlotPct": 0.5614
+    },
+    "MIN": {
+      "n": 57,
+      "learnedIntercept": 0.5067,
+      "rawMean": 0.0445,
+      "rawMedian": -0.056,
+      "overSlotPct": 0.3333,
+      "underSlotPct": 0.5263
+    },
+    "NYM": {
+      "n": 56,
+      "learnedIntercept": 0.2531,
+      "rawMean": -0.1986,
+      "rawMedian": -0.0947,
+      "overSlotPct": 0.2143,
+      "underSlotPct": 0.6071
+    },
+    "NYY": {
+      "n": 54,
+      "learnedIntercept": 0.3903,
+      "rawMean": -0.0869,
+      "rawMedian": -0.012,
+      "overSlotPct": 0.2222,
+      "underSlotPct": 0.4815
+    },
+    "PHI": {
+      "n": 50,
+      "learnedIntercept": 0.5039,
+      "rawMean": -0.0051,
+      "rawMedian": -0.0708,
+      "overSlotPct": 0.34,
+      "underSlotPct": 0.58
+    },
+    "PIT": {
+      "n": 62,
+      "learnedIntercept": 0.4048,
+      "rawMean": -0.0793,
+      "rawMedian": -0.0351,
+      "overSlotPct": 0.2581,
+      "underSlotPct": 0.5484
+    },
+    "SD": {
+      "n": 61,
+      "learnedIntercept": 0.3396,
+      "rawMean": -0.1336,
+      "rawMedian": -0.1508,
+      "overSlotPct": 0.1475,
+      "underSlotPct": 0.7049
+    },
+    "SEA": {
+      "n": 57,
+      "learnedIntercept": 0.3462,
+      "rawMean": -0.1362,
+      "rawMedian": -0.0634,
+      "overSlotPct": 0.2105,
+      "underSlotPct": 0.5614
+    },
+    "SF": {
+      "n": 57,
+      "learnedIntercept": 0.5059,
+      "rawMean": 0.0282,
+      "rawMedian": -0.0921,
+      "overSlotPct": 0.2632,
+      "underSlotPct": 0.614
+    },
+    "STL": {
+      "n": 58,
+      "learnedIntercept": 0.4596,
+      "rawMean": -0.0103,
+      "rawMedian": 0,
+      "overSlotPct": 0.2241,
+      "underSlotPct": 0.4655
+    },
+    "TB": {
+      "n": 65,
+      "learnedIntercept": 0.3971,
+      "rawMean": -0.0968,
+      "rawMedian": -0.0493,
+      "overSlotPct": 0.1231,
+      "underSlotPct": 0.5538
+    },
+    "TEX": {
+      "n": 53,
+      "learnedIntercept": 0.3972,
+      "rawMean": -0.0679,
+      "rawMedian": -0.1039,
+      "overSlotPct": 0.283,
+      "underSlotPct": 0.566
+    },
+    "TOR": {
+      "n": 56,
+      "learnedIntercept": 0.3835,
+      "rawMean": -0.081,
+      "rawMedian": -0.0173,
+      "overSlotPct": 0.25,
+      "underSlotPct": 0.5
+    },
+    "WSH": {
+      "n": 55,
+      "learnedIntercept": 0.4123,
+      "rawMean": -0.0896,
+      "rawMedian": 0,
+      "overSlotPct": 0.2909,
+      "underSlotPct": 0.3455
+    }
+  },
+  "perFO": {
+    "falvey": {
+      "name": "Derek Falvey",
+      "n": 80,
+      "rawMean": -0.0027,
+      "rawMedian": -0.0726,
+      "overSlotPct": 0.275,
+      "underSlotPct": 0.5625,
+      "tenures": [
+        {
+          "team": "MIN",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "williams": {
+      "name": "Dick Williams",
+      "n": 38,
+      "rawMean": -0.1207,
+      "rawMedian": -0.1091,
+      "overSlotPct": 0.2105,
+      "underSlotPct": 0.6579,
+      "tenures": [
+        {
+          "team": "CIN",
+          "from": 2017,
+          "to": 2020
+        }
+      ]
+    },
+    "preller": {
+      "name": "A.J. Preller",
+      "n": 81,
+      "rawMean": -0.1226,
+      "rawMedian": -0.1508,
+      "overSlotPct": 0.1481,
+      "underSlotPct": 0.6914,
+      "tenures": [
+        {
+          "team": "SD",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "neander": {
+      "name": "Erik Neander",
+      "n": 86,
+      "rawMean": -0.0864,
+      "rawMedian": -0.0335,
+      "overSlotPct": 0.1163,
+      "underSlotPct": 0.5465,
+      "tenures": [
+        {
+          "team": "TB",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "hart": {
+      "name": "John Hart",
+      "n": 10,
+      "rawMean": -0.4896,
+      "rawMedian": -0.9633,
+      "overSlotPct": 0.2,
+      "underSlotPct": 0.8,
+      "tenures": [
+        {
+          "team": "ATL",
+          "from": 2017,
+          "to": 2017
+        }
+      ]
+    },
+    "forst": {
+      "name": "David Forst",
+      "n": 79,
+      "rawMean": 0.0021,
+      "rawMedian": 0,
+      "overSlotPct": 0.3291,
+      "underSlotPct": 0.4937,
+      "tenures": [
+        {
+          "team": "ATH",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "hazen": {
+      "name": "Mike Hazen",
+      "n": 86,
+      "rawMean": -0.0548,
+      "rawMedian": -0.0944,
+      "overSlotPct": 0.1977,
+      "underSlotPct": 0.5814,
+      "tenures": [
+        {
+          "team": "ARI",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "klentak": {
+      "name": "Matt Klentak",
+      "n": 31,
+      "rawMean": -0.0103,
+      "rawMedian": -0.158,
+      "overSlotPct": 0.3548,
+      "underSlotPct": 0.6129,
+      "tenures": [
+        {
+          "team": "PHI",
+          "from": 2017,
+          "to": 2020
+        }
+      ]
+    },
+    "stearns": {
+      "name": "David Stearns",
+      "n": 77,
+      "rawMean": -0.0627,
+      "rawMedian": -0.126,
+      "overSlotPct": 0.2078,
+      "underSlotPct": 0.5974,
+      "tenures": [
+        {
+          "team": "MIL",
+          "from": 2017,
+          "to": 2023
+        },
+        {
+          "team": "NYM",
+          "from": 2024,
+          "to": 2024
+        }
+      ]
+    },
+    "eppler": {
+      "name": "Billy Eppler",
+      "n": 57,
+      "rawMean": -0.1057,
+      "rawMedian": -0.0249,
+      "overSlotPct": 0.2632,
+      "underSlotPct": 0.5088,
+      "tenures": [
+        {
+          "team": "LAA",
+          "from": 2017,
+          "to": 2020
+        },
+        {
+          "team": "NYM",
+          "from": 2022,
+          "to": 2023
+        }
+      ]
+    },
+    "hahn": {
+      "name": "Rick Hahn",
+      "n": 65,
+      "rawMean": -0.1667,
+      "rawMedian": -0.0548,
+      "overSlotPct": 0.2615,
+      "underSlotPct": 0.5385,
+      "tenures": [
+        {
+          "team": "CWS",
+          "from": 2017,
+          "to": 2023
+        }
+      ]
+    },
+    "huntington": {
+      "name": "Neal Huntington",
+      "n": 34,
+      "rawMean": -0.0984,
+      "rawMedian": -0.0148,
+      "overSlotPct": 0.2353,
+      "underSlotPct": 0.5,
+      "tenures": [
+        {
+          "team": "PIT",
+          "from": 2017,
+          "to": 2019
+        }
+      ]
+    },
+    "hill_mia": {
+      "name": "Michael Hill",
+      "n": 39,
+      "rawMean": -0.1114,
+      "rawMedian": -0.0665,
+      "overSlotPct": 0.2051,
+      "underSlotPct": 0.5385,
+      "tenures": [
+        {
+          "team": "MIA",
+          "from": 2017,
+          "to": 2020
+        }
+      ]
+    },
+    "moore": {
+      "name": "Dayton Moore",
+      "n": 62,
+      "rawMean": -0.122,
+      "rawMedian": -0.017,
+      "overSlotPct": 0.2581,
+      "underSlotPct": 0.5,
+      "tenures": [
+        {
+          "team": "KC",
+          "from": 2017,
+          "to": 2022
+        }
+      ]
+    },
+    "luhnow": {
+      "name": "Jeff Luhnow",
+      "n": 31,
+      "rawMean": -0.0404,
+      "rawMedian": -0.0689,
+      "overSlotPct": 0.2258,
+      "underSlotPct": 0.6129,
+      "tenures": [
+        {
+          "team": "HOU",
+          "from": 2017,
+          "to": 2019
+        }
+      ]
+    },
+    "cashman": {
+      "name": "Brian Cashman",
+      "n": 72,
+      "rawMean": -0.0962,
+      "rawMedian": -0.012,
+      "overSlotPct": 0.2361,
+      "underSlotPct": 0.4722,
+      "tenures": [
+        {
+          "team": "NYY",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "dipoto": {
+      "name": "Jerry Dipoto",
+      "n": 79,
+      "rawMean": -0.144,
+      "rawMedian": -0.08,
+      "overSlotPct": 0.2152,
+      "underSlotPct": 0.5823,
+      "tenures": [
+        {
+          "team": "SEA",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "avila": {
+      "name": "Al Avila",
+      "n": 56,
+      "rawMean": 0.0305,
+      "rawMedian": 0,
+      "overSlotPct": 0.25,
+      "underSlotPct": 0.2679,
+      "tenures": [
+        {
+          "team": "DET",
+          "from": 2017,
+          "to": 2022
+        }
+      ]
+    },
+    "evans": {
+      "name": "Bobby Evans",
+      "n": 20,
+      "rawMean": 0.0075,
+      "rawMedian": -0.0627,
+      "overSlotPct": 0.25,
+      "underSlotPct": 0.6,
+      "tenures": [
+        {
+          "team": "SF",
+          "from": 2017,
+          "to": 2018
+        }
+      ]
+    },
+    "alderson": {
+      "name": "Sandy Alderson",
+      "n": 29,
+      "rawMean": -0.1952,
+      "rawMedian": -0.0911,
+      "overSlotPct": 0.1724,
+      "underSlotPct": 0.5862,
+      "tenures": [
+        {
+          "team": "NYM",
+          "from": 2017,
+          "to": 2021
+        }
+      ]
+    },
+    "duquette": {
+      "name": "Dan Duquette",
+      "n": 20,
+      "rawMean": -0.3032,
+      "rawMedian": -0.0871,
+      "overSlotPct": 0.2,
+      "underSlotPct": 0.65,
+      "tenures": [
+        {
+          "team": "BAL",
+          "from": 2017,
+          "to": 2018
+        }
+      ]
+    },
+    "atkins": {
+      "name": "Ross Atkins",
+      "n": 76,
+      "rawMean": -0.0555,
+      "rawMedian": -0.0173,
+      "overSlotPct": 0.2632,
+      "underSlotPct": 0.5,
+      "tenures": [
+        {
+          "team": "TOR",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "friedman": {
+      "name": "Andrew Friedman",
+      "n": 74,
+      "rawMean": -0.0929,
+      "rawMedian": -0.0418,
+      "overSlotPct": 0.2568,
+      "underSlotPct": 0.5135,
+      "tenures": [
+        {
+          "team": "LAD",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "dombrowski": {
+      "name": "Dave Dombrowski",
+      "n": 67,
+      "rawMean": -0.0718,
+      "rawMedian": -0.0708,
+      "overSlotPct": 0.2388,
+      "underSlotPct": 0.5522,
+      "tenures": [
+        {
+          "team": "BOS",
+          "from": 2017,
+          "to": 2019
+        },
+        {
+          "team": "PHI",
+          "from": 2021,
+          "to": 2024
+        }
+      ]
+    },
+    "rizzo": {
+      "name": "Mike Rizzo",
+      "n": 76,
+      "rawMean": -0.1315,
+      "rawMedian": 0,
+      "overSlotPct": 0.2632,
+      "underSlotPct": 0.4342,
+      "tenures": [
+        {
+          "team": "WSH",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "daniels": {
+      "name": "Jon Daniels",
+      "n": 53,
+      "rawMean": -0.0679,
+      "rawMedian": -0.1039,
+      "overSlotPct": 0.283,
+      "underSlotPct": 0.566,
+      "tenures": [
+        {
+          "team": "TEX",
+          "from": 2017,
+          "to": 2022
+        }
+      ]
+    },
+    "hoyer": {
+      "name": "Jed Hoyer",
+      "n": 77,
+      "rawMean": 0.0701,
+      "rawMedian": 0,
+      "overSlotPct": 0.2727,
+      "underSlotPct": 0.4805,
+      "tenures": [
+        {
+          "team": "CHC",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "bridich": {
+      "name": "Jeff Bridich",
+      "n": 38,
+      "rawMean": -0.0667,
+      "rawMedian": 0,
+      "overSlotPct": 0.1053,
+      "underSlotPct": 0.2895,
+      "tenures": [
+        {
+          "team": "COL",
+          "from": 2017,
+          "to": 2020
+        }
+      ]
+    },
+    "antonetti": {
+      "name": "Chris Antonetti",
+      "n": 80,
+      "rawMean": 0.1047,
+      "rawMedian": -0.0476,
+      "overSlotPct": 0.2875,
+      "underSlotPct": 0.5375,
+      "tenures": [
+        {
+          "team": "CLE",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "mozeliak": {
+      "name": "John Mozeliak",
+      "n": 75,
+      "rawMean": 0.0006,
+      "rawMedian": 0,
+      "overSlotPct": 0.2533,
+      "underSlotPct": 0.4,
+      "tenures": [
+        {
+          "team": "STL",
+          "from": 2017,
+          "to": 2024
+        }
+      ]
+    },
+    "anthopoulos": {
+      "name": "Alex Anthopoulos",
+      "n": 67,
+      "rawMean": 0.0754,
+      "rawMedian": -0.0769,
+      "overSlotPct": 0.3134,
+      "underSlotPct": 0.5522,
+      "tenures": [
+        {
+          "team": "ATL",
+          "from": 2018,
+          "to": 2024
+        }
+      ]
+    },
+    "elias": {
+      "name": "Mike Elias",
+      "n": 62,
+      "rawMean": 0.0773,
+      "rawMedian": -0.0463,
+      "overSlotPct": 0.2258,
+      "underSlotPct": 0.5645,
+      "tenures": [
+        {
+          "team": "BAL",
+          "from": 2019,
+          "to": 2024
+        }
+      ]
+    },
+    "zaidi": {
+      "name": "Farhan Zaidi",
+      "n": 56,
+      "rawMean": 0.01,
+      "rawMedian": -0.0995,
+      "overSlotPct": 0.2321,
+      "underSlotPct": 0.6786,
+      "tenures": [
+        {
+          "team": "SF",
+          "from": 2019,
+          "to": 2024
+        }
+      ]
+    },
+    "van_wagenen": {
+      "name": "Brodie Van Wagenen",
+      "n": 16,
+      "rawMean": -0.298,
+      "rawMedian": -0.9353,
+      "overSlotPct": 0.1875,
+      "underSlotPct": 0.75,
+      "tenures": [
+        {
+          "team": "NYM",
+          "from": 2019,
+          "to": 2020
+        }
+      ]
+    },
+    "cherington": {
+      "name": "Ben Cherington",
+      "n": 50,
+      "rawMean": -0.0571,
+      "rawMedian": -0.0615,
+      "overSlotPct": 0.24,
+      "underSlotPct": 0.58,
+      "tenures": [
+        {
+          "team": "PIT",
+          "from": 2020,
+          "to": 2024
+        }
+      ]
+    },
+    "bloom": {
+      "name": "Chaim Bloom",
+      "n": 36,
+      "rawMean": 0.0124,
+      "rawMedian": -0.1025,
+      "overSlotPct": 0.25,
+      "underSlotPct": 0.5833,
+      "tenures": [
+        {
+          "team": "BOS",
+          "from": 2020,
+          "to": 2023
+        }
+      ]
+    },
+    "click": {
+      "name": "James Click",
+      "n": 23,
+      "rawMean": -0.2342,
+      "rawMedian": -0.2672,
+      "overSlotPct": 0.087,
+      "underSlotPct": 0.7826,
+      "tenures": [
+        {
+          "team": "HOU",
+          "from": 2020,
+          "to": 2022
+        }
+      ]
+    },
+    "schmidt": {
+      "name": "Bill Schmidt",
+      "n": 45,
+      "rawMean": -0.0405,
+      "rawMedian": 0,
+      "overSlotPct": 0.2222,
+      "underSlotPct": 0.3333,
+      "tenures": [
+        {
+          "team": "COL",
+          "from": 2021,
+          "to": 2024
+        }
+      ]
+    },
+    "minasian": {
+      "name": "Perry Minasian",
+      "n": 38,
+      "rawMean": -0.1213,
+      "rawMedian": -0.2184,
+      "overSlotPct": 0.1842,
+      "underSlotPct": 0.6842,
+      "tenures": [
+        {
+          "team": "LAA",
+          "from": 2021,
+          "to": 2024
+        }
+      ]
+    },
+    "ng": {
+      "name": "Kim Ng",
+      "n": 32,
+      "rawMean": -0.153,
+      "rawMedian": -0.081,
+      "overSlotPct": 0.1563,
+      "underSlotPct": 0.5938,
+      "tenures": [
+        {
+          "team": "MIA",
+          "from": 2021,
+          "to": 2023
+        }
+      ]
+    },
+    "krall": {
+      "name": "Nick Krall",
+      "n": 46,
+      "rawMean": -0.0491,
+      "rawMedian": -0.0915,
+      "overSlotPct": 0.1304,
+      "underSlotPct": 0.6957,
+      "tenures": [
+        {
+          "team": "CIN",
+          "from": 2021,
+          "to": 2024
+        }
+      ]
+    },
+    "harris": {
+      "name": "Scott Harris",
+      "n": 22,
+      "rawMean": 0.0866,
+      "rawMedian": -0.1011,
+      "overSlotPct": 0.2727,
+      "underSlotPct": 0.6364,
+      "tenures": [
+        {
+          "team": "DET",
+          "from": 2023,
+          "to": 2024
+        }
+      ]
+    },
+    "picollo": {
+      "name": "J.J. Picollo",
+      "n": 21,
+      "rawMean": -0.0666,
+      "rawMedian": -0.0155,
+      "overSlotPct": 0.2857,
+      "underSlotPct": 0.4762,
+      "tenures": [
+        {
+          "team": "KC",
+          "from": 2023,
+          "to": 2024
+        }
+      ]
+    },
+    "brown": {
+      "name": "Dana Brown",
+      "n": 19,
+      "rawMean": -0.0273,
+      "rawMedian": -0.0123,
+      "overSlotPct": 0.2105,
+      "underSlotPct": 0.4737,
+      "tenures": [
+        {
+          "team": "HOU",
+          "from": 2023,
+          "to": 2024
+        }
+      ]
+    },
+    "getz": {
+      "name": "Chris Getz",
+      "n": 11,
+      "rawMean": -0.1888,
+      "rawMedian": 0.0304,
+      "overSlotPct": 0.5455,
+      "underSlotPct": 0.4545,
+      "tenures": [
+        {
+          "team": "CWS",
+          "from": 2024,
+          "to": 2024
+        }
+      ]
+    },
+    "breslow": {
+      "name": "Craig Breslow",
+      "n": 10,
+      "rawMean": 0.4225,
+      "rawMedian": -0.0884,
+      "overSlotPct": 0.3,
+      "underSlotPct": 0.7,
+      "tenures": [
+        {
+          "team": "BOS",
+          "from": 2024,
+          "to": 2024
+        }
+      ]
+    },
+    "bendix": {
+      "name": "Peter Bendix",
+      "n": 11,
+      "rawMean": 0.0111,
+      "rawMedian": -0.0131,
+      "overSlotPct": 0.1818,
+      "underSlotPct": 0.4545,
+      "tenures": [
+        {
+          "team": "MIA",
+          "from": 2024,
+          "to": 2024
+        }
+      ]
+    },
+    "arnold": {
+      "name": "Matt Arnold",
+      "n": 11,
+      "rawMean": -0.1855,
+      "rawMedian": -0.2217,
+      "overSlotPct": 0.1818,
+      "underSlotPct": 0.7273,
+      "tenures": [
+        {
+          "team": "MIL",
+          "from": 2024,
+          "to": 2024
+        }
+      ]
+    }
+  }
+}

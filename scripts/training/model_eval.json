@@ -1,0 +1,572 @@
+{
+  "_meta": {
+    "note": "Honest evaluation: leave-one-year-out cross-validation + baseline comparisons + per-FO sample-size verdict.",
+    "generatedAt": "2026-06-14"
+  },
+  "cv": {
+    "events": 650,
+    "nll": 1610.223,
+    "top1Rate": 0.277,
+    "top3Rate": 0.605,
+    "top5Rate": 0.726,
+    "fallbackRate": 0.014,
+    "byYear": {
+      "2014": {
+        "n": 46,
+        "nll": 107.446,
+        "top3": 0.63
+      },
+      "2015": {
+        "n": 49,
+        "nll": 124.591,
+        "top3": 0.551
+      },
+      "2016": {
+        "n": 44,
+        "nll": 111.99,
+        "top3": 0.523
+      },
+      "2017": {
+        "n": 36,
+        "nll": 99.427,
+        "top3": 0.472
+      },
+      "2018": {
+        "n": 63,
+        "nll": 162.238,
+        "top3": 0.635
+      },
+      "2019": {
+        "n": 71,
+        "nll": 179.795,
+        "top3": 0.62
+      },
+      "2020": {
+        "n": 52,
+        "nll": 133.789,
+        "top3": 0.615
+      },
+      "2021": {
+        "n": 57,
+        "nll": 137.128,
+        "top3": 0.614
+      },
+      "2022": {
+        "n": 73,
+        "nll": 184.201,
+        "top3": 0.589
+      },
+      "2023": {
+        "n": 57,
+        "nll": 125.893,
+        "top3": 0.702
+      },
+      "2024": {
+        "n": 54,
+        "nll": 127.243,
+        "top3": 0.648
+      },
+      "2025": {
+        "n": 48,
+        "nll": 116.481,
+        "top3": 0.583
+      }
+    }
+  },
+  "baselines": {
+    "uniform": {
+      "nll": 2003.585,
+      "top3Rate": 0.204
+    },
+    "fvOnly": {
+      "nll": 1600.785,
+      "top3Rate": 0.628
+    },
+    "noFvCV": {
+      "nll": 2000.799,
+      "top3Rate": 0.197
+    }
+  },
+  "perRegime": [
+    {
+      "id": "dipoto",
+      "name": "Jerry Dipoto",
+      "n": 24,
+      "cvN": 24,
+      "cvTop3": 0.5833333333333334,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "neander",
+      "name": "Erik Neander",
+      "n": 24,
+      "cvN": 24,
+      "cvTop3": 0.7083333333333334,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "antonetti",
+      "name": "Chris Antonetti",
+      "n": 22,
+      "cvN": 22,
+      "cvTop3": 0.6818181818181818,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "hazen",
+      "name": "Mike Hazen",
+      "n": 22,
+      "cvN": 22,
+      "cvTop3": 0.7727272727272727,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "rizzo",
+      "name": "Mike Rizzo",
+      "n": 21,
+      "cvN": 21,
+      "cvTop3": 0.7142857142857143,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "hoyer",
+      "name": "Jed Hoyer",
+      "n": 20,
+      "cvN": 20,
+      "cvTop3": 0.45,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "anthopoulos",
+      "name": "Alex Anthopoulos",
+      "n": 20,
+      "cvN": 20,
+      "cvTop3": 0.55,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "moore",
+      "name": "Dayton Moore",
+      "n": 20,
+      "cvN": 20,
+      "cvTop3": 0.7,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "forst",
+      "name": "David Forst",
+      "n": 20,
+      "cvN": 20,
+      "cvTop3": 0.3,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "falvey",
+      "name": "Derek Falvey",
+      "n": 20,
+      "cvN": 20,
+      "cvTop3": 0.7,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "mozeliak",
+      "name": "John Mozeliak",
+      "n": 19,
+      "cvN": 19,
+      "cvTop3": 0.631578947368421,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "friedman",
+      "name": "Andrew Friedman",
+      "n": 18,
+      "cvN": 18,
+      "cvTop3": 1,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "cashman",
+      "name": "Brian Cashman",
+      "n": 18,
+      "cvN": 18,
+      "cvTop3": 0.7222222222222222,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "preller",
+      "name": "A.J. Preller",
+      "n": 18,
+      "cvN": 18,
+      "cvTop3": 0.5555555555555556,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "atkins",
+      "name": "Ross Atkins",
+      "n": 18,
+      "cvN": 18,
+      "cvTop3": 0.7222222222222222,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "hahn",
+      "name": "Rick Hahn",
+      "n": 17,
+      "cvN": 17,
+      "cvTop3": 0.6470588235294118,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "dombrowski",
+      "name": "Dave Dombrowski",
+      "n": 17,
+      "cvN": 17,
+      "cvTop3": 0.7647058823529411,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "cherington",
+      "name": "Ben Cherington",
+      "n": 17,
+      "cvN": 17,
+      "cvTop3": 0.5294117647058824,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "stearns",
+      "name": "David Stearns",
+      "n": 17,
+      "cvN": 17,
+      "cvTop3": 0.35294117647058826,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "elias",
+      "name": "Mike Elias",
+      "n": 17,
+      "cvN": 17,
+      "cvTop3": 0.6470588235294118,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "huntington",
+      "name": "Neal Huntington",
+      "n": 15,
+      "cvN": 15,
+      "cvTop3": 0.6,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "daniels",
+      "name": "Jon Daniels",
+      "n": 15,
+      "cvN": 15,
+      "cvTop3": 0.6,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "krall",
+      "name": "Nick Krall",
+      "n": 13,
+      "cvN": 13,
+      "cvTop3": 0.3076923076923077,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "hill_mia",
+      "name": "Michael Hill",
+      "n": 12,
+      "cvN": 12,
+      "cvTop3": 0.4166666666666667,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "bridich",
+      "name": "Jeff Bridich",
+      "n": 12,
+      "cvN": 12,
+      "cvTop3": 0.5,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "avila",
+      "name": "Al Avila",
+      "n": 12,
+      "cvN": 12,
+      "cvTop3": 0.5,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "eppler",
+      "name": "Billy Eppler",
+      "n": 12,
+      "cvN": 12,
+      "cvTop3": 0.6666666666666666,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "schmidt",
+      "name": "Bill Schmidt",
+      "n": 12,
+      "cvN": 12,
+      "cvTop3": 0.5,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "williams",
+      "name": "Dick Williams",
+      "n": 11,
+      "cvN": 11,
+      "cvTop3": 0.5454545454545454,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "zaidi",
+      "name": "Farhan Zaidi",
+      "n": 11,
+      "cvN": 11,
+      "cvTop3": 0.6363636363636364,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "luhnow",
+      "name": "Jeff Luhnow",
+      "n": 10,
+      "cvN": 10,
+      "cvTop3": 0.6,
+      "verdict": "GREEN"
+    },
+    {
+      "id": "alderson",
+      "name": "Sandy Alderson",
+      "n": 8,
+      "cvN": 8,
+      "cvTop3": 0.5,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "bloom",
+      "name": "Chaim Bloom",
+      "n": 8,
+      "cvN": 8,
+      "cvTop3": 0.875,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "minasian",
+      "name": "Perry Minasian",
+      "n": 8,
+      "cvN": 8,
+      "cvTop3": 0.5,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "picollo",
+      "name": "J.J. Picollo",
+      "n": 8,
+      "cvN": 8,
+      "cvTop3": 0.875,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "hart",
+      "name": "John Hart",
+      "n": 6,
+      "cvN": 6,
+      "cvTop3": 0.5,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "evans",
+      "name": "Bobby Evans",
+      "n": 6,
+      "cvN": 6,
+      "cvTop3": 0.5,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "duquette",
+      "name": "Dan Duquette",
+      "n": 6,
+      "cvN": 6,
+      "cvTop3": 0.6666666666666666,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "klentak",
+      "name": "Matt Klentak",
+      "n": 6,
+      "cvN": 6,
+      "cvTop3": 0.16666666666666666,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "ng",
+      "name": "Kim Ng",
+      "n": 6,
+      "cvN": 6,
+      "cvTop3": 0.3333333333333333,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "harris",
+      "name": "Scott Harris",
+      "n": 6,
+      "cvN": 6,
+      "cvTop3": 0.6666666666666666,
+      "verdict": "AMBER"
+    },
+    {
+      "id": "ryan_min",
+      "name": "Terry Ryan",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.25,
+      "verdict": "RED"
+    },
+    {
+      "id": "melvin",
+      "name": "Doug Melvin",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.25,
+      "verdict": "RED"
+    },
+    {
+      "id": "van_wagenen",
+      "name": "Brodie Van Wagenen",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.25,
+      "verdict": "RED"
+    },
+    {
+      "id": "brown",
+      "name": "Dana Brown",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.75,
+      "verdict": "RED"
+    },
+    {
+      "id": "getz",
+      "name": "Chris Getz",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.75,
+      "verdict": "RED"
+    },
+    {
+      "id": "bendix",
+      "name": "Peter Bendix",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.5,
+      "verdict": "RED"
+    },
+    {
+      "id": "arnold",
+      "name": "Matt Arnold",
+      "n": 4,
+      "cvN": 4,
+      "cvTop3": 0.75,
+      "verdict": "RED"
+    },
+    {
+      "id": "zduriencik",
+      "name": "Jack Zduriencik",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 0.6666666666666666,
+      "verdict": "RED"
+    },
+    {
+      "id": "amaro",
+      "name": "Ruben Amaro Jr.",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 0.3333333333333333,
+      "verdict": "RED"
+    },
+    {
+      "id": "jocketty",
+      "name": "Walt Jocketty",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 0.6666666666666666,
+      "verdict": "RED"
+    },
+    {
+      "id": "beane",
+      "name": "Billy Beane",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 1,
+      "verdict": "RED"
+    },
+    {
+      "id": "stewart_ari",
+      "name": "Dave Stewart",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 1,
+      "verdict": "RED"
+    },
+    {
+      "id": "silverman",
+      "name": "Matt Silverman",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 0,
+      "verdict": "RED"
+    },
+    {
+      "id": "click",
+      "name": "James Click",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 0.3333333333333333,
+      "verdict": "RED"
+    },
+    {
+      "id": "breslow",
+      "name": "Craig Breslow",
+      "n": 3,
+      "cvN": 3,
+      "cvTop3": 1,
+      "verdict": "RED"
+    },
+    {
+      "id": "towers",
+      "name": "Kevin Towers",
+      "n": 2,
+      "cvN": 2,
+      "cvTop3": 1,
+      "verdict": "RED"
+    },
+    {
+      "id": "colletti",
+      "name": "Ned Colletti",
+      "n": 2,
+      "cvN": 2,
+      "cvTop3": 0.5,
+      "verdict": "RED"
+    },
+    {
+      "id": "wren",
+      "name": "Frank Wren",
+      "n": 1,
+      "cvN": 1,
+      "cvTop3": 1,
+      "verdict": "RED"
+    },
+    {
+      "id": "posey",
+      "name": "Buster Posey",
+      "n": 1,
+      "cvN": 1,
+      "cvTop3": 1,
+      "verdict": "RED"
+    }
+  ]
+}

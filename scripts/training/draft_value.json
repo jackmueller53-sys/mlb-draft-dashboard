@@ -1,0 +1,1164 @@
+{
+  "_meta": {
+    "note": "Per-FO draft-value rating. Scale: star=4, regular=2, fringe=1, bust=0. Avg across rated picks. Sample is top 15 of 2014-2020 (or whichever of those were picked by that FO).",
+    "generatedAt": "2026-06-12",
+    "scale": {
+      "star": 4,
+      "regular": 2,
+      "fringe": 1,
+      "bust": 0
+    }
+  },
+  "perFO": {
+    "elias": {
+      "name": "Mike Elias",
+      "sampleN": 4,
+      "counts": {
+        "star": 1,
+        "regular": 2,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 7,
+        "unrated": 4
+      },
+      "avgScore": 2.25,
+      "verdict": "ABOVE-AVG",
+      "exemplars": {
+        "star": [
+          "Adley Rutschman"
+        ],
+        "bust": []
+      }
+    },
+    "luhnow": {
+      "name": "Jeff Luhnow",
+      "sampleN": 4,
+      "counts": {
+        "star": 2,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 2,
+        "tbd": 0,
+        "unrated": 3
+      },
+      "avgScore": 2,
+      "verdict": "ABOVE-AVG",
+      "exemplars": {
+        "star": [
+          "Alex Bregman",
+          "Kyle Tucker"
+        ],
+        "bust": [
+          "Brady Aiken",
+          "J.B. Bukauskas"
+        ]
+      }
+    },
+    "dipoto": {
+      "name": "Jerry Dipoto",
+      "sampleN": 5,
+      "counts": {
+        "star": 1,
+        "regular": 1,
+        "fringe": 3,
+        "bust": 0,
+        "tbd": 8,
+        "unrated": 8
+      },
+      "avgScore": 1.8,
+      "verdict": "ABOVE-AVG",
+      "exemplars": {
+        "star": [
+          "Logan Gilbert"
+        ],
+        "bust": []
+      }
+    },
+    "hoyer": {
+      "name": "Jed Hoyer",
+      "sampleN": 4,
+      "counts": {
+        "star": 1,
+        "regular": 1,
+        "fringe": 1,
+        "bust": 1,
+        "tbd": 5,
+        "unrated": 8
+      },
+      "avgScore": 1.75,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [
+          "Kyle Schwarber"
+        ],
+        "bust": [
+          "Ed Howard"
+        ]
+      }
+    },
+    "hahn": {
+      "name": "Rick Hahn",
+      "sampleN": 6,
+      "counts": {
+        "star": 1,
+        "regular": 2,
+        "fringe": 2,
+        "bust": 1,
+        "tbd": 2,
+        "unrated": 7
+      },
+      "avgScore": 1.67,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [
+          "Carlos Rodón"
+        ],
+        "bust": [
+          "Carson Fulmer"
+        ]
+      }
+    },
+    "moore": {
+      "name": "Dayton Moore",
+      "sampleN": 3,
+      "counts": {
+        "star": 1,
+        "regular": 0,
+        "fringe": 1,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 13
+      },
+      "avgScore": 1.67,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [
+          "Bobby Witt Jr."
+        ],
+        "bust": [
+          "Asa Lacy"
+        ]
+      }
+    },
+    "preller": {
+      "name": "A.J. Preller",
+      "sampleN": 5,
+      "counts": {
+        "star": 0,
+        "regular": 3,
+        "fringe": 2,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 8
+      },
+      "avgScore": 1.6,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "klentak": {
+      "name": "Matt Klentak",
+      "sampleN": 5,
+      "counts": {
+        "star": 0,
+        "regular": 2,
+        "fringe": 3,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 0
+      },
+      "avgScore": 1.4,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "williams": {
+      "name": "Dick Williams",
+      "sampleN": 5,
+      "counts": {
+        "star": 0,
+        "regular": 3,
+        "fringe": 1,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 3
+      },
+      "avgScore": 1.4,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Austin Hendrick"
+        ]
+      }
+    },
+    "avila": {
+      "name": "Al Avila",
+      "sampleN": 5,
+      "counts": {
+        "star": 0,
+        "regular": 2,
+        "fringe": 3,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 5
+      },
+      "avgScore": 1.4,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "alderson": {
+      "name": "Sandy Alderson",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 2,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 4
+      },
+      "avgScore": 1.33,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "atkins": {
+      "name": "Ross Atkins",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 2,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 9
+      },
+      "avgScore": 1.33,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "falvey": {
+      "name": "Derek Falvey",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 2,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 6,
+        "unrated": 8
+      },
+      "avgScore": 1.33,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Keoni Cavaco"
+        ]
+      }
+    },
+    "hazen": {
+      "name": "Mike Hazen",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 2,
+        "bust": 0,
+        "tbd": 6,
+        "unrated": 7
+      },
+      "avgScore": 1.33,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "cherington": {
+      "name": "Ben Cherington",
+      "sampleN": 4,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 3,
+        "bust": 0,
+        "tbd": 7,
+        "unrated": 5
+      },
+      "avgScore": 1.25,
+      "verdict": "AVERAGE",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "hill_mia": {
+      "name": "Michael Hill",
+      "sampleN": 7,
+      "counts": {
+        "star": 0,
+        "regular": 2,
+        "fringe": 3,
+        "bust": 2,
+        "tbd": 0,
+        "unrated": 3
+      },
+      "avgScore": 1,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Tyler Kolek",
+          "Connor Scott"
+        ]
+      }
+    },
+    "anthopoulos": {
+      "name": "Alex Anthopoulos",
+      "sampleN": 4,
+      "counts": {
+        "star": 0,
+        "regular": 2,
+        "fringe": 0,
+        "bust": 2,
+        "tbd": 6,
+        "unrated": 7
+      },
+      "avgScore": 1,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Max Pentecost",
+          "Carter Stewart"
+        ]
+      }
+    },
+    "daniels": {
+      "name": "Jon Daniels",
+      "sampleN": 4,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 2,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 8
+      },
+      "avgScore": 1,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Cole Winn"
+        ]
+      }
+    },
+    "hart": {
+      "name": "John Hart",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 3,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 2
+      },
+      "avgScore": 1,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "stearns": {
+      "name": "David Stearns",
+      "sampleN": 4,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 2,
+        "bust": 1,
+        "tbd": 4,
+        "unrated": 8
+      },
+      "avgScore": 1,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Corey Ray"
+        ]
+      }
+    },
+    "eppler": {
+      "name": "Billy Eppler",
+      "sampleN": 4,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 2,
+        "bust": 1,
+        "tbd": 1,
+        "unrated": 5
+      },
+      "avgScore": 1,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Will Wilson"
+        ]
+      }
+    },
+    "forst": {
+      "name": "David Forst",
+      "sampleN": 4,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 1,
+        "bust": 2,
+        "tbd": 6,
+        "unrated": 9
+      },
+      "avgScore": 0.75,
+      "verdict": "BELOW-AVG",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Austin Beck",
+          "Kyler Murray"
+        ]
+      }
+    },
+    "ryan_min": {
+      "name": "Terry Ryan",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 2,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 0
+      },
+      "avgScore": 0.67,
+      "verdict": "POOR",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Tyler Jay"
+        ]
+      }
+    },
+    "bridich": {
+      "name": "Jeff Bridich",
+      "sampleN": 3,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 2,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 6
+      },
+      "avgScore": 0.67,
+      "verdict": "POOR",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Riley Pint"
+        ]
+      }
+    },
+    "amaro": {
+      "name": "Ruben Amaro Jr.",
+      "sampleN": 2,
+      "counts": {
+        "star": 1,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 0
+      },
+      "avgScore": 2,
+      "verdict": "—",
+      "exemplars": {
+        "star": [
+          "Aaron Nola"
+        ],
+        "bust": [
+          "Cornelius Randolph"
+        ]
+      }
+    },
+    "melvin": {
+      "name": "Doug Melvin",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 0
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Kodi Medeiros"
+        ]
+      }
+    },
+    "rizzo": {
+      "name": "Mike Rizzo",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 6,
+        "unrated": 10
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Elijah Green"
+        ]
+      }
+    },
+    "dombrowski": {
+      "name": "Dave Dombrowski",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 5,
+        "unrated": 7
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Jason Groome"
+        ]
+      }
+    },
+    "huntington": {
+      "name": "Neal Huntington",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 7
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Travis Swaggerty"
+        ]
+      }
+    },
+    "silverman": {
+      "name": "Matt Silverman",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 1,
+        "tbd": 0,
+        "unrated": 1
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Garrett Whitley"
+        ]
+      }
+    },
+    "neander": {
+      "name": "Erik Neander",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 2,
+        "tbd": 6,
+        "unrated": 12
+      },
+      "avgScore": 0,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Brendan McKay",
+          "Brock Jones"
+        ]
+      }
+    },
+    "zaidi": {
+      "name": "Farhan Zaidi",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 2,
+        "tbd": 3,
+        "unrated": 5
+      },
+      "avgScore": 0,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Hunter Bishop",
+          "Will Bednar"
+        ]
+      }
+    },
+    "van_wagenen": {
+      "name": "Brodie Van Wagenen",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 1
+      },
+      "avgScore": 1.5,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "ng": {
+      "name": "Kim Ng",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 2,
+        "tbd": 2,
+        "unrated": 2
+      },
+      "avgScore": 0,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": [
+          "Kahlil Watson",
+          "Jacob Berry"
+        ]
+      }
+    },
+    "krall": {
+      "name": "Nick Krall",
+      "sampleN": 2,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 6,
+        "unrated": 5
+      },
+      "avgScore": 1.5,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "zduriencik": {
+      "name": "Jack Zduriencik",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 0
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "jocketty": {
+      "name": "Walt Jocketty",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 2
+      },
+      "avgScore": 2,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "antonetti": {
+      "name": "Chris Antonetti",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 7,
+        "unrated": 13
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "stewart_ari": {
+      "name": "Dave Stewart",
+      "sampleN": 1,
+      "counts": {
+        "star": 1,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 1
+      },
+      "avgScore": 4,
+      "verdict": "—",
+      "exemplars": {
+        "star": [
+          "Dansby Swanson"
+        ],
+        "bust": []
+      }
+    },
+    "evans": {
+      "name": "Bobby Evans",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 3
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "duquette": {
+      "name": "Dan Duquette",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 5
+      },
+      "avgScore": 2,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "bloom": {
+      "name": "Chaim Bloom",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 1,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 2,
+        "unrated": 5
+      },
+      "avgScore": 2,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "schmidt": {
+      "name": "Bill Schmidt",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 7,
+        "unrated": 4
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "click": {
+      "name": "James Click",
+      "sampleN": 1,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 1,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 2
+      },
+      "avgScore": 1,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "towers": {
+      "name": "Kevin Towers",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 1
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "friedman": {
+      "name": "Andrew Friedman",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 3,
+        "unrated": 14
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "colletti": {
+      "name": "Ned Colletti",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 1
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "beane": {
+      "name": "Billy Beane",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 2
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "mozeliak": {
+      "name": "John Mozeliak",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 15
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "wren": {
+      "name": "Frank Wren",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 0,
+        "unrated": 1
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "cashman": {
+      "name": "Brian Cashman",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 3,
+        "unrated": 11
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "minasian": {
+      "name": "Perry Minasian",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 5,
+        "unrated": 3
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "harris": {
+      "name": "Scott Harris",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 6,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "picollo": {
+      "name": "J.J. Picollo",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 8,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "brown": {
+      "name": "Dana Brown",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "getz": {
+      "name": "Chris Getz",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "breslow": {
+      "name": "Craig Breslow",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 3,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "bendix": {
+      "name": "Peter Bendix",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "arnold": {
+      "name": "Matt Arnold",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 4,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    },
+    "posey": {
+      "name": "Buster Posey",
+      "sampleN": 0,
+      "counts": {
+        "star": 0,
+        "regular": 0,
+        "fringe": 0,
+        "bust": 0,
+        "tbd": 1,
+        "unrated": 0
+      },
+      "avgScore": null,
+      "verdict": "—",
+      "exemplars": {
+        "star": [],
+        "bust": []
+      }
+    }
+  }
+}

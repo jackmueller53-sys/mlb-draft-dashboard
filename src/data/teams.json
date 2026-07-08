@@ -1,0 +1,2156 @@
+{
+  "_meta": {
+    "note": "Round 1 (picks 1-30) matches MLB Pipeline's June 4 mock; picks 25-30 supplemental (-S id). Round 2 (picks 31-60) approximated from inverse-standings order; ids have -R2 suffix. Tendencies derived from 2020-2025 historical first-round picks.",
+    "tendencyScale": "0..1",
+    "draftYear": 2026,
+    "source": "https://www.mlb.com/news/mlb-pipeline-2026-mock-draft-june-4",
+    "tendenciesSource": "2020-2025 first-round picks (Wikipedia)",
+    "tendenciesGeneratedAt": "2026-06-09",
+    "tendenciesScript": "scripts/training/derive_tendencies.js",
+    "tendencyFeatures": [
+      "hs",
+      "college",
+      "pitcher",
+      "hitter",
+      "riskTolerance",
+      "avgPickFV",
+      "fvFlex",
+      "regionShare",
+      "dominantRegion"
+    ],
+    "needsSource": "ESPN — Kiley McDaniel 2026 farm system rankings + per-team top-10s; needs reflect underrepresented positions in each org's top-prospect ranks. 1B excluded as a draftable need (universally thin, rarely R1 target).",
+    "needsFetchedAt": "2026-06-14"
+  },
+  "teams": [
+    {
+      "id": "CWS",
+      "name": "Chicago White Sox",
+      "city": "Chicago",
+      "league": "AL",
+      "div": "Central",
+      "color": "#27251F",
+      "pick": 1,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.5,
+          "Midwest": 0.33,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "TB",
+      "name": "Tampa Bay Rays",
+      "city": "St. Petersburg",
+      "league": "AL",
+      "div": "East",
+      "color": "#092C5C",
+      "pick": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.83,
+        "college": 0.17,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "model-driven",
+        "riskTolerance": 0.73,
+        "avgPickFV": 52.5,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.67,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "MIN",
+      "name": "Minnesota Twins",
+      "city": "Minneapolis",
+      "league": "AL",
+      "div": "Central",
+      "color": "#002B5C",
+      "pick": 3,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.33,
+        "college": 0.67,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "model-driven",
+        "riskTolerance": 0.53,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "SF",
+      "name": "San Francisco Giants",
+      "city": "San Francisco",
+      "league": "NL",
+      "div": "West",
+      "color": "#FD5A1E",
+      "pick": 4,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.83,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "PIT",
+      "name": "Pittsburgh Pirates",
+      "city": "Pittsburgh",
+      "league": "NL",
+      "div": "Central",
+      "color": "#FDB827",
+      "pick": 5,
+      "supplemental": false,
+      "needs": [
+        "RHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 61.67,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.67,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "KC",
+      "name": "Kansas City Royals",
+      "city": "Kansas City",
+      "league": "AL",
+      "div": "Central",
+      "color": "#004687",
+      "pick": 6,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.57,
+        "college": 0.43,
+        "pitcher": 0.29,
+        "hitter": 0.71,
+        "signability": "balanced",
+        "riskTolerance": 0.63,
+        "avgPickFV": 57.14,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.86,
+          "Midwest": 0,
+          "Northeast": 0.14,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "7 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 7
+    },
+    {
+      "id": "BAL",
+      "name": "Baltimore Orioles",
+      "city": "Baltimore",
+      "league": "AL",
+      "div": "East",
+      "color": "#DF4601",
+      "pick": 7,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "RHP",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 58.33,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 1,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ATH",
+      "name": "Athletics",
+      "city": "Sacramento",
+      "league": "AL",
+      "div": "West",
+      "color": "#003831",
+      "pick": 8,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "RHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.33,
+        "college": 0.67,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "under-slot",
+        "riskTolerance": 0.53,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.67,
+          "South": 0.33,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "6 R1 picks 2020-25 · hitter lean · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ATL",
+      "name": "Atlanta Braves",
+      "city": "Atlanta",
+      "league": "NL",
+      "div": "East",
+      "color": "#13274F",
+      "pick": 9,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "C",
+        "MIF"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.83,
+        "hitter": 0.17,
+        "signability": "strong-signers",
+        "riskTolerance": 0.6,
+        "avgPickFV": 50.83,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · pitcher lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "COL",
+      "name": "Colorado Rockies",
+      "city": "Denver",
+      "league": "NL",
+      "div": "West",
+      "color": "#33006F",
+      "pick": 10,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.43,
+        "college": 0.57,
+        "pitcher": 0.29,
+        "hitter": 0.71,
+        "signability": "strong-signers",
+        "riskTolerance": 0.57,
+        "avgPickFV": 59.29,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.71,
+          "Midwest": 0,
+          "Northeast": 0.14,
+          "Other": 0.14
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "7 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 7
+    },
+    {
+      "id": "LAA",
+      "name": "Los Angeles Angels",
+      "city": "Anaheim",
+      "league": "AL",
+      "div": "West",
+      "color": "#BA0021",
+      "pick": 11,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0,
+        "college": 1,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "win-now",
+        "riskTolerance": 0.4,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.67,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "STL",
+      "name": "St. Louis Cardinals",
+      "city": "St. Louis",
+      "league": "NL",
+      "div": "Central",
+      "color": "#C41E3A",
+      "pick": 12,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "RHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "strong-signers",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.5,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "MIA",
+      "name": "Miami Marlins",
+      "city": "Miami",
+      "league": "NL",
+      "div": "East",
+      "color": "#00A3E0",
+      "pick": 13,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ARI",
+      "name": "Arizona Diamondbacks",
+      "city": "Phoenix",
+      "league": "NL",
+      "div": "West",
+      "color": "#A71930",
+      "pick": 14,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.67,
+        "college": 0.33,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.67,
+        "avgPickFV": 56.67,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.83,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "TEX",
+      "name": "Texas Rangers",
+      "city": "Arlington",
+      "league": "AL",
+      "div": "West",
+      "color": "#003278",
+      "pick": 15,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.2,
+        "college": 0.8,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.48,
+        "avgPickFV": 58.33,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0.17
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "HOU",
+      "name": "Houston Astros",
+      "city": "Houston",
+      "league": "AL",
+      "div": "West",
+      "color": "#EB6E1F",
+      "pick": 16,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.25,
+        "college": 0.75,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "win-now",
+        "riskTolerance": 0.5,
+        "avgPickFV": 50,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.25,
+          "South": 0.5,
+          "Midwest": 0.25,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "4 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 4
+    },
+    {
+      "id": "CIN",
+      "name": "Cincinnati Reds",
+      "city": "Cincinnati",
+      "league": "NL",
+      "div": "Central",
+      "color": "#C6011F",
+      "pick": 17,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.25,
+        "hitter": 0.75,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 56.25,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.13,
+          "South": 0.75,
+          "Midwest": 0,
+          "Northeast": 0.13,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "8 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 8
+    },
+    {
+      "id": "CLE",
+      "name": "Cleveland Guardians",
+      "city": "Cleveland",
+      "league": "AL",
+      "div": "Central",
+      "color": "#E31937",
+      "pick": 18,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.33,
+        "college": 0.67,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.53,
+        "avgPickFV": 53.33,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.5,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "6 R1 picks 2020-25 · hitter lean · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "BOS",
+      "name": "Boston Red Sox",
+      "city": "Boston",
+      "league": "AL",
+      "div": "East",
+      "color": "#BD3039",
+      "pick": 19,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "SS",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.5,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "6 R1 picks 2020-25 · hitter lean · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "SD",
+      "name": "San Diego Padres",
+      "city": "San Diego",
+      "league": "NL",
+      "div": "West",
+      "color": "#2F241D",
+      "pick": 20,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "C",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 1,
+        "college": 0,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "win-now",
+        "riskTolerance": 0.8,
+        "avgPickFV": 52.5,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · HS-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "DET",
+      "name": "Detroit Tigers",
+      "city": "Detroit",
+      "league": "AL",
+      "div": "Central",
+      "color": "#0C2340",
+      "pick": 21,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.67,
+        "college": 0.33,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.67,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "CHC",
+      "name": "Chicago Cubs",
+      "city": "Chicago",
+      "league": "NL",
+      "div": "Central",
+      "color": "#0E3386",
+      "pick": 22,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.5,
+          "Midwest": 0.33,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "SEA",
+      "name": "Seattle Mariners",
+      "city": "Seattle",
+      "league": "AL",
+      "div": "West",
+      "color": "#0C2C56",
+      "pick": 23,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.63,
+        "college": 0.38,
+        "pitcher": 0.38,
+        "hitter": 0.63,
+        "signability": "balanced",
+        "riskTolerance": 0.65,
+        "avgPickFV": 54.38,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.75,
+          "Midwest": 0.13,
+          "Northeast": 0.13,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "8 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 8
+    },
+    {
+      "id": "MIL",
+      "name": "Milwaukee Brewers",
+      "city": "Milwaukee",
+      "league": "NL",
+      "div": "Central",
+      "color": "#12284B",
+      "pick": 24,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.67,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ATL-S",
+      "name": "Atlanta Braves (Supp.)",
+      "city": "Atlanta",
+      "league": "NL",
+      "div": "East",
+      "color": "#13274F",
+      "pick": 25,
+      "supplemental": true,
+      "needs": [
+        "OF",
+        "C",
+        "MIF"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.83,
+        "hitter": 0.17,
+        "signability": "strong-signers",
+        "riskTolerance": 0.6,
+        "avgPickFV": 50.83,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · pitcher lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "NYM-S",
+      "name": "New York Mets (Supp.)",
+      "city": "New York",
+      "league": "NL",
+      "div": "East",
+      "color": "#FF5910",
+      "pick": 26,
+      "supplemental": true,
+      "needs": [
+        "C",
+        "SS",
+        "2B"
+      ],
+      "tendencies": {
+        "hs": 0.4,
+        "college": 0.6,
+        "pitcher": 0.2,
+        "hitter": 0.8,
+        "signability": "balanced",
+        "riskTolerance": 0.56,
+        "avgPickFV": 56,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.2,
+          "South": 0.8,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "5 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 5
+    },
+    {
+      "id": "HOU-S",
+      "name": "Houston Astros (Supp.)",
+      "city": "Houston",
+      "league": "AL",
+      "div": "West",
+      "color": "#EB6E1F",
+      "pick": 27,
+      "supplemental": true,
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.25,
+        "college": 0.75,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "win-now",
+        "riskTolerance": 0.5,
+        "avgPickFV": 50,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.25,
+          "South": 0.5,
+          "Midwest": 0.25,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "4 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 4
+    },
+    {
+      "id": "SF-S",
+      "name": "San Francisco Giants (Supp.)",
+      "city": "San Francisco",
+      "league": "NL",
+      "div": "West",
+      "color": "#FD5A1E",
+      "pick": 28,
+      "supplemental": true,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.83,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "KC-S",
+      "name": "Kansas City Royals (Supp.)",
+      "city": "Kansas City",
+      "league": "AL",
+      "div": "Central",
+      "color": "#004687",
+      "pick": 29,
+      "supplemental": true,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.57,
+        "college": 0.43,
+        "pitcher": 0.29,
+        "hitter": 0.71,
+        "signability": "balanced",
+        "riskTolerance": 0.63,
+        "avgPickFV": 57.14,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.86,
+          "Midwest": 0,
+          "Northeast": 0.14,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "7 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 7
+    },
+    {
+      "id": "ARI-S",
+      "name": "Arizona Diamondbacks (Supp.)",
+      "city": "Phoenix",
+      "league": "NL",
+      "div": "West",
+      "color": "#A71930",
+      "pick": 30,
+      "supplemental": true,
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.67,
+        "college": 0.33,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.67,
+        "avgPickFV": 56.67,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.83,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "CWS-R2",
+      "name": "Chicago White Sox",
+      "city": "Chicago",
+      "league": "AL",
+      "div": "Central",
+      "color": "#27251F",
+      "pick": 31,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.5,
+          "Midwest": 0.33,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "TB-R2",
+      "name": "Tampa Bay Rays",
+      "city": "St. Petersburg",
+      "league": "AL",
+      "div": "East",
+      "color": "#092C5C",
+      "pick": 32,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.83,
+        "college": 0.17,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "model-driven",
+        "riskTolerance": 0.73,
+        "avgPickFV": 52.5,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.67,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "MIN-R2",
+      "name": "Minnesota Twins",
+      "city": "Minneapolis",
+      "league": "AL",
+      "div": "Central",
+      "color": "#002B5C",
+      "pick": 33,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.33,
+        "college": 0.67,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "model-driven",
+        "riskTolerance": 0.53,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "SF-R2",
+      "name": "San Francisco Giants",
+      "city": "San Francisco",
+      "league": "NL",
+      "div": "West",
+      "color": "#FD5A1E",
+      "pick": 34,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.83,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "PIT-R2",
+      "name": "Pittsburgh Pirates",
+      "city": "Pittsburgh",
+      "league": "NL",
+      "div": "Central",
+      "color": "#FDB827",
+      "pick": 35,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "RHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 61.67,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.67,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "KC-R2",
+      "name": "Kansas City Royals",
+      "city": "Kansas City",
+      "league": "AL",
+      "div": "Central",
+      "color": "#004687",
+      "pick": 36,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.57,
+        "college": 0.43,
+        "pitcher": 0.29,
+        "hitter": 0.71,
+        "signability": "balanced",
+        "riskTolerance": 0.63,
+        "avgPickFV": 57.14,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.86,
+          "Midwest": 0,
+          "Northeast": 0.14,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 7 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 7
+    },
+    {
+      "id": "BAL-R2",
+      "name": "Baltimore Orioles",
+      "city": "Baltimore",
+      "league": "AL",
+      "div": "East",
+      "color": "#DF4601",
+      "pick": 37,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "RHP",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 58.33,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 1,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ATH-R2",
+      "name": "Athletics",
+      "city": "Sacramento",
+      "league": "AL",
+      "div": "West",
+      "color": "#003831",
+      "pick": 38,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "RHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.33,
+        "college": 0.67,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "under-slot",
+        "riskTolerance": 0.53,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.67,
+          "South": 0.33,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · hitter lean · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ATL-R2",
+      "name": "Atlanta Braves",
+      "city": "Atlanta",
+      "league": "NL",
+      "div": "East",
+      "color": "#13274F",
+      "pick": 39,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "C",
+        "MIF"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.83,
+        "hitter": 0.17,
+        "signability": "strong-signers",
+        "riskTolerance": 0.6,
+        "avgPickFV": 50.83,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · pitcher lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "COL-R2",
+      "name": "Colorado Rockies",
+      "city": "Denver",
+      "league": "NL",
+      "div": "West",
+      "color": "#33006F",
+      "pick": 40,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.43,
+        "college": 0.57,
+        "pitcher": 0.29,
+        "hitter": 0.71,
+        "signability": "strong-signers",
+        "riskTolerance": 0.57,
+        "avgPickFV": 59.29,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.71,
+          "Midwest": 0,
+          "Northeast": 0.14,
+          "Other": 0.14
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 7 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 7
+    },
+    {
+      "id": "LAA-R2",
+      "name": "Los Angeles Angels",
+      "city": "Anaheim",
+      "league": "AL",
+      "div": "West",
+      "color": "#BA0021",
+      "pick": 41,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 0,
+        "college": 1,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "win-now",
+        "riskTolerance": 0.4,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.67,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "STL-R2",
+      "name": "St. Louis Cardinals",
+      "city": "St. Louis",
+      "league": "NL",
+      "div": "Central",
+      "color": "#C41E3A",
+      "pick": 42,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "RHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "strong-signers",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.5,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "MIA-R2",
+      "name": "Miami Marlins",
+      "city": "Miami",
+      "league": "NL",
+      "div": "East",
+      "color": "#00A3E0",
+      "pick": 43,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "ARI-R2",
+      "name": "Arizona Diamondbacks",
+      "city": "Phoenix",
+      "league": "NL",
+      "div": "West",
+      "color": "#A71930",
+      "pick": 44,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.67,
+        "college": 0.33,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.67,
+        "avgPickFV": 56.67,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.83,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "TEX-R2",
+      "name": "Texas Rangers",
+      "city": "Arlington",
+      "league": "AL",
+      "div": "West",
+      "color": "#003278",
+      "pick": 45,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.2,
+        "college": 0.8,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.48,
+        "avgPickFV": 58.33,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0.17
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "HOU-R2",
+      "name": "Houston Astros",
+      "city": "Houston",
+      "league": "AL",
+      "div": "West",
+      "color": "#EB6E1F",
+      "pick": 46,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.25,
+        "college": 0.75,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "win-now",
+        "riskTolerance": 0.5,
+        "avgPickFV": 50,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.25,
+          "South": 0.5,
+          "Midwest": 0.25,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 4 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 4
+    },
+    {
+      "id": "CIN-R2",
+      "name": "Cincinnati Reds",
+      "city": "Cincinnati",
+      "league": "NL",
+      "div": "Central",
+      "color": "#C6011F",
+      "pick": 47,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.25,
+        "hitter": 0.75,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 56.25,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.13,
+          "South": 0.75,
+          "Midwest": 0,
+          "Northeast": 0.13,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 8 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 8
+    },
+    {
+      "id": "CLE-R2",
+      "name": "Cleveland Guardians",
+      "city": "Cleveland",
+      "league": "AL",
+      "div": "Central",
+      "color": "#E31937",
+      "pick": 48,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "LHP",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.33,
+        "college": 0.67,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.53,
+        "avgPickFV": 53.33,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.5,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · hitter lean · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "BOS-R2",
+      "name": "Boston Red Sox",
+      "city": "Boston",
+      "league": "AL",
+      "div": "East",
+      "color": "#BD3039",
+      "pick": 49,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "SS",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.5,
+          "South": 0.5,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "West"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · hitter lean · West pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "SD-R2",
+      "name": "San Diego Padres",
+      "city": "San Diego",
+      "league": "NL",
+      "div": "West",
+      "color": "#2F241D",
+      "pick": 50,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "OF",
+        "C",
+        "RHP"
+      ],
+      "tendencies": {
+        "hs": 1,
+        "college": 0,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "win-now",
+        "riskTolerance": 0.8,
+        "avgPickFV": 52.5,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · HS-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "DET-R2",
+      "name": "Detroit Tigers",
+      "city": "Detroit",
+      "league": "AL",
+      "div": "Central",
+      "color": "#0C2340",
+      "pick": 51,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.67,
+        "college": 0.33,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.67,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · HS-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "CHC-R2",
+      "name": "Chicago Cubs",
+      "city": "Chicago",
+      "league": "NL",
+      "div": "Central",
+      "color": "#0E3386",
+      "pick": 52,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0.33,
+        "hitter": 0.67,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 55,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.5,
+          "Midwest": 0.33,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "SEA-R2",
+      "name": "Seattle Mariners",
+      "city": "Seattle",
+      "league": "AL",
+      "div": "West",
+      "color": "#0C2C56",
+      "pick": 53,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.63,
+        "college": 0.38,
+        "pitcher": 0.38,
+        "hitter": 0.63,
+        "signability": "balanced",
+        "riskTolerance": 0.65,
+        "avgPickFV": 54.38,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 0.75,
+          "Midwest": 0.13,
+          "Northeast": 0.13,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 8 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 8
+    },
+    {
+      "id": "MIL-R2",
+      "name": "Milwaukee Brewers",
+      "city": "Milwaukee",
+      "league": "NL",
+      "div": "Central",
+      "color": "#12284B",
+      "pick": 54,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "3B"
+      ],
+      "tendencies": {
+        "hs": 0.17,
+        "college": 0.83,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "balanced",
+        "riskTolerance": 0.47,
+        "avgPickFV": 54.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.17,
+          "South": 0.67,
+          "Midwest": 0,
+          "Northeast": 0.17,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "NYY-R2",
+      "name": "New York Yankees",
+      "city": "New York",
+      "league": "AL",
+      "div": "East",
+      "color": "#003087",
+      "pick": 55,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.2,
+        "college": 0.8,
+        "pitcher": 0.2,
+        "hitter": 0.8,
+        "signability": "balanced",
+        "riskTolerance": 0.48,
+        "avgPickFV": 51,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.2,
+          "South": 0.6,
+          "Midwest": 0.2,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 5 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 5
+    },
+    {
+      "id": "LAD-R2",
+      "name": "Los Angeles Dodgers",
+      "city": "Los Angeles",
+      "league": "NL",
+      "div": "West",
+      "color": "#005A9C",
+      "pick": 56,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "C",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.67,
+        "college": 0.33,
+        "pitcher": 0.67,
+        "hitter": 0.33,
+        "signability": "model-driven",
+        "riskTolerance": 0.67,
+        "avgPickFV": 50,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 1,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 3 R1 picks 2020-25 · HS-heavy · pitcher lean · South pipeline",
+      "learnedFromPicks": 3
+    },
+    {
+      "id": "TOR-R2",
+      "name": "Toronto Blue Jays",
+      "city": "Toronto",
+      "league": "AL",
+      "div": "East",
+      "color": "#134A8E",
+      "pick": 57,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "OF",
+        "LHP"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 55.83,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 1,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "WSH-R2",
+      "name": "Washington Nationals",
+      "city": "Washington",
+      "league": "NL",
+      "div": "East",
+      "color": "#AB0003",
+      "pick": 58,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "RHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.5,
+        "college": 0.5,
+        "pitcher": 0.17,
+        "hitter": 0.83,
+        "signability": "balanced",
+        "riskTolerance": 0.6,
+        "avgPickFV": 59.17,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0,
+          "South": 1,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "PHI-R2",
+      "name": "Philadelphia Phillies",
+      "city": "Philadelphia",
+      "league": "NL",
+      "div": "East",
+      "color": "#E81828",
+      "pick": 59,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "LHP",
+        "OF",
+        "C"
+      ],
+      "tendencies": {
+        "hs": 0.83,
+        "college": 0.17,
+        "pitcher": 0.5,
+        "hitter": 0.5,
+        "signability": "balanced",
+        "riskTolerance": 0.73,
+        "avgPickFV": 52.5,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.33,
+          "South": 0.5,
+          "Midwest": 0.17,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 6 R1 picks 2020-25 · HS-heavy · South pipeline",
+      "learnedFromPicks": 6
+    },
+    {
+      "id": "NYM-R2",
+      "name": "New York Mets",
+      "city": "New York",
+      "league": "NL",
+      "div": "East",
+      "color": "#FF5910",
+      "pick": 60,
+      "round": 2,
+      "supplemental": false,
+      "needs": [
+        "C",
+        "SS",
+        "2B"
+      ],
+      "tendencies": {
+        "hs": 0.4,
+        "college": 0.6,
+        "pitcher": 0.2,
+        "hitter": 0.8,
+        "signability": "balanced",
+        "riskTolerance": 0.56,
+        "avgPickFV": 56,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.2,
+          "South": 0.8,
+          "Midwest": 0,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "Round 2 · 5 R1 picks 2020-25 · hitter lean · South pipeline",
+      "learnedFromPicks": 5
+    }
+  ]
+}
