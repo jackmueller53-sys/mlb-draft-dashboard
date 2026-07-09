@@ -1,7 +1,6 @@
 import { NavLink, Outlet, Link } from 'react-router-dom'
 
 const NAV = [
-  { to: '/',               label: 'Overview',  end: true },
   { to: '/board',          label: 'Big Board' },
   { to: '/teams',          label: 'Teams' },
   { to: '/simulator',      label: 'Simulator', end: true },
@@ -13,7 +12,7 @@ export default function Layout() {
     <>
       <header className="hub-header">
         <div className="hub-hdr">
-          <Link to="/" className="hub-logo">
+          <Link to="/board" className="hub-logo">
             <div className="hub-logo-mark">D</div>
             <div>
               <span className="hub-logo-title">Draft Dashboard</span>

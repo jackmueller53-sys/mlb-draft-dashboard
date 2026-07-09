@@ -15,6 +15,88 @@ const Grade = ({ lbl, val }) => (
   </div>
 )
 
+const Stat = ({ lbl, val }) => (
+  <div className="grade-cell">
+    <div className="lbl">{lbl}</div>
+    <div className="val" style={{ fontSize: 20 }}>{val ?? '—'}</div>
+  </div>
+)
+
+/*
+ * Statistical panel body.
+ *   - High school prospects: FV only (no collegiate statistical record).
+ *   - College prospects with a sourced line: hitting or pitching stat tiles.
+ *   - College prospects without a line yet: FV + a "not sourced" note.
+ */
+function StatPanel({ p }) {
+  if (p.level === 'HS') {
+    return (
+      <>
+        <div className="grade-row">
+          <Stat lbl="Future value" val={p.fv} />
+        </div>
+        <div className="muted" style={{ marginTop: 10, fontSize: 13, lineHeight: 1.6 }}>
+          High school prospect — no collegiate statistical record. Evaluation is scouting-based.
+        </div>
+      </>
+    )
+  }
+
+  const s = p.stats
+  if (!s) {
+    return (
+      <>
+        <div className="grade-row">
+          <Stat lbl="Future value" val={p.fv} />
+        </div>
+        <div className="muted" style={{ marginTop: 10, fontSize: 13, lineHeight: 1.6 }}>
+          College statistics not yet sourced for this prospect.
+        </div>
+      </>
+    )
+  }
+
+  if (s.type === 'pitching') {
+    const g = s.pitching || {}
+    return (
+      <>
+        <div className="grade-row">
+          <Stat lbl="ERA"    val={g.era} />
+          <Stat lbl="IP"     val={g.ip} />
+          <Stat lbl="SO"     val={g.so} />
+          <Stat lbl="BB"     val={g.bb} />
+          <Stat lbl="WHIP"   val={g.whip} />
+          <Stat lbl="Record" val={g.record} />
+        </div>
+        <StatFooter s={s} />
+      </>
+    )
+  }
+
+  const g = s.hitting || {}
+  return (
+    <>
+      <div className="grade-row">
+        <Stat lbl="AVG" val={g.avg} />
+        <Stat lbl="OBP" val={g.obp} />
+        <Stat lbl="SLG" val={g.slg} />
+        <Stat lbl="HR"  val={g.hr} />
+        <Stat lbl="RBI" val={g.rbi} />
+        {g.sb != null && <Stat lbl="SB" val={g.sb} />}
+      </div>
+      <StatFooter s={s} />
+    </>
+  )
+}
+
+const StatFooter = ({ s }) => (
+  <div className="muted" style={{ marginTop: 10, fontSize: 12, lineHeight: 1.6 }}>
+    {s.season} · {s.team}
+    {s.summer ? <> · Summer: {s.summer}</> : ''}
+    <span style={{ display: 'block', color: 'var(--fg-3)', marginTop: 2 }}>Source: {s.source}</span>
+  </div>
+)
+
 const MetaItem = ({ label, value }) => {
   if (value == null || value === '') return null
   return <span>{label} <b>{value}</b></span>
@@ -31,9 +113,6 @@ export default function PlayerProfile() {
   )
 
   if (!p) return <div>Player not found. <Link to="/board">Back</Link></div>
-
-  const isPit = p.tier === 'PIT'
-  const grades = p.grades || {}
 
   const teamFits = [...teamsData.teams]
     .map(t => ({ t, score: scoreProspect(t, p) }))
@@ -69,27 +148,16 @@ export default function PlayerProfile() {
 
       <div className="grid-3">
         <div className="panel" style={{ gridColumn: 'span 2' }}>
-          <div className="panel-title">Scouting grades (20–80)</div>
-          <div className="grade-row">
-            {isPit ? (
-              <>
-                <Grade lbl="Fastball" val={grades.fb} />
-                <Grade lbl="Breaking" val={grades.br} />
-                <Grade lbl="Changeup" val={grades.ch} />
-                <Grade lbl="Command"  val={grades.cmd} />
-                <Grade lbl="Overall"  val={p.fv} />
-              </>
-            ) : (
-              <>
-                <Grade lbl="Hit"     val={grades.hit} />
-                <Grade lbl="Power"   val={grades.power} />
-                <Grade lbl="Run"     val={grades.run} />
-                <Grade lbl="Field"   val={grades.field} />
-                <Grade lbl="Arm"     val={grades.arm} />
-                <Grade lbl="Overall" val={p.fv} />
-              </>
-            )}
+          <div className="panel-title">
+            {p.level === 'HS'
+              ? 'Player grade'
+              : p.stats?.type === 'pitching'
+                ? 'College pitching'
+                : p.stats
+                  ? 'College hitting'
+                  : 'College statistics'}
           </div>
+          <StatPanel p={p} />
           <div className="spacer" />
           <div style={{ lineHeight: 1.6, color: 'var(--fg-2)' }}>{p.blurb}</div>
           {p.scoutingNotes && (
