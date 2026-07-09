@@ -314,16 +314,59 @@ const heuristicTalent = (team, prospect) => {
   return base + levelFit + sideFit
 }
 
+// ── Top-of-draft BPA / consensus layer (v0.20) ─────────────────────────
+/*
+ * The learned model under-weights FV once every fit/trait bonus is stacked
+ * on (the trained fvNorm coefficient is only ~3.5, so a 10-grade FV gap is
+ * a smaller swing than a need + trait combo). Real drafts don't work that
+ * way at the very top — picks 1-10 are overwhelmingly best-player-available
+ * and hew to the industry consensus board.
+ *
+ * So we add a pick-dependent layer that is strongest at #1 and fades to zero
+ * by ~pick 16, leaving the mid-to-late board exactly as the model had it:
+ *
+ *   earlyWeight(pick)  1.0 at #1 → 0 by #16 (linear)
+ *   fvEmphasis         extra reward per FV grade above 55, scaled by earliness
+ *   consensusBonus     reward for sitting near the top of the consensus board
+ *   fit damping        need bonus is softened early so fit can't override BPA
+ *
+ * Signability, positional value, pitcher traits, and the learned utility all
+ * stay intact — fit and historical trends are still in the mix, just not
+ * allowed to leapfrog a clear consensus talent at the top of the round.
+ */
+const earlyWeight = (pick) => Math.max(0, Math.min(1, (16 - (pick ?? 60)) / 15))
+
+// Extra FV push, early only. pick 1: 65-FV → +6.0, 60 → +3.0, 50 → -3.0.
+const fvEmphasis = (prospect, pick) =>
+  ((prospect.fv ?? 50) - 55) * 0.6 * earlyWeight(pick)
+
+// Consensus board pull, early only. pick 1: rk1 → +3.0, rk3 → +2.4, rk5 → +1.8,
+// rk10 → +0.3, outside top-10 → 0. Keeps the true top of the board on top.
+const consensusBonus = (prospect, pick) => {
+  const w = earlyWeight(pick)
+  if (w <= 0) return 0
+  const topness = Math.max(0, 11 - (prospect.rank ?? 999))
+  return topness * 0.30 * w
+}
+
+// Soften the (fit) need bonus at the very top so it nudges rather than decides.
+// pick 1: 0.5× need, pick 16+: full need. Positional value is left full since
+// it is a talent-adjacent premium, not roster fit.
+const needDamp = (pick) => 1 - 0.5 * earlyWeight(pick)
+
 // ── Scoring ────────────────────────────────────────────────────────────
 
 export const scoreProspect = (team, prospect) => {
-  const need     = needBonus(team, prospect)
+  const pick     = team.pick
+  const need     = needBonus(team, prospect) * needDamp(pick)
   const sign     = signabilityAdjust(team, prospect)
   const posValue = positionalValueBonus(prospect)
   const trait    = pitcherTraitBonus(prospect)
+  const fvEm     = fvEmphasis(prospect, pick)
+  const cons     = consensusBonus(prospect, pick)
   const u        = learnedUtility(team, prospect)
-  if (u != null) return 55 + u + need + sign + posValue + trait
-  return heuristicTalent(team, prospect) + need + sign + posValue + trait
+  if (u != null) return 55 + u + need + sign + posValue + trait + fvEm + cons
+  return heuristicTalent(team, prospect) + need + sign + posValue + trait + fvEm + cons
 }
 
 export const hasLearnedWeights = (team) => preferenceVector(team).source != null
