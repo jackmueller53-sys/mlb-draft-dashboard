@@ -48,11 +48,12 @@ export default function Simulator() {
   return (
     <>
       <div className="page-title">Mock simulator</div>
-      <div className="page-sub">
+      <div className="page-sub"
+           title="Top-3 hit rate = how often a front office's actual pick landed in the model's top-3 predicted targets, tested on draft years the model was not trained on (leave-one-year-out cross-validation).">
         v0.8 · FO-aware model · 2014-25 · {cvMetrics.events} picks ·{' '}
-        held-out top-3 <b>{Math.round((cvMetrics.top3Rate ?? 0) * 100)}%</b>{' '}
-        (uniform baseline {Math.round((baselines.uniform?.top3Rate ?? 0) * 100)}%,
-        FV-only {Math.round((baselines.fvOnly?.top3Rate ?? 0) * 100)}%)
+        top-3 hit rate on unseen years <b>{Math.round((cvMetrics.top3Rate ?? 0) * 100)}%</b>{' '}
+        (vs {Math.round((baselines.uniform?.top3Rate ?? 0) * 100)}% random,
+        {' '}{Math.round((baselines.fvOnly?.top3Rate ?? 0) * 100)}% talent-only)
       </div>
 
       <div className="grid-4" style={{ marginBottom: 18 }}>

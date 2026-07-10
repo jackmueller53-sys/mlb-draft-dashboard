@@ -146,17 +146,23 @@ export default function TeamProfile() {
               <div className="mono" style={{ fontSize: 14, marginTop: 4 }}>
                 {fo?.nPicks ?? '—'} historical picks (R1-R2)
               </div>
-              <div className="kpi-label" style={{ marginTop: 12 }}>Training top-3</div>
+              <div className="kpi-label" style={{ marginTop: 12 }}
+                   title="How often this front office's actual pick was inside the model's top-3 predicted targets, scored on the same drafts the model learned from. Inflated — see the accuracy on unseen years below.">
+                Top-3 hit rate · on its own history
+              </div>
               <div className="mono" style={{ fontSize: 14, marginTop: 4 }}>
                 {fo ? Math.round(fo.top3Rate * 100) + '%' : '—'}
               </div>
               {evalRow && vStyle && (
                 <>
-                  <div className="kpi-label" style={{ marginTop: 12 }}>Held-out CV top-3</div>
+                  <div className="kpi-label" style={{ marginTop: 12 }}
+                       title="The honest accuracy: draft years are removed one at a time, the model is retrained on the rest, then asked to predict the held-out year. This is how often the actual pick landed in the model's top 3 on drafts it never trained on.">
+                    Top-3 hit rate · on unseen years
+                  </div>
                   <div className="mono" style={{ fontSize: 14, marginTop: 4 }}>
                     {evalRow.cvTop3 != null ? Math.round(evalRow.cvTop3 * 100) + '%' : '—'}
                     {' '}<span style={{ fontSize: 11, color: 'var(--fg-3)' }}>
-                      ({evalRow.cvN} held-out)
+                      (tested on {evalRow.cvN} picks)
                     </span>
                   </div>
                   <div style={{
