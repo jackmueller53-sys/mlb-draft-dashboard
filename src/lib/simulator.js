@@ -134,7 +134,7 @@ const featurize = (p) => {
 }
 
 // Strip -S / -R2 suffix to get base org id (used as fallback key in model weights).
-const orgIdOf = (team) => team.id.replace(/-(S|R2)$/, '')
+const orgIdOf = (team) => team.id.replace(/-\d+$/, '')
 
 /*
  * Preference vector for a team. Tries front-office weights first (so e.g.

@@ -10,9 +10,9 @@ import ProbBar from '../components/ProbBar.jsx'
 const N_RUNS = 1000
 
 const ROUND_LIMITS = {
-  1:   { min: 1,  max: 30 },
-  2:   { min: 31, max: 60 },
-  all: { min: 1,  max: 60 },
+  1:   { min: 1,  max: 37 },   // R1 + PPI + Competitive Balance A
+  2:   { min: 38, max: 75 },   // R2 + Competitive Balance B + Compensatory
+  all: { min: 1,  max: 75 },
 }
 
 export default function Simulator() {

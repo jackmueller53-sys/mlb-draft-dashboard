@@ -210,7 +210,7 @@ for (const id in stats) {
 let mergedCount = 0
 for (const team of teams.teams) {
   // strip -S and -R2 to get base org id
-  const orgId = team.id.replace(/-(S|R2)$/, '')
+  const orgId = team.id.replace(/-\d+$/, '')
   const d = tendenciesByOrg[orgId]
   if (!d) continue
   team.tendencies = {

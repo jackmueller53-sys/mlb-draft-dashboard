@@ -9,6 +9,15 @@ import { regimeEval } from '../lib/modelEval.js'
 import { draftValueFor } from '../lib/draftValue.js'
 import { bonusFor, bonusForFO, bonusVerdict, bonusMeta } from '../lib/bonusBehavior.js'
 
+export const PICK_TYPE_LABEL = {
+  R1:   'Round 1',
+  PPI:  'Prospect Promotion Incentive',
+  CBA:  'Competitive Balance A',
+  R2:   'Round 2',
+  CBB:  'Competitive Balance B',
+  Comp: 'Compensatory',
+}
+
 const VERDICT_STYLE = {
   GREEN: { bg: 'rgba(34, 139, 76, 0.10)', fg: '#1F7A3D', label: 'GREEN' },
   AMBER: { bg: 'rgba(202, 138, 4, 0.12)',  fg: '#9A6B00', label: 'AMBER' },
@@ -61,7 +70,7 @@ export default function TeamProfile() {
   const vStyle   = evalRow ? VERDICT_STYLE[evalRow.verdict] : null
   const dv       = foId ? draftValueFor(foId) : null
   const dvStyle  = dv?.verdict ? DV_STYLE[dv.verdict] : null
-  const orgId      = team.id.replace(/-(S|R2)$/, '')
+  const orgId      = team.id.replace(/-\d+$/, '')
   // Prefer per-FO bonus stats when available — picks up cross-team regimes.
   const bonus      = (foId && bonusForFO(foId)) || bonusFor(orgId)
   const bonusScope = (foId && bonusForFO(foId)) ? 'fo' : 'team'
@@ -111,7 +120,7 @@ export default function TeamProfile() {
       <div className="profile-head" style={{ marginTop: 8 }}>
         <div>
           <div className="profile-eyebrow">
-            Pick #{team.pick}{team.supplemental ? ' (Supp.)' : ''} · {team.league} {team.div}
+            Pick #{team.pick} · {PICK_TYPE_LABEL[team.pickType] ?? 'Round 1'} · {team.league} {team.div}
           </div>
           <div className="profile-name">{team.name}</div>
           <div className="profile-meta">

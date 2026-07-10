@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import teamsData from '../data/teams.json'
 
 const RANGE = {
-  1:   { min: 1,  max: 30 },
-  2:   { min: 31, max: 60 },
-  all: { min: 1,  max: 60 },
+  1:   { min: 1,  max: 37 },   // R1 + PPI + Competitive Balance A
+  2:   { min: 38, max: 75 },   // R2 + Competitive Balance B + Compensatory
+  all: { min: 1,  max: 75 },
 }
 
 export default function Teams() {
@@ -45,7 +45,7 @@ export default function Teams() {
             <div className="team-card-bar" />
             <div className="team-card-body">
               <div className="team-card-pick">
-                Pick #{t.pick}{t.supplemental ? ' · supp' : ''}{t.round === 2 ? ' · R2' : ''}
+                Pick #{t.pick}{t.pickType && t.pickType !== 'R1' ? ` · ${t.pickType}` : ''}
               </div>
               <div className="team-card-name">{t.name}</div>
               <div className="team-card-meta">{t.league} {t.div}</div>

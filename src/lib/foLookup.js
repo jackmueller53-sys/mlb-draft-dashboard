@@ -10,7 +10,7 @@
  */
 import modelWeights from '../../scripts/training/model_weights.json'
 
-const orgIdOf = (teamId) => teamId.replace(/-(S|R2)$/, '')
+const orgIdOf = (teamId) => teamId.replace(/-\d+$/, '')
 
 /** Build a fast lookup: { teamId: { year: foId } } */
 const byTeamYear = (() => {

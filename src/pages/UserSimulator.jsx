@@ -16,7 +16,7 @@ import teamsData from '../data/teams.json'
 import prospectsData from '../data/prospects.json'
 import { scoreProspect, pickBestForTeam } from '../lib/simulator.js'
 
-const orgOf = (teamId) => teamId.replace(/-(S|R2)$/, '')
+const orgOf = (teamId) => teamId.replace(/-\d+$/, '')
 
 // Team display name in the draft feed. Removes the "(Supp.)" tag baked into
 // team.name for supplemental entries — the pick number tells you it's a supp.

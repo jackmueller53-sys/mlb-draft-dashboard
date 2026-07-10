@@ -120,7 +120,7 @@ export default function PlayerProfile() {
   // Best team fits — one row per franchise. Teams with multiple picks
   // (supplemental -S, round-2 -R2) would otherwise appear two or three times;
   // keep only their highest-scoring slot.
-  const orgOf = (id) => id.replace(/-(S|R2)$/, '')
+  const orgOf = (id) => id.replace(/-\d+$/, '')
   const seenOrgs = new Set()
   const teamFits = [...teamsData.teams]
     .map(t => ({ t, score: scoreProspect(t, p) }))
