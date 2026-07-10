@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import teamsData from '../data/teams.json'
 import prospectsData from '../data/prospects.json'
-import { scoreProspect, topK, modelMetrics, preferenceVector } from '../lib/simulator.js'
+import { scoreProspect, modelMetrics, preferenceVector } from '../lib/simulator.js'
 import modelWeights from '../../scripts/training/model_weights.json'
 import { foForTeamYear, foMeta } from '../lib/foLookup.js'
 import { regimeEval } from '../lib/modelEval.js'
@@ -47,10 +47,6 @@ export default function TeamProfile() {
   const team = teamsData.teams.find(t => t.id === teamId)
 
   const mc = useMemo(() => getMC(), [])
-  const prospectsById = useMemo(
-    () => Object.fromEntries(prospectsData.prospects.map(p => [p.id, p])),
-    []
-  )
 
   if (!team) return <div>Team not found. <Link to="/teams">Back</Link></div>
 
@@ -101,9 +97,10 @@ export default function TeamProfile() {
     .sort((a, b) => b.score - a.score)
     .slice(0, 8)
 
-  // Monte Carlo: likeliest targets at this team's pick slot
-  const slotDist = mc.pickProspectDist[team.pick] || {}
-  const likelyAtSlot = topK(slotDist, 8)
+  // Fit-score range across the shown targets, for normalizing the fit bar.
+  const fitScores = fits.map(f => f.score)
+  const fitMax = fitScores.length ? Math.max(...fitScores) : 1
+  const fitMin = fitScores.length ? Math.min(...fitScores) : 0
 
   return (
     <div style={{ ['--team']: team.color }}>
@@ -392,73 +389,71 @@ export default function TeamProfile() {
 
       <div className="spacer" />
 
+      {/*
+        Merged targets board: each prospect realistically available at this
+        slot, with two bars — "likely available" (Monte-Carlo P(on the board
+        at team.pick)) and "fit rating" (deterministic fit score, normalized
+        across the shown candidates). Replaces the old separate "likely
+        targets" and "top fits" panels.
+      */}
       <div className="panel">
-        <div className="panel-title">Likely targets at pick #{team.pick} · {mc.n.toLocaleString()} sims</div>
-        {likelyAtSlot.length === 0 ? (
-          <div className="muted">No target distribution computed.</div>
-        ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {likelyAtSlot.map(({ key: pid, prob }) => {
-              const p = prospectsById[pid]
-              if (!p) return null
-              return (
-                <div key={pid} style={{ display: 'grid', gridTemplateColumns: '60px 1fr 200px', gap: 12, alignItems: 'center' }}>
-                  <div className="mono muted">#{p.rank}</div>
-                  <div>
-                    <span style={{ fontWeight: 700 }}>
-                      <Link to={`/players/${p.id}`} style={{ color: 'var(--fg)' }}>{p.name}</Link>
-                    </span>
-                    <span className="muted" style={{ marginLeft: 8, fontSize: 13 }}>
-                      <span className={`pos-pill ${p.tier === 'PIT' ? 'pit' : 'hit'}`}>{p.pos}</span>
-                      {' '}· {p.level} · {p.school}
-                    </span>
-                  </div>
-                  <ProbBar prob={prob} color={team.color} />
-                </div>
-              )
-            })}
-          </div>
-        )}
-      </div>
-
-      <div className="spacer" />
-
-      <div className="panel">
-        <div className="panel-title">
-          Top fits available at pick #{team.pick}
-          <span style={{ marginLeft: 8, fontSize: 10, color: 'var(--fg-3)', letterSpacing: '0.04em' }}>
-            · MC AVAILABILITY ≥ {Math.round(AVAIL_FLOOR * 100)}%
-          </span>
-        </div>
+        <div className="panel-title">Draft targets at pick #{team.pick}</div>
         {fits.length === 0 ? (
           <div className="muted" style={{ padding: '12px 0', fontSize: 13 }}>
             No prospects clear the {Math.round(AVAIL_FLOOR * 100)}% availability threshold —
             everyone with a meaningful fit profile is projected gone before this slot.
           </div>
         ) : (
-          <table className="board-table">
-            <thead>
-              <tr><th>Fit</th><th>Player</th><th>Pos</th><th>Level</th><th>FV</th><th>Sign</th><th>Avail</th><th>Score</th></tr>
-            </thead>
-            <tbody>
-              {fits.map(({ p, score, avail }, i) => (
-                <tr key={p.id}>
-                  <td className="rank-cell">{i + 1}</td>
-                  <td className="name-cell"><Link to={`/players/${p.id}`}>{p.name}</Link></td>
-                  <td><span className={`pos-pill ${p.tier === 'PIT' ? 'pit' : 'hit'}`}>{p.pos}</span></td>
-                  <td className="muted">{p.level}</td>
-                  <td className="mono">{p.fv}</td>
-                  <td className="muted" style={{ textTransform: 'capitalize' }}>{p.signability}</td>
-                  <td className="mono" style={{ color: avail >= 0.5 ? 'var(--navy)' : 'var(--fg-3)' }}>
-                    {Math.round(avail * 100)}%
-                  </td>
-                  <td className="mono">{score.toFixed(1)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <>
+            <div className="targets-head">
+              <div />
+              <div className="kpi-label" style={{ margin: 0 }}>Player</div>
+              <div className="kpi-label" style={{ margin: 0 }}>Likely available</div>
+              <div className="kpi-label" style={{ margin: 0 }}>Fit rating</div>
+            </div>
+            {fits.map(({ p, score, avail }, i) => (
+              <div key={p.id} className="targets-row">
+                <div className="rank-cell" style={{ width: 'auto' }}>{i + 1}</div>
+                <div>
+                  <Link to={`/players/${p.id}`} style={{ color: 'var(--fg)', fontWeight: 700 }}>{p.name}</Link>
+                  <div className="muted" style={{ fontSize: 12, marginTop: 2 }}>
+                    <span className={`pos-pill ${p.tier === 'PIT' ? 'pit' : 'hit'}`}>{p.pos}</span>
+                    {' '}· {p.level} · FV {p.fv}
+                  </div>
+                </div>
+                <div className="targets-bar">
+                  <span className="targets-bar-label">Available</span>
+                  <ProbBar prob={avail} color={team.color} />
+                </div>
+                <div className="targets-bar">
+                  <span className="targets-bar-label">Fit</span>
+                  <FitBar score={score} min={fitMin} max={fitMax} />
+                </div>
+              </div>
+            ))}
+            <div className="muted" style={{ fontSize: 11, marginTop: 10, lineHeight: 1.5 }}>
+              Likely available = share of {mc.n.toLocaleString()} simulated drafts where the player is still on the board at #{team.pick}.
+              Fit rating = model score for this front office (talent + learned tendencies + roster need), scaled across the shown targets.
+            </div>
+          </>
         )}
       </div>
+    </div>
+  )
+}
+
+/* Fit rating bar — normalizes the raw fit score across the shown candidates
+ * so the strongest fit fills the bar and the weakest still reads meaningfully
+ * (floored at 40%). Shows the raw score as the numeric label. */
+function FitBar({ score, min, max }) {
+  const span = max - min
+  const pct = span > 0 ? 0.4 + 0.6 * (score - min) / span : 1
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 8, minWidth: 110 }}>
+      <div style={{ flex: 1, height: 6, background: 'var(--surface-2)', borderRadius: 4, overflow: 'hidden' }}>
+        <div style={{ width: `${pct * 100}%`, height: '100%', background: 'var(--navy)', borderRadius: 4 }} />
+      </div>
+      <div className="mono" style={{ fontSize: 12, color: 'var(--fg-2)', width: 32, textAlign: 'right' }}>{score.toFixed(0)}</div>
     </div>
   )
 }

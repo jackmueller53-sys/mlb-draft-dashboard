@@ -5,17 +5,18 @@
  * available, falling back to the v0.3 heuristic for teams without learned
  * weights.
  *
- *   score = 55 + learnedUtility + needBonus + signabilityAdjust
- *           ────────────────────  ─────────  ──────────────────
- *           talent + team pattern  exogenous  exogenous
+ *   score = 55 + learnedUtility + needBonus + positional + trait
+ *              + FV/consensus emphasis (early picks)
  *
  * The learned utility is `(β_global + δ_team) · features(prospect)` from
  * scripts/training/model_weights.json. Features encode level (HS/college),
  * tier (P/H), region, and an FV proxy. Re-running the trainer regenerates
  * the weights without touching this file.
  *
- * needBonus and signabilityAdjust stay heuristic — we don't have signability
- * or roster-need labels per historical pick yet.
+ * v0.23 — signability was removed from scoring: a prospect's sign-ability
+ * lean (easy/tough) is a subjective, non-public estimate, so the model no
+ * longer conditions on it. (Public signing-bonus behavior still shows on
+ * team profiles as descriptive history, but does not drive picks.)
  *
  * Monte Carlo: scoreProspect + gaussian noise, N independent draws,
  * aggregated to per-pick and per-team probabilities.
@@ -23,7 +24,6 @@
 
 import modelWeights from '../../scripts/training/model_weights.json'
 import { foForTeamYear } from './foLookup.js'
-import { bonusFor, bonusForFO } from './bonusBehavior.js'
 
 // ── Featurization (mirrors scripts/training/featurize.js) ──────────────
 
@@ -194,54 +194,6 @@ const needBonus = (team, prospect) => {
 }
 
 /*
- * Signability adjustment.
- *
- * v0.16: replaces the hand-tuned riskTolerance scalar with the learned
- * per-team (or per-FO) bonus-behavior tendency from bonus_weights.json
- * (Karpathy-trained on 30k draft picks 2012-2024). The signal:
- *
- *   - tough-signability prospects: over-slot teams (positive rawMean)
- *     get a *reduced* penalty, because their pattern proves they're
- *     willing to pay; under-slot teams get an *amplified* penalty.
- *   - easy-signability prospects: under-slot teams get a small extra
- *     bonus (an easy sign is exactly the profile they target with
- *     under-slot strategies to feed bonus-pool gymnastics elsewhere).
- *
- * Fallback path matches v0.15 when no bonus data is loaded yet.
- */
-const bonusFor2026 = (team) => {
-  const foId = foForTeamYear(team.id, 2026)
-  if (foId) {
-    const fo = bonusForFO(foId)
-    if (fo) return fo
-  }
-  return bonusFor(team.id.replace(/-(S|R2)$/, ''))
-}
-
-const signabilityAdjust = (team, prospect) => {
-  const sign = prospect.signability
-  if (sign === 'neutral') return 0
-
-  const bonus = bonusFor2026(team)
-  const mean  = bonus?.rawMean ?? 0   // ~-0.30 .. +0.10 across the league
-
-  if (sign === 'tough') {
-    // Base penalty -3.0; over-slot teams shrink it, under-slot teams worsen it.
-    // mean = +0.10 → scale 0.6 → penalty -1.8
-    // mean = -0.20 → scale 1.4 → penalty -4.2
-    const scale = Math.max(0.3, Math.min(1.7, 1.0 - mean * 4))
-    return -3.0 * scale
-  }
-  if (sign === 'easy') {
-    // Easy signers fit under-slot strategies. Give a small bonus when team's
-    // pattern is under-slot, neutral or slight bonus when over-slot.
-    const easyBoost = mean < 0 ? 1.0 + Math.min(0.6, -mean * 3) : 1.0
-    return easyBoost
-  }
-  return 0
-}
-
-/*
  * Premium-position bonus. Industry treats up-the-middle defenders (C, SS, CF)
  * as scarce; corner positions (1B, DH) as defensive negatives. Applied flat
  * at inference, on top of FV and team prefs.
@@ -359,14 +311,13 @@ const needDamp = (pick) => 1 - 0.5 * earlyWeight(pick)
 export const scoreProspect = (team, prospect) => {
   const pick     = team.pick
   const need     = needBonus(team, prospect) * needDamp(pick)
-  const sign     = signabilityAdjust(team, prospect)
   const posValue = positionalValueBonus(prospect)
   const trait    = pitcherTraitBonus(prospect)
   const fvEm     = fvEmphasis(prospect, pick)
   const cons     = consensusBonus(prospect, pick)
   const u        = learnedUtility(team, prospect)
-  if (u != null) return 55 + u + need + sign + posValue + trait + fvEm + cons
-  return heuristicTalent(team, prospect) + need + sign + posValue + trait + fvEm + cons
+  if (u != null) return 55 + u + need + posValue + trait + fvEm + cons
+  return heuristicTalent(team, prospect) + need + posValue + trait + fvEm + cons
 }
 
 export const hasLearnedWeights = (team) => preferenceVector(team).source != null
@@ -441,16 +392,10 @@ const gaussian = (rng) => {
 const NOISE = {
   fvSigma: 1.8,
   fitSigma: 0.6,
-  signabilityFlipP: 0.04,
 }
 
 const noisyScore = (team, prospect, rng) => {
-  let p = prospect
-  if (rng() < NOISE.signabilityFlipP) {
-    const flip = { easy: 'tough', tough: 'easy', neutral: 'neutral' }
-    p = { ...prospect, signability: flip[prospect.signability] ?? prospect.signability }
-  }
-  const base = scoreProspect(team, p)
+  const base = scoreProspect(team, prospect)
   return base + gaussian(rng) * NOISE.fvSigma + gaussian(rng) * NOISE.fitSigma
 }
 

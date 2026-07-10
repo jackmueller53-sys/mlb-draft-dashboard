@@ -329,3 +329,38 @@ a { color: inherit; text-decoration: none; }
   color: var(--fg); letter-spacing: -0.02em; line-height: 1;
 }
 .kpi-sub { font-size: 12px; color: var(--fg-3); margin-top: 6px; }
+
+/* ── Draft targets panel (merged availability + fit) ───────────────────── */
+.targets-head,
+.targets-row {
+  display: grid;
+  grid-template-columns: 28px 1fr 160px 160px;
+  gap: 14px;
+  align-items: center;
+}
+.targets-head {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+.targets-row {
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+}
+.targets-row:last-child { border-bottom: none; }
+.targets-bar-label { display: none; }
+
+@media (max-width: 720px) {
+  .targets-head { display: none; }
+  .targets-row {
+    grid-template-columns: 28px 1fr;
+    row-gap: 6px;
+  }
+  .targets-bar { grid-column: 2 / -1; }
+  .targets-bar-label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+}
