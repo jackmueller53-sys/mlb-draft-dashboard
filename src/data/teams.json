@@ -935,48 +935,13 @@
       "learnedFromPicks": 6
     },
     {
-      "id": "HOU-27",
-      "name": "Houston Astros",
-      "city": "Houston",
-      "league": "AL",
-      "div": "West",
-      "color": "#EB6E1F",
-      "pick": 27,
-      "pickType": "PPI",
-      "needs": [
-        "C",
-        "LHP",
-        "OF"
-      ],
-      "tendencies": {
-        "hs": 0.25,
-        "college": 0.75,
-        "pitcher": 0,
-        "hitter": 1,
-        "signability": "win-now",
-        "riskTolerance": 0.5,
-        "avgPickFV": 50,
-        "fvFlex": 0,
-        "regionShare": {
-          "West": 0.25,
-          "South": 0.5,
-          "Midwest": 0.25,
-          "Northeast": 0,
-          "Other": 0
-        },
-        "dominantRegion": "South"
-      },
-      "notes": "4 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
-      "learnedFromPicks": 4
-    },
-    {
       "id": "NYM",
       "name": "New York Mets",
       "city": "New York",
       "league": "NL",
       "div": "East",
       "color": "#FF5910",
-      "pick": 28,
+      "pick": 27,
       "pickType": "PPI",
       "needs": [
         "C",
@@ -1003,6 +968,41 @@
       },
       "notes": "5 R1 picks 2020-25 · hitter lean · South pipeline",
       "learnedFromPicks": 5
+    },
+    {
+      "id": "HOU-28",
+      "name": "Houston Astros",
+      "city": "Houston",
+      "league": "AL",
+      "div": "West",
+      "color": "#EB6E1F",
+      "pick": 28,
+      "pickType": "PPI",
+      "needs": [
+        "C",
+        "LHP",
+        "OF"
+      ],
+      "tendencies": {
+        "hs": 0.25,
+        "college": 0.75,
+        "pitcher": 0,
+        "hitter": 1,
+        "signability": "win-now",
+        "riskTolerance": 0.5,
+        "avgPickFV": 50,
+        "fvFlex": 0,
+        "regionShare": {
+          "West": 0.25,
+          "South": 0.5,
+          "Midwest": 0.25,
+          "Northeast": 0,
+          "Other": 0
+        },
+        "dominantRegion": "South"
+      },
+      "notes": "4 R1 picks 2020-25 · college-heavy · hitter lean · South pipeline",
+      "learnedFromPicks": 4
     },
     {
       "id": "SF-29",
