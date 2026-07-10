@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "Top 30 from MLB Pipeline's 2026 Mock Draft (June 4). Ranks 31-100 from ESPN's updated top-150 board. Scouting notes attached to top 30 only. FV grades are coarse rank-bucket estimates until per-source FVs are merged.",
+    "note": "Top 30 from MLB Pipeline's 2026 Mock Draft (June 4). Ranks 31-100 from ESPN's updated top-150 board. Scouting notes attached to top 30 only. FV grades are coarse rank-bucket estimates until per-source FVs are merged. Jared Grindlinger (HS LHP/OF, Huntington Beach CA) added after being omitted from the initial merge despite consensus first-round grades; board renumbered contiguously (ranks 1-N, id==p{rank}).",
     "source": "https://www.mlb.com/news/mlb-pipeline-2026-mock-draft-june-4",
     "depthSource": "https://www.espn.com/mlb/story/_/id/48778463/2026-mlb-draft-rankings-update-top-150-prospects",
     "scoutingSources": [
@@ -239,6 +239,20 @@
     {
       "id": "p14",
       "rank": 14,
+      "name": "Jared Grindlinger",
+      "pos": "LHP",
+      "tier": "PIT",
+      "level": "HS",
+      "school": "Huntington Beach HS (CA)",
+      "state": "CA",
+      "fv": 55,
+      "signability": "neutral",
+      "blurb": "Two-way reclassification who vaulted into the first-round mix; premium left-handed arm with a legitimate bat.",
+      "scoutingNotes": "Reclassified from 2027 into the 2026 class (announced Feb. 19, 2026). Left-handed pitcher up to 97 mph with a four-pitch mix, and a genuine two-way talent: plus bat control with projectable above-average power as a left-handed hitter. Consensus first-round talent across boards (ESPN #12, Kiley McDaniel #11, Baseball Prospectus #15, Baseball America #17, MLB Pipeline #18)."
+    },
+    {
+      "id": "p15",
+      "rank": 15,
       "name": "Liam Peterson",
       "pos": "RHP",
       "tier": "PIT",
@@ -266,8 +280,8 @@
       }
     },
     {
-      "id": "p15",
-      "rank": 15,
+      "id": "p16",
+      "rank": 16,
       "name": "Tyler Bell",
       "pos": "SS",
       "tier": "HIT",
@@ -280,8 +294,8 @@
       "scoutingNotes": "One of the fastest risers in the class with an elite floor — grades above 50 in every tool and profiles as a major-league contributor. Industry-wide consensus mover."
     },
     {
-      "id": "p16",
-      "rank": 16,
+      "id": "p17",
+      "rank": 17,
       "name": "Justin Lebron",
       "pos": "SS",
       "tier": "HIT",
@@ -294,8 +308,8 @@
       "scoutingNotes": "Above-average power, plus speed, and an above-average glove at shortstop. The catch is a below-average in-zone miss rate and overall feel to hit, which makes him an enigma to evaluate."
     },
     {
-      "id": "p17",
-      "rank": 17,
+      "id": "p18",
+      "rank": 18,
       "name": "Trevor Condon",
       "pos": "OF",
       "tier": "HIT",
@@ -308,8 +322,8 @@
       "scoutingNotes": "Undersized lefty prep hitter with preternatural bat-to-ball skills and blazing speed in center field. Lower-variance type whose hit tool gives him a real ceiling; team valuation varies."
     },
     {
-      "id": "p18",
-      "rank": 18,
+      "id": "p19",
+      "rank": 19,
       "name": "Sawyer Strosnider",
       "pos": "OF",
       "tier": "HIT",
@@ -322,8 +336,8 @@
       "scoutingNotes": "Toolsy college hitter who is as pro-ready as they come. 60-grade power and speed tools; profiles as a quick-mover corner OF."
     },
     {
-      "id": "p19",
-      "rank": 19,
+      "id": "p20",
+      "rank": 20,
       "name": "Bo Lowrance",
       "pos": "3B",
       "tier": "HIT",
@@ -336,8 +350,8 @@
       "scoutingNotes": "More than a few scouts have whispered Freddie Freeman when describing Lowrance. Plenty of left-handed power projection and should continue to improve defensively in pro ball."
     },
     {
-      "id": "p20",
-      "rank": 20,
+      "id": "p21",
+      "rank": 21,
       "name": "Brody Bumila",
       "pos": "LHP",
       "tier": "PIT",
@@ -350,8 +364,8 @@
       "scoutingNotes": "6-8 left-hander regularly up to 100 mph this spring with interesting shapes from a lower slot. Questions remain about the secondaries and strike quality; archetype Padres love to gamble on."
     },
     {
-      "id": "p21",
-      "rank": 21,
+      "id": "p22",
+      "rank": 22,
       "name": "Archer Horn",
       "pos": "SS",
       "tier": "HIT",
@@ -364,8 +378,8 @@
       "scoutingNotes": "Great athlete with bat speed and tons of arm strength who has performed well this spring, moving into the late first round of draft projections. Multi-position upside."
     },
     {
-      "id": "p22",
-      "rank": 22,
+      "id": "p23",
+      "rank": 23,
       "name": "Hunter Dietz",
       "pos": "LHP",
       "tier": "PIT",
@@ -378,8 +392,8 @@
       "scoutingNotes": "Threw just 1.2 innings between 2024 and 2025 due to injury, then impressed with 131 K in 85.2 IP. Elite velocity and a deep repertoire; injury history is the swing factor."
     },
     {
-      "id": "p23",
-      "rank": 23,
+      "id": "p24",
+      "rank": 24,
       "name": "Tegan Kuhns",
       "pos": "RHP",
       "tier": "PIT",
@@ -392,8 +406,8 @@
       "scoutingNotes": "Fastball touches 98 mph with a good feel for spinning a curveball. A reliable third offering could unlock another level of starter projection."
     },
     {
-      "id": "p24",
-      "rank": 24,
+      "id": "p25",
+      "rank": 25,
       "name": "Cade Townsend",
       "pos": "RHP",
       "tier": "PIT",
@@ -406,8 +420,8 @@
       "scoutingNotes": "A new addition to the first-round picture, lights out to start the 2026 season with a 0.48 ERA. Late helium that Milwaukee's dev shop is well-positioned to nurture."
     },
     {
-      "id": "p25",
-      "rank": 25,
+      "id": "p26",
+      "rank": 26,
       "name": "A.J. Gracia",
       "pos": "OF",
       "tier": "HIT",
@@ -420,8 +434,8 @@
       "scoutingNotes": "Much more consensus talent with strong reports across all 30 teams. Fits the medium-upside college hitter class — average tools across the board, no red flags."
     },
     {
-      "id": "p26",
-      "rank": 26,
+      "id": "p27",
+      "rank": 27,
       "name": "Aiden Robbins",
       "pos": "OF",
       "tier": "HIT",
@@ -434,8 +448,8 @@
       "scoutingNotes": "Tapped into a ton more power in his first season at Texas. Corner outfield upside with impressive tournament performances in 2026."
     },
     {
-      "id": "p27",
-      "rank": 27,
+      "id": "p28",
+      "rank": 28,
       "name": "Daniel Jackson",
       "pos": "C",
       "tier": "HIT",
@@ -448,8 +462,8 @@
       "scoutingNotes": "Projected as a supplemental-first-round catcher. Put on an offensive showcase during the super regionals and will continue to showcase his unique toolset in the CWS."
     },
     {
-      "id": "p28",
-      "rank": 28,
+      "id": "p29",
+      "rank": 29,
       "name": "Carson Bolemon",
       "pos": "LHP",
       "tier": "PIT",
@@ -462,8 +476,8 @@
       "scoutingNotes": "Based on pure talent, offers as much pure stuff and upside as any arm in the class. 6'4\", 210-pound southpaw with four plus pitches and smooth mechanics; signability is the open question."
     },
     {
-      "id": "p29",
-      "rank": 29,
+      "id": "p30",
+      "rank": 30,
       "name": "Caden Sorrell",
       "pos": "OF",
       "tier": "HIT",
@@ -476,8 +490,8 @@
       "scoutingNotes": "Power hitter with strong on-base skills and outfield speed; ranked 45th in recent rankings. Some swing-and-miss, but he stays inside the zone and attacks strikes."
     },
     {
-      "id": "p30",
-      "rank": 30,
+      "id": "p31",
+      "rank": 31,
       "name": "Cole Carlon",
       "pos": "LHP",
       "tier": "PIT",
@@ -490,8 +504,8 @@
       "scoutingNotes": "Burst onto the scene as a reliever with Arizona State, then his stock rose this season after moving into the Sun Devils' rotation. Mid-90s fastball velocity."
     },
     {
-      "id": "p31",
-      "rank": 31,
+      "id": "p32",
+      "rank": 32,
       "name": "Chase Brunson",
       "pos": "CF",
       "tier": "HIT",
@@ -502,8 +516,8 @@
       "signability": "easy"
     },
     {
-      "id": "p32",
-      "rank": 32,
+      "id": "p33",
+      "rank": 33,
       "name": "Cole Prosek",
       "pos": "3B",
       "tier": "HIT",
@@ -514,8 +528,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p33",
-      "rank": 33,
+      "id": "p34",
+      "rank": 34,
       "name": "Eric Becker",
       "pos": "SS",
       "tier": "HIT",
@@ -598,8 +612,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p42",
-      "rank": 42,
+      "id": "p41",
+      "rank": 41,
       "name": "Ben Blair",
       "pos": "RHP",
       "tier": "PIT",
@@ -610,8 +624,8 @@
       "signability": "easy"
     },
     {
-      "id": "p43",
-      "rank": 43,
+      "id": "p42",
+      "rank": 42,
       "name": "Andrew Williamson",
       "pos": "OF",
       "tier": "HIT",
@@ -622,8 +636,8 @@
       "signability": "easy"
     },
     {
-      "id": "p44",
-      "rank": 44,
+      "id": "p43",
+      "rank": 43,
       "name": "Aiden Ruiz",
       "pos": "SS",
       "tier": "HIT",
@@ -634,8 +648,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p46",
-      "rank": 46,
+      "id": "p44",
+      "rank": 44,
       "name": "Ethan Kleinschmit",
       "pos": "LHP",
       "tier": "PIT",
@@ -646,8 +660,8 @@
       "signability": "easy"
     },
     {
-      "id": "p47",
-      "rank": 47,
+      "id": "p45",
+      "rank": 45,
       "name": "Ty Head",
       "pos": "CF",
       "tier": "HIT",
@@ -658,8 +672,8 @@
       "signability": "easy"
     },
     {
-      "id": "p48",
-      "rank": 48,
+      "id": "p46",
+      "rank": 46,
       "name": "Kaden Waechter",
       "pos": "RHP",
       "tier": "PIT",
@@ -670,8 +684,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p49",
-      "rank": 49,
+      "id": "p47",
+      "rank": 47,
       "name": "Jack Radel",
       "pos": "RHP",
       "tier": "PIT",
@@ -682,8 +696,8 @@
       "signability": "easy"
     },
     {
-      "id": "p50",
-      "rank": 50,
+      "id": "p48",
+      "rank": 48,
       "name": "Wes Mendes",
       "pos": "LHP",
       "tier": "PIT",
@@ -694,8 +708,8 @@
       "signability": "easy"
     },
     {
-      "id": "p51",
-      "rank": 51,
+      "id": "p49",
+      "rank": 49,
       "name": "Landon Thome",
       "pos": "SS",
       "tier": "HIT",
@@ -706,8 +720,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p52",
-      "rank": 52,
+      "id": "p50",
+      "rank": 50,
       "name": "Jake Brown",
       "pos": "OF",
       "tier": "HIT",
@@ -718,8 +732,8 @@
       "signability": "easy"
     },
     {
-      "id": "p53",
-      "rank": 53,
+      "id": "p51",
+      "rank": 51,
       "name": "Chris Rembert",
       "pos": "2B",
       "tier": "HIT",
@@ -730,8 +744,8 @@
       "signability": "easy"
     },
     {
-      "id": "p54",
-      "rank": 54,
+      "id": "p52",
+      "rank": 52,
       "name": "Jensen Hirschkorn",
       "pos": "RHP",
       "tier": "PIT",
@@ -742,8 +756,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p55",
-      "rank": 55,
+      "id": "p53",
+      "rank": 53,
       "name": "Sean Dunlap",
       "pos": "C",
       "tier": "HIT",
@@ -754,8 +768,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p56",
-      "rank": 56,
+      "id": "p54",
+      "rank": 54,
       "name": "Rocco Maniscalco",
       "pos": "SS",
       "tier": "HIT",
@@ -766,8 +780,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p58",
-      "rank": 58,
+      "id": "p55",
+      "rank": 55,
       "name": "Sean Duncan",
       "pos": "LHP",
       "tier": "PIT",
@@ -778,8 +792,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p59",
-      "rank": 59,
+      "id": "p56",
+      "rank": 56,
       "name": "Kaiden McCarthy",
       "pos": "RHP",
       "tier": "PIT",
@@ -790,8 +804,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p60",
-      "rank": 60,
+      "id": "p57",
+      "rank": 57,
       "name": "Ethan Norby",
       "pos": "LHP",
       "tier": "PIT",
@@ -802,8 +816,8 @@
       "signability": "easy"
     },
     {
-      "id": "p61",
-      "rank": 61,
+      "id": "p58",
+      "rank": 58,
       "name": "Beau Peterson",
       "pos": "3B",
       "tier": "HIT",
@@ -814,8 +828,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p62",
-      "rank": 62,
+      "id": "p59",
+      "rank": 59,
       "name": "Carson Tinney",
       "pos": "C",
       "tier": "HIT",
@@ -826,8 +840,8 @@
       "signability": "easy"
     },
     {
-      "id": "p63",
-      "rank": 63,
+      "id": "p60",
+      "rank": 60,
       "name": "Will Yow",
       "pos": "SS",
       "tier": "HIT",
@@ -838,8 +852,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p64",
-      "rank": 64,
+      "id": "p61",
+      "rank": 61,
       "name": "Jace Mataczynski",
       "pos": "SS",
       "tier": "HIT",
@@ -850,8 +864,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p65",
-      "rank": 65,
+      "id": "p62",
+      "rank": 62,
       "name": "Ruger Riojas",
       "pos": "RHP",
       "tier": "PIT",
@@ -862,8 +876,8 @@
       "signability": "easy"
     },
     {
-      "id": "p66",
-      "rank": 66,
+      "id": "p63",
+      "rank": 63,
       "name": "Luke Williams",
       "pos": "SS",
       "tier": "HIT",
@@ -874,8 +888,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p67",
-      "rank": 67,
+      "id": "p64",
+      "rank": 64,
       "name": "Joey Volchko",
       "pos": "RHP",
       "tier": "PIT",
@@ -886,8 +900,8 @@
       "signability": "easy"
     },
     {
-      "id": "p68",
-      "rank": 68,
+      "id": "p65",
+      "rank": 65,
       "name": "Blake Bowen",
       "pos": "CF",
       "tier": "HIT",
@@ -898,8 +912,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p69",
-      "rank": 69,
+      "id": "p66",
+      "rank": 66,
       "name": "Joseph Contreras",
       "pos": "RHP",
       "tier": "PIT",
@@ -910,8 +924,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p70",
-      "rank": 70,
+      "id": "p67",
+      "rank": 67,
       "name": "Gavin Grahovac",
       "pos": "1B",
       "tier": "HIT",
@@ -922,8 +936,8 @@
       "signability": "easy"
     },
     {
-      "id": "p71",
-      "rank": 71,
+      "id": "p68",
+      "rank": 68,
       "name": "Jack Natili",
       "pos": "C",
       "tier": "HIT",
@@ -934,8 +948,8 @@
       "signability": "easy"
     },
     {
-      "id": "p72",
-      "rank": 72,
+      "id": "p69",
+      "rank": 69,
       "name": "Bo Holloway",
       "pos": "LHP",
       "tier": "PIT",
@@ -946,8 +960,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p73",
-      "rank": 73,
+      "id": "p70",
+      "rank": 70,
       "name": "Keon Johnson",
       "pos": "SS",
       "tier": "HIT",
@@ -958,8 +972,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p74",
-      "rank": 74,
+      "id": "p71",
+      "rank": 71,
       "name": "Logan Hughes",
       "pos": "OF",
       "tier": "HIT",
@@ -970,8 +984,8 @@
       "signability": "easy"
     },
     {
-      "id": "p75",
-      "rank": 75,
+      "id": "p72",
+      "rank": 72,
       "name": "Myles Bailey",
       "pos": "1B",
       "tier": "HIT",
@@ -982,8 +996,8 @@
       "signability": "easy"
     },
     {
-      "id": "p76",
-      "rank": 76,
+      "id": "p73",
+      "rank": 73,
       "name": "Brett Renfrow",
       "pos": "RHP",
       "tier": "PIT",
@@ -994,8 +1008,8 @@
       "signability": "easy"
     },
     {
-      "id": "p77",
-      "rank": 77,
+      "id": "p74",
+      "rank": 74,
       "name": "Carson Bailey",
       "pos": "LHP",
       "tier": "PIT",
@@ -1006,8 +1020,8 @@
       "signability": "easy"
     },
     {
-      "id": "p78",
-      "rank": 78,
+      "id": "p75",
+      "rank": 75,
       "name": "Jacob Dudan",
       "pos": "RHP",
       "tier": "PIT",
@@ -1018,8 +1032,8 @@
       "signability": "easy"
     },
     {
-      "id": "p79",
-      "rank": 79,
+      "id": "p76",
+      "rank": 76,
       "name": "Hudson DeVaughan",
       "pos": "RHP",
       "tier": "PIT",
@@ -1030,8 +1044,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p80",
-      "rank": 80,
+      "id": "p77",
+      "rank": 77,
       "name": "Ryan Peterson",
       "pos": "RHP",
       "tier": "PIT",
@@ -1042,8 +1056,8 @@
       "signability": "easy"
     },
     {
-      "id": "p81",
-      "rank": 81,
+      "id": "p78",
+      "rank": 78,
       "name": "Taj Marchand",
       "pos": "SS",
       "tier": "HIT",
@@ -1054,8 +1068,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p82",
-      "rank": 82,
+      "id": "p79",
+      "rank": 79,
       "name": "Cooper Harris",
       "pos": "RHP",
       "tier": "PIT",
@@ -1066,8 +1080,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p83",
-      "rank": 83,
+      "id": "p80",
+      "rank": 80,
       "name": "Malachi Washington",
       "pos": "CF",
       "tier": "HIT",
@@ -1078,8 +1092,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p84",
-      "rank": 84,
+      "id": "p81",
+      "rank": 81,
       "name": "Cole Koeninger",
       "pos": "SS",
       "tier": "HIT",
@@ -1090,8 +1104,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p85",
-      "rank": 85,
+      "id": "p82",
+      "rank": 82,
       "name": "Ryan Marohn",
       "pos": "LHP",
       "tier": "PIT",
@@ -1102,8 +1116,8 @@
       "signability": "easy"
     },
     {
-      "id": "p86",
-      "rank": 86,
+      "id": "p83",
+      "rank": 83,
       "name": "Deven Sheerin",
       "pos": "RHP",
       "tier": "PIT",
@@ -1114,8 +1128,8 @@
       "signability": "easy"
     },
     {
-      "id": "p87",
-      "rank": 87,
+      "id": "p84",
+      "rank": 84,
       "name": "Brendan Brock",
       "pos": "C",
       "tier": "HIT",
@@ -1126,8 +1140,8 @@
       "signability": "easy"
     },
     {
-      "id": "p88",
-      "rank": 88,
+      "id": "p85",
+      "rank": 85,
       "name": "Will Gasparino",
       "pos": "CF",
       "tier": "HIT",
@@ -1138,8 +1152,8 @@
       "signability": "easy"
     },
     {
-      "id": "p89",
-      "rank": 89,
+      "id": "p86",
+      "rank": 86,
       "name": "Denton Lord",
       "pos": "RHP",
       "tier": "PIT",
@@ -1150,8 +1164,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p90",
-      "rank": 90,
+      "id": "p87",
+      "rank": 87,
       "name": "Matt Ponatoski",
       "pos": "RHP",
       "tier": "PIT",
@@ -1162,8 +1176,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p91",
-      "rank": 91,
+      "id": "p88",
+      "rank": 88,
       "name": "Will Adams",
       "pos": "1B",
       "tier": "HIT",
@@ -1174,8 +1188,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p92",
-      "rank": 92,
+      "id": "p89",
+      "rank": 89,
       "name": "Gary Morse",
       "pos": "RHP",
       "tier": "PIT",
@@ -1186,8 +1200,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p93",
-      "rank": 93,
+      "id": "p90",
+      "rank": 90,
       "name": "Peyton Bonds",
       "pos": "CF",
       "tier": "HIT",
@@ -1198,8 +1212,8 @@
       "signability": "easy"
     },
     {
-      "id": "p94",
-      "rank": 94,
+      "id": "p91",
+      "rank": 91,
       "name": "Caden Bogenpohl",
       "pos": "CF",
       "tier": "HIT",
@@ -1210,8 +1224,8 @@
       "signability": "easy"
     },
     {
-      "id": "p95",
-      "rank": 95,
+      "id": "p92",
+      "rank": 92,
       "name": "Kevin Roberts Jr.",
       "pos": "CF",
       "tier": "HIT",
@@ -1222,8 +1236,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p96",
-      "rank": 96,
+      "id": "p93",
+      "rank": 93,
       "name": "Noah Wilson",
       "pos": "CF",
       "tier": "HIT",
@@ -1234,8 +1248,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p97",
-      "rank": 97,
+      "id": "p94",
+      "rank": 94,
       "name": "Shane Sdao",
       "pos": "LHP",
       "tier": "PIT",
@@ -1246,8 +1260,8 @@
       "signability": "easy"
     },
     {
-      "id": "p98",
-      "rank": 98,
+      "id": "p95",
+      "rank": 95,
       "name": "Gabe Gaeckle",
       "pos": "RHP",
       "tier": "PIT",
@@ -1258,8 +1272,8 @@
       "signability": "easy"
     },
     {
-      "id": "p99",
-      "rank": 99,
+      "id": "p96",
+      "rank": 96,
       "name": "Savion Sims",
       "pos": "RHP",
       "tier": "PIT",
@@ -1270,8 +1284,8 @@
       "signability": "neutral"
     },
     {
-      "id": "p100",
-      "rank": 100,
+      "id": "p97",
+      "rank": 97,
       "name": "Dominic Santarelli",
       "pos": "OF",
       "tier": "HIT",
