@@ -6,6 +6,7 @@ import { scoreProspect, summarizePickDist, topK } from '../lib/simulator.js'
 import { getMC } from '../lib/mcCache.js'
 import ProbBar from '../components/ProbBar.jsx'
 import PickDistChart from '../components/PickDistChart.jsx'
+import { COLLEGE_SITES } from '../data/collegeSites.js'
 
 const Stat = ({ lbl, val }) => (
   <div className="grade-cell">
@@ -22,10 +23,11 @@ const Stat = ({ lbl, val }) => (
  *   - College pitchers with a sourced line: pitching stat tiles + profile link.
  */
 
-// Best-effort link to a college player's school profile page. We don't have
-// a direct roster URL for every school, so this resolves to a scoped web
-// search that lands on the player's college page as the top result.
+// Link to a college player's school profile. Uses the hardcoded official
+// baseball roster page when the school is known (all schools currently on
+// the board are mapped); falls back to a scoped web search otherwise.
 const collegeProfileUrl = (name, school) =>
+  COLLEGE_SITES[school] ||
   `https://www.google.com/search?q=${encodeURIComponent(`${name} ${school} baseball roster`)}`
 
 const CollegeLink = ({ p }) => (
