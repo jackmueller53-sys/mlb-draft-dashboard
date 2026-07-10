@@ -17,9 +17,30 @@ const Stat = ({ lbl, val }) => (
 /*
  * Statistical panel body.
  *   - High school prospects: FV only (no collegiate statistical record).
- *   - College prospects with a sourced line: hitting or pitching stat tiles.
- *   - College prospects without a line yet: FV + a "not sourced" note.
+ *   - College hitters: FV + a link to their school player profile (we can't
+ *     reliably source complete slash lines for every college bat).
+ *   - College pitchers with a sourced line: pitching stat tiles + profile link.
  */
+
+// Best-effort link to a college player's school profile page. We don't have
+// a direct roster URL for every school, so this resolves to a scoped web
+// search that lands on the player's college page as the top result.
+const collegeProfileUrl = (name, school) =>
+  `https://www.google.com/search?q=${encodeURIComponent(`${name} ${school} baseball roster`)}`
+
+const CollegeLink = ({ p }) => (
+  <div className="muted" style={{ marginTop: 12, fontSize: 13 }}>
+    <a
+      href={collegeProfileUrl(p.name, p.school)}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'var(--red)', fontWeight: 600 }}
+    >
+      {p.school} player profile ↗
+    </a>
+  </div>
+)
+
 function StatPanel({ p }) {
   if (p.level === 'HS') {
     return (
@@ -35,20 +56,9 @@ function StatPanel({ p }) {
   }
 
   const s = p.stats
-  if (!s) {
-    return (
-      <>
-        <div className="grade-row">
-          <Stat lbl="Future value" val={p.fv} />
-        </div>
-        <div className="muted" style={{ marginTop: 10, fontSize: 13, lineHeight: 1.6 }}>
-          College statistics not yet sourced for this prospect.
-        </div>
-      </>
-    )
-  }
 
-  if (s.type === 'pitching') {
+  // College pitcher with a sourced line: show the pitching tiles + profile link.
+  if (s?.type === 'pitching') {
     const g = s.pitching || {}
     return (
       <>
@@ -61,22 +71,21 @@ function StatPanel({ p }) {
           <Stat lbl="Record" val={g.record} />
         </div>
         <StatFooter s={s} />
+        <CollegeLink p={p} />
       </>
     )
   }
 
-  const g = s.hitting || {}
+  // College hitter (or any college player without a sourced line): FV + link.
   return (
     <>
       <div className="grade-row">
-        <Stat lbl="AVG" val={g.avg} />
-        <Stat lbl="OBP" val={g.obp} />
-        <Stat lbl="SLG" val={g.slg} />
-        <Stat lbl="HR"  val={g.hr} />
-        <Stat lbl="RBI" val={g.rbi} />
-        {g.sb != null && <Stat lbl="SB" val={g.sb} />}
+        <Stat lbl="Future value" val={p.fv} />
       </div>
-      <StatFooter s={s} />
+      <div className="muted" style={{ marginTop: 10, fontSize: 13, lineHeight: 1.6 }}>
+        Full statistics on the school site.
+      </div>
+      <CollegeLink p={p} />
     </>
   )
 }
@@ -106,15 +115,34 @@ export default function PlayerProfile() {
 
   if (!p) return <div>Player not found. <Link to="/board">Back</Link></div>
 
+  // Best team fits — one row per franchise. Teams with multiple picks
+  // (supplemental -S, round-2 -R2) would otherwise appear two or three times;
+  // keep only their highest-scoring slot.
+  const orgOf = (id) => id.replace(/-(S|R2)$/, '')
+  const seenOrgs = new Set()
   const teamFits = [...teamsData.teams]
     .map(t => ({ t, score: scoreProspect(t, p) }))
     .sort((a, b) => b.score - a.score)
+    .filter(({ t }) => {
+      const org = orgOf(t.id)
+      if (seenOrgs.has(org)) return false
+      seenOrgs.add(org)
+      return true
+    })
     .slice(0, 6)
 
   const pickDist = mc.pickDist[p.id]
   const teamDist = mc.teamDist[p.id]
   const summary = summarizePickDist(pickDist)
-  const topTeams = topK(teamDist, 5)
+
+  // Likeliest landing spots — also collapse a franchise's multiple picks into
+  // one entry, summing the probability across its slots.
+  const teamDistByOrg = {}
+  for (const [tid, prob] of Object.entries(teamDist || {})) {
+    const org = orgOf(tid)
+    teamDistByOrg[org] = (teamDistByOrg[org] || 0) + prob
+  }
+  const topTeams = topK(teamDistByOrg, 5)
 
   return (
     <>
@@ -138,13 +166,7 @@ export default function PlayerProfile() {
 
       <div className="panel">
         <div className="panel-title">
-          {p.level === 'HS'
-            ? 'Player grade'
-            : p.stats?.type === 'pitching'
-              ? 'College pitching'
-              : p.stats
-                ? 'College hitting'
-                : 'College statistics'}
+          {p.stats?.type === 'pitching' ? 'College pitching' : 'Player grade'}
         </div>
         <StatPanel p={p} />
       </div>
