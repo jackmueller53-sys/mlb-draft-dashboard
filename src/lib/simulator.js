@@ -6,7 +6,15 @@
  * weights.
  *
  *   score = 55 + learnedUtility + needBonus + positional + trait
+ *              + fvBaseline (talent, all picks)
  *              + FV/consensus emphasis (early picks)
+ *
+ * v0.24 — talent re-weighted upward via a single persistent board-wide FV
+ * term (fvBaseline), so talent matters across the whole board, not just the
+ * top 16. The fit and positional coefficients (needBonus, needDamp,
+ * positionalValueBonus, pitcherTraitBonus) are deliberately left untouched
+ * — talent rises, fit/positional keep their veto over a one-grade gap. See
+ * the fvBaseline block below for the calibration.
  *
  * The learned utility is `(β_global + δ_team) · features(prospect)` from
  * scripts/training/model_weights.json. Features encode level (HS/college),
@@ -301,6 +309,34 @@ const consensusBonus = (prospect, pick) => {
   return topness * 0.30 * w
 }
 
+// ── Persistent talent weight (v0.24) ───────────────────────────────────
+/*
+ * Board-wide FV reward, applied to EVERY pick (not just the top of the
+ * round). Prior versions leaned on fvEmphasis + consensusBonus, both of
+ * which fade to 0 by pick 16 — so deeper in the board the only talent
+ * signal was the trained fvNorm coefficient (~3.5 per 10 FV grades),
+ * routinely out-voted by a need + trait + positional stack. That let
+ * lower-FV "fit" prospects leapfrog clearly better talent.
+ *
+ * The retune raises talent WITHOUT touching the fit or positional
+ * coefficients: needBonus (2.5), needDamp, positionalValueBonus (±1.5)
+ * and pitcherTraitBonus are all unchanged. fvBaseline only *adds* a
+ * talent term, calibrated so fit + positional remain decisive:
+ *   FV 65 → +3.0, 60 → +1.5, 55 → 0, 50 → -1.5, 45 → -3.0
+ *
+ * Net effect per FV bucket (fvBaseline + learned fvNorm ≈ 3.5/10 grades):
+ *   within a tier (ΔFV 0):  fit + positional decide outright (as before)
+ *   one bucket (ΔFV 5):     talent swing ≈ 3.2 — a full need (2.5) +
+ *                           positional (1.5) stack can still overcome it,
+ *                           so fit is never overlooked
+ *   two buckets (ΔFV 10):   talent swing ≈ 6.5 — clearly better talent
+ *                           wins, killing the deep-board reaches
+ * Talent is weighted higher than before, but fit/positional keep real
+ * veto power across a one-grade gap — exactly where scouting nuance lives.
+ */
+const FV_BASE_W = 0.3
+const fvBaseline = (prospect) => ((prospect.fv ?? 50) - 55) * FV_BASE_W
+
 // Soften the (fit) need bonus at the very top so it nudges rather than decides.
 // pick 1: 0.5× need, pick 16+: full need. Positional value is left full since
 // it is a talent-adjacent premium, not roster fit.
@@ -315,9 +351,10 @@ export const scoreProspect = (team, prospect) => {
   const trait    = pitcherTraitBonus(prospect)
   const fvEm     = fvEmphasis(prospect, pick)
   const cons     = consensusBonus(prospect, pick)
+  const fvBase   = fvBaseline(prospect)
   const u        = learnedUtility(team, prospect)
-  if (u != null) return 55 + u + need + posValue + trait + fvEm + cons
-  return heuristicTalent(team, prospect) + need + posValue + trait + fvEm + cons
+  if (u != null) return 55 + u + need + posValue + trait + fvEm + cons + fvBase
+  return heuristicTalent(team, prospect) + need + posValue + trait + fvEm + cons + fvBase
 }
 
 export const hasLearnedWeights = (team) => preferenceVector(team).source != null
