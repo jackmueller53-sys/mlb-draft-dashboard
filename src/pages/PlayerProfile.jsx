@@ -4,16 +4,8 @@ import prospectsData from '../data/prospects.json'
 import teamsData from '../data/teams.json'
 import { scoreProspect, summarizePickDist, topK } from '../lib/simulator.js'
 import { getMC } from '../lib/mcCache.js'
-import { money, overUnder } from '../lib/format.js'
 import ProbBar from '../components/ProbBar.jsx'
 import PickDistChart from '../components/PickDistChart.jsx'
-
-const Grade = ({ lbl, val }) => (
-  <div className="grade-cell">
-    <div className="lbl">{lbl}</div>
-    <div className="val">{val ?? '—'}</div>
-  </div>
-)
 
 const Stat = ({ lbl, val }) => (
   <div className="grade-cell">
@@ -119,8 +111,6 @@ export default function PlayerProfile() {
     .sort((a, b) => b.score - a.score)
     .slice(0, 6)
 
-  const ou = overUnder(p.bonusExp, p.rank)
-
   const pickDist = mc.pickDist[p.id]
   const teamDist = mc.teamDist[p.id]
   const summary = summarizePickDist(pickDist)
@@ -146,70 +136,17 @@ export default function PlayerProfile() {
         </div>
       </div>
 
-      <div className="grid-3">
-        <div className="panel" style={{ gridColumn: 'span 2' }}>
-          <div className="panel-title">
-            {p.level === 'HS'
-              ? 'Player grade'
-              : p.stats?.type === 'pitching'
-                ? 'College pitching'
-                : p.stats
-                  ? 'College hitting'
-                  : 'College statistics'}
-          </div>
-          <StatPanel p={p} />
-          <div className="spacer" />
-          <div style={{ lineHeight: 1.6, color: 'var(--fg-2)' }}>{p.blurb}</div>
-          {p.scoutingNotes && (
-            <>
-              <div className="spacer" />
-              <div style={{
-                background: 'var(--surface-2)',
-                borderLeft: '3px solid var(--red)',
-                padding: '12px 16px',
-                borderRadius: 4,
-                lineHeight: 1.6,
-                color: 'var(--fg)',
-                fontSize: 14,
-              }}>
-                <div style={{
-                  fontFamily: 'var(--display)',
-                  fontSize: 11,
-                  letterSpacing: '0.06em',
-                  textTransform: 'uppercase',
-                  color: 'var(--red)',
-                  fontWeight: 700,
-                  marginBottom: 6,
-                }}>Industry consensus</div>
-                {p.scoutingNotes}
-              </div>
-            </>
-          )}
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 12 }}>
-            {(p.tags || []).map(tag => <span key={tag} className="pos-pill">{tag}</span>)}
-          </div>
+      <div className="panel">
+        <div className="panel-title">
+          {p.level === 'HS'
+            ? 'Player grade'
+            : p.stats?.type === 'pitching'
+              ? 'College pitching'
+              : p.stats
+                ? 'College hitting'
+                : 'College statistics'}
         </div>
-
-        <div className="panel">
-          <div className="panel-title">Signability</div>
-          <div className="grade-row">
-            <div className="grade-cell">
-              <div className="lbl">Lean</div>
-              <div className="val" style={{ textTransform: 'capitalize', fontSize: 18 }}>{p.signability ?? '—'}</div>
-            </div>
-            {p.bonusExp != null && (
-              <div className="grade-cell">
-                <div className="lbl">Bonus exp.</div>
-                <div className="val" style={{ fontSize: 18 }}>{money(p.bonusExp)}</div>
-              </div>
-            )}
-          </div>
-          {ou && (
-            <div className="muted" style={{ marginTop: 10, fontFamily: 'var(--mono)', fontSize: 12 }}>
-              {ou.diff >= 0 ? 'Over' : 'Under'} slot at #{p.rank}: {money(Math.abs(ou.diff))} ({ou.pct.toFixed(0)}%)
-            </div>
-          )}
-        </div>
+        <StatPanel p={p} />
       </div>
 
       <div className="spacer" />

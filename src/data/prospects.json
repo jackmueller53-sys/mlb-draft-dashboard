@@ -20,8 +20,8 @@
     "fetchedAt": "2026-06-09",
     "scale": "20-80",
     "draftYear": 2026,
-    "statsNote": "Real 2026 college statistics attached to marquee college prospects (verified via public search; BR register blocks automated fetch). Depth players and HS prospects intentionally carry no stat line — HS cards show FV only.",
-    "statsFetchedAt": "2026-07-09"
+    "statsNote": "Real 2026 college statistics attached to college prospects (verified via public search of D1Baseball / school athletics / BR register; BR blocks automated fetch). HS cards show FV only; unsourced college depth shows a \"not sourced\" state.",
+    "statsFetchedAt": "2026-07-10"
   },
   "prospects": [
     {
@@ -267,7 +267,22 @@
       "fv": 55,
       "signability": "easy",
       "blurb": "Collegian on an express route to the big leagues.",
-      "scoutingNotes": "Steady starter with a plus fastball — among the best pure starter traits in the class. Fringy breaking balls play up because of his other tools, and the changeup is solid. Express-route college arm."
+      "scoutingNotes": "Steady starter with a plus fastball — among the best pure starter traits in the class. Fringy breaking balls play up because of his other tools, and the changeup is solid. Express-route college arm.",
+      "stats": {
+        "type": "pitching",
+        "season": "2026",
+        "team": "Coastal Carolina",
+        "pitching": {
+          "era": "4.13",
+          "ip": "24.0",
+          "so": 31,
+          "bb": null,
+          "whip": null,
+          "record": "0-2"
+        },
+        "summer": null,
+        "source": "D1Baseball / school athletics / Baseball-Reference register (2026)"
+      }
     },
     {
       "id": "p12",
@@ -308,7 +323,22 @@
       "fv": 55,
       "signability": "easy",
       "blurb": "Marlins' continued focus on college hitters.",
-      "scoutingNotes": "6'4\", 220-pound slugger separating himself from the college corner-infield pack, hitting .406/.473/.750 with 10 doubles, 4 HR, and 21 RBI through 16 games. Power-over-hit profile."
+      "scoutingNotes": "6'4\", 220-pound slugger separating himself from the college corner-infield pack, hitting .406/.473/.750 with 10 doubles, 4 HR, and 21 RBI through 16 games. Power-over-hit profile.",
+      "stats": {
+        "type": "hitting",
+        "season": "2026",
+        "team": "Mississippi State",
+        "hitting": {
+          "avg": ".336",
+          "obp": ".432",
+          "slg": ".721",
+          "g": 62,
+          "hr": 24,
+          "rbi": 74
+        },
+        "summer": null,
+        "source": "D1Baseball / school athletics / Baseball-Reference register (2026)"
+      }
     },
     {
       "id": "p14",
@@ -322,7 +352,22 @@
       "fv": 55,
       "signability": "easy",
       "blurb": "Connected to college pitchers across demographics.",
-      "scoutingNotes": "6-5 with an above-average fastball/slider combo headlining a four-pitch mix. Projects as a starter and carries a five-year scouting pedigree."
+      "scoutingNotes": "6-5 with an above-average fastball/slider combo headlining a four-pitch mix. Projects as a starter and carries a five-year scouting pedigree.",
+      "stats": {
+        "type": "pitching",
+        "season": "2026",
+        "team": "Florida",
+        "pitching": {
+          "era": "4.59",
+          "ip": "84.1",
+          "so": 111,
+          "bb": 36,
+          "whip": "1.42",
+          "record": null
+        },
+        "summer": null,
+        "source": "D1Baseball / school athletics / Baseball-Reference register (2026)"
+      }
     },
     {
       "id": "p15",
@@ -336,7 +381,20 @@
       "fv": 55,
       "signability": "easy",
       "blurb": "Described as near his floor; Robbins at ceiling.",
-      "scoutingNotes": "One of the fastest risers in the class with an elite floor — grades above 50 in every tool and profiles as a major-league contributor. Industry-wide consensus mover."
+      "scoutingNotes": "One of the fastest risers in the class with an elite floor — grades above 50 in every tool and profiles as a major-league contributor. Industry-wide consensus mover.",
+      "stats": {
+        "type": "hitting",
+        "season": "2026",
+        "team": "Kentucky",
+        "hitting": {
+          "avg": ".343",
+          "g": 41,
+          "hr": 9,
+          "rbi": 29
+        },
+        "summer": null,
+        "source": "D1Baseball / school athletics / Baseball-Reference register (2026)"
+      }
     },
     {
       "id": "p16",
@@ -350,7 +408,21 @@
       "fv": 55,
       "signability": "easy",
       "blurb": "Highest-ceilinged player here with enigmatic qualities.",
-      "scoutingNotes": "Above-average power, plus speed, and an above-average glove at shortstop. The catch is a below-average in-zone miss rate and overall feel to hit, which makes him an enigma to evaluate."
+      "scoutingNotes": "Above-average power, plus speed, and an above-average glove at shortstop. The catch is a below-average in-zone miss rate and overall feel to hit, which makes him an enigma to evaluate.",
+      "stats": {
+        "type": "hitting",
+        "season": "2026",
+        "team": "Alabama",
+        "hitting": {
+          "avg": ".262",
+          "g": 61,
+          "hr": 14,
+          "rbi": 40,
+          "sb": 16
+        },
+        "summer": null,
+        "source": "D1Baseball / school athletics / Baseball-Reference register (2026)"
+      }
     },
     {
       "id": "p17",
@@ -378,7 +450,23 @@
       "fv": 55,
       "signability": "easy",
       "blurb": "Pattern of tooled-up Texas college outfielders.",
-      "scoutingNotes": "Toolsy college hitter who is as pro-ready as they come. 60-grade power and speed tools; profiles as a quick-mover corner OF."
+      "scoutingNotes": "Toolsy college hitter who is as pro-ready as they come. 60-grade power and speed tools; profiles as a quick-mover corner OF.",
+      "stats": {
+        "type": "hitting",
+        "season": "2026",
+        "team": "TCU",
+        "hitting": {
+          "avg": ".273",
+          "obp": ".415",
+          "slg": ".590",
+          "g": 50,
+          "hr": 13,
+          "rbi": 47,
+          "bb": 43
+        },
+        "summer": null,
+        "source": "D1Baseball / school athletics / Baseball-Reference register (2026)"
+      }
     },
     {
       "id": "p19",
