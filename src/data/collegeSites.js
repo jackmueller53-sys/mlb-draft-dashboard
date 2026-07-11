@@ -39,6 +39,7 @@ export const COLLEGE_SITES = {
   'UC Santa Barbara': 'https://ucsbgauchos.com/sports/baseball/roster',
   'UCF':              'https://ucfknights.com/sports/baseball/roster',
   'UCLA':             'https://uclabruins.com/sports/baseball/roster',
+  'USC':              'https://usctrojans.com/sports/baseball/roster',
   'Virginia':         'https://virginiasports.com/sports/baseball/roster',
   'Virginia Tech':    'https://hokiesports.com/sports/baseball/roster',
 }
