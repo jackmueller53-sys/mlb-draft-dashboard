@@ -689,8 +689,19 @@
       "signability": "neutral"
     },
     {
+      "id": "p-rabe",
+      "name": "Taylor Rabe",
+      "pos": "RHP",
+      "tier": "PIT",
+      "level": "College",
+      "school": "Mississippi",
+      "state": "MS",
+      "fv": 48,
+      "rank": 48
+    },
+    {
       "id": "p46",
-      "rank": 48,
+      "rank": 49,
       "name": "Ethan Kleinschmit",
       "pos": "LHP",
       "tier": "PIT",
@@ -702,7 +713,7 @@
     },
     {
       "id": "p47",
-      "rank": 49,
+      "rank": 50,
       "name": "Ty Head",
       "pos": "CF",
       "tier": "HIT",
@@ -714,7 +725,7 @@
     },
     {
       "id": "p48",
-      "rank": 50,
+      "rank": 51,
       "name": "Kaden Waechter",
       "pos": "RHP",
       "tier": "PIT",
@@ -725,8 +736,19 @@
       "signability": "neutral"
     },
     {
+      "id": "p-schaffner",
+      "name": "Jake Schaffner",
+      "pos": "SS",
+      "tier": "HIT",
+      "level": "College",
+      "school": "North Carolina",
+      "state": "NC",
+      "fv": 48,
+      "rank": 52
+    },
+    {
       "id": "p49",
-      "rank": 51,
+      "rank": 53,
       "name": "Jack Radel",
       "pos": "RHP",
       "tier": "PIT",
@@ -738,7 +760,7 @@
     },
     {
       "id": "p50",
-      "rank": 52,
+      "rank": 54,
       "name": "Wes Mendes",
       "pos": "LHP",
       "tier": "PIT",
@@ -750,7 +772,7 @@
     },
     {
       "id": "p51",
-      "rank": 53,
+      "rank": 55,
       "name": "Landon Thome",
       "pos": "SS",
       "tier": "HIT",
@@ -762,7 +784,7 @@
     },
     {
       "id": "p52",
-      "rank": 54,
+      "rank": 56,
       "name": "Jake Brown",
       "pos": "OF",
       "tier": "HIT",
@@ -773,8 +795,19 @@
       "signability": "easy"
     },
     {
+      "id": "p-ferraro",
+      "name": "Caden Ferraro",
+      "pos": "RF",
+      "tier": "HIT",
+      "level": "College",
+      "school": "Texas Tech",
+      "state": "TX",
+      "fv": 48,
+      "rank": 57
+    },
+    {
       "id": "p53",
-      "rank": 55,
+      "rank": 58,
       "name": "Chris Rembert",
       "pos": "2B",
       "tier": "HIT",
@@ -785,8 +818,19 @@
       "signability": "easy"
     },
     {
+      "id": "p-lschmidt",
+      "name": "Logan Schmidt",
+      "pos": "LHP",
+      "tier": "PIT",
+      "level": "HS",
+      "school": "Ganesha HS (CA)",
+      "state": "CA",
+      "fv": 48,
+      "rank": 59
+    },
+    {
       "id": "p54",
-      "rank": 56,
+      "rank": 60,
       "name": "Jensen Hirschkorn",
       "pos": "RHP",
       "tier": "PIT",
@@ -798,7 +842,7 @@
     },
     {
       "id": "p55",
-      "rank": 57,
+      "rank": 61,
       "name": "Sean Dunlap",
       "pos": "C",
       "tier": "HIT",
@@ -810,7 +854,7 @@
     },
     {
       "id": "p56",
-      "rank": 58,
+      "rank": 62,
       "name": "Rocco Maniscalco",
       "pos": "SS",
       "tier": "HIT",
@@ -822,7 +866,7 @@
     },
     {
       "id": "p58",
-      "rank": 59,
+      "rank": 63,
       "name": "Sean Duncan",
       "pos": "LHP",
       "tier": "PIT",
@@ -833,8 +877,19 @@
       "signability": "neutral"
     },
     {
+      "id": "p-slightom",
+      "name": "Jack Slightom",
+      "pos": "RHP",
+      "tier": "PIT",
+      "level": "HS",
+      "school": "Lyons Township HS (IL)",
+      "state": "IL",
+      "fv": 47,
+      "rank": 64
+    },
+    {
       "id": "p59",
-      "rank": 60,
+      "rank": 65,
       "name": "Kaiden McCarthy",
       "pos": "RHP",
       "tier": "PIT",
@@ -846,7 +901,7 @@
     },
     {
       "id": "p60",
-      "rank": 61,
+      "rank": 66,
       "name": "Ethan Norby",
       "pos": "LHP",
       "tier": "PIT",
@@ -857,8 +912,19 @@
       "signability": "easy"
     },
     {
+      "id": "p-hull",
+      "name": "Owen Hull",
+      "pos": "CF",
+      "tier": "HIT",
+      "level": "College",
+      "school": "North Carolina",
+      "state": "NC",
+      "fv": 47,
+      "rank": 67
+    },
+    {
       "id": "p61",
-      "rank": 62,
+      "rank": 68,
       "name": "Beau Peterson",
       "pos": "3B",
       "tier": "HIT",
@@ -870,7 +936,7 @@
     },
     {
       "id": "p62",
-      "rank": 63,
+      "rank": 69,
       "name": "Carson Tinney",
       "pos": "C",
       "tier": "HIT",
@@ -882,7 +948,7 @@
     },
     {
       "id": "p63",
-      "rank": 64,
+      "rank": 70,
       "name": "Will Yow",
       "pos": "SS",
       "tier": "HIT",
@@ -894,7 +960,7 @@
     },
     {
       "id": "p64",
-      "rank": 65,
+      "rank": 71,
       "name": "Jace Mataczynski",
       "pos": "SS",
       "tier": "HIT",
@@ -906,7 +972,7 @@
     },
     {
       "id": "p65",
-      "rank": 66,
+      "rank": 72,
       "name": "Ruger Riojas",
       "pos": "RHP",
       "tier": "PIT",
@@ -918,7 +984,7 @@
     },
     {
       "id": "p66",
-      "rank": 67,
+      "rank": 73,
       "name": "Luke Williams",
       "pos": "SS",
       "tier": "HIT",
@@ -929,8 +995,19 @@
       "signability": "neutral"
     },
     {
+      "id": "p-wachsmann",
+      "name": "Ethan Wachsmann",
+      "pos": "RHP",
+      "tier": "PIT",
+      "level": "HS",
+      "school": "Grandview HS (CO)",
+      "state": "CO",
+      "fv": 47,
+      "rank": 74
+    },
+    {
       "id": "p67",
-      "rank": 68,
+      "rank": 75,
       "name": "Joey Volchko",
       "pos": "RHP",
       "tier": "PIT",
@@ -942,7 +1019,7 @@
     },
     {
       "id": "p68",
-      "rank": 69,
+      "rank": 76,
       "name": "Blake Bowen",
       "pos": "CF",
       "tier": "HIT",
@@ -953,8 +1030,19 @@
       "signability": "neutral"
     },
     {
+      "id": "p-beck",
+      "name": "Carter Beck",
+      "pos": "CF",
+      "tier": "HIT",
+      "level": "College",
+      "school": "Indiana State",
+      "state": "IN",
+      "fv": 47,
+      "rank": 77
+    },
+    {
       "id": "p69",
-      "rank": 70,
+      "rank": 78,
       "name": "Joseph Contreras",
       "pos": "RHP",
       "tier": "PIT",
@@ -965,8 +1053,19 @@
       "signability": "neutral"
     },
     {
+      "id": "p-advincula",
+      "name": "Jarren Advincula",
+      "pos": "2B",
+      "tier": "HIT",
+      "level": "College",
+      "school": "Georgia Tech",
+      "state": "GA",
+      "fv": 47,
+      "rank": 79
+    },
+    {
       "id": "p70",
-      "rank": 71,
+      "rank": 80,
       "name": "Gavin Grahovac",
       "pos": "1B",
       "tier": "HIT",
@@ -978,7 +1077,7 @@
     },
     {
       "id": "p71",
-      "rank": 72,
+      "rank": 81,
       "name": "Jack Natili",
       "pos": "C",
       "tier": "HIT",
@@ -989,8 +1088,19 @@
       "signability": "easy"
     },
     {
+      "id": "p-tronstein",
+      "name": "James Tronstein",
+      "pos": "SS",
+      "tier": "HIT",
+      "level": "HS",
+      "school": "Harvard Westlake HS (CA)",
+      "state": "CA",
+      "fv": 47,
+      "rank": 82
+    },
+    {
       "id": "p72",
-      "rank": 73,
+      "rank": 83,
       "name": "Bo Holloway",
       "pos": "LHP",
       "tier": "PIT",
@@ -1002,7 +1112,7 @@
     },
     {
       "id": "p73",
-      "rank": 74,
+      "rank": 84,
       "name": "Keon Johnson",
       "pos": "SS",
       "tier": "HIT",
@@ -1014,7 +1124,7 @@
     },
     {
       "id": "p74",
-      "rank": 75,
+      "rank": 85,
       "name": "Logan Hughes",
       "pos": "OF",
       "tier": "HIT",
@@ -1026,7 +1136,7 @@
     },
     {
       "id": "p75",
-      "rank": 76,
+      "rank": 86,
       "name": "Myles Bailey",
       "pos": "1B",
       "tier": "HIT",
@@ -1038,7 +1148,7 @@
     },
     {
       "id": "p76",
-      "rank": 77,
+      "rank": 87,
       "name": "Brett Renfrow",
       "pos": "RHP",
       "tier": "PIT",
@@ -1050,7 +1160,7 @@
     },
     {
       "id": "p77",
-      "rank": 78,
+      "rank": 88,
       "name": "Carson Bailey",
       "pos": "LHP",
       "tier": "PIT",
@@ -1062,7 +1172,7 @@
     },
     {
       "id": "p78",
-      "rank": 79,
+      "rank": 89,
       "name": "Jacob Dudan",
       "pos": "RHP",
       "tier": "PIT",
@@ -1074,7 +1184,7 @@
     },
     {
       "id": "p79",
-      "rank": 80,
+      "rank": 90,
       "name": "Hudson DeVaughan",
       "pos": "RHP",
       "tier": "PIT",
@@ -1086,7 +1196,7 @@
     },
     {
       "id": "p80",
-      "rank": 81,
+      "rank": 91,
       "name": "Ryan Peterson",
       "pos": "RHP",
       "tier": "PIT",
@@ -1098,7 +1208,7 @@
     },
     {
       "id": "p81",
-      "rank": 82,
+      "rank": 92,
       "name": "Taj Marchand",
       "pos": "SS",
       "tier": "HIT",
@@ -1110,7 +1220,7 @@
     },
     {
       "id": "p82",
-      "rank": 83,
+      "rank": 93,
       "name": "Cooper Harris",
       "pos": "RHP",
       "tier": "PIT",
@@ -1122,7 +1232,7 @@
     },
     {
       "id": "p83",
-      "rank": 84,
+      "rank": 94,
       "name": "Malachi Washington",
       "pos": "CF",
       "tier": "HIT",
@@ -1134,7 +1244,7 @@
     },
     {
       "id": "p84",
-      "rank": 85,
+      "rank": 95,
       "name": "Cole Koeninger",
       "pos": "SS",
       "tier": "HIT",
@@ -1146,7 +1256,7 @@
     },
     {
       "id": "p85",
-      "rank": 86,
+      "rank": 96,
       "name": "Ryan Marohn",
       "pos": "LHP",
       "tier": "PIT",
@@ -1158,7 +1268,7 @@
     },
     {
       "id": "p86",
-      "rank": 87,
+      "rank": 97,
       "name": "Deven Sheerin",
       "pos": "RHP",
       "tier": "PIT",
@@ -1170,7 +1280,7 @@
     },
     {
       "id": "p87",
-      "rank": 88,
+      "rank": 98,
       "name": "Brendan Brock",
       "pos": "C",
       "tier": "HIT",
@@ -1182,7 +1292,7 @@
     },
     {
       "id": "p88",
-      "rank": 89,
+      "rank": 99,
       "name": "Will Gasparino",
       "pos": "CF",
       "tier": "HIT",
@@ -1194,7 +1304,7 @@
     },
     {
       "id": "p89",
-      "rank": 90,
+      "rank": 100,
       "name": "Denton Lord",
       "pos": "RHP",
       "tier": "PIT",
@@ -1206,7 +1316,7 @@
     },
     {
       "id": "p90",
-      "rank": 91,
+      "rank": 101,
       "name": "Matt Ponatoski",
       "pos": "RHP",
       "tier": "PIT",
@@ -1218,7 +1328,7 @@
     },
     {
       "id": "p91",
-      "rank": 92,
+      "rank": 102,
       "name": "Will Adams",
       "pos": "1B",
       "tier": "HIT",
@@ -1230,7 +1340,7 @@
     },
     {
       "id": "p92",
-      "rank": 93,
+      "rank": 103,
       "name": "Gary Morse",
       "pos": "RHP",
       "tier": "PIT",
@@ -1242,7 +1352,7 @@
     },
     {
       "id": "p93",
-      "rank": 94,
+      "rank": 104,
       "name": "Peyton Bonds",
       "pos": "CF",
       "tier": "HIT",
@@ -1254,7 +1364,7 @@
     },
     {
       "id": "p94",
-      "rank": 95,
+      "rank": 105,
       "name": "Caden Bogenpohl",
       "pos": "CF",
       "tier": "HIT",
@@ -1266,7 +1376,7 @@
     },
     {
       "id": "p95",
-      "rank": 96,
+      "rank": 106,
       "name": "Kevin Roberts Jr.",
       "pos": "CF",
       "tier": "HIT",
@@ -1278,7 +1388,7 @@
     },
     {
       "id": "p96",
-      "rank": 97,
+      "rank": 107,
       "name": "Noah Wilson",
       "pos": "CF",
       "tier": "HIT",
@@ -1290,7 +1400,7 @@
     },
     {
       "id": "p97",
-      "rank": 98,
+      "rank": 108,
       "name": "Shane Sdao",
       "pos": "LHP",
       "tier": "PIT",
@@ -1302,7 +1412,7 @@
     },
     {
       "id": "p98",
-      "rank": 99,
+      "rank": 109,
       "name": "Gabe Gaeckle",
       "pos": "RHP",
       "tier": "PIT",
@@ -1314,7 +1424,7 @@
     },
     {
       "id": "p99",
-      "rank": 100,
+      "rank": 110,
       "name": "Savion Sims",
       "pos": "RHP",
       "tier": "PIT",
@@ -1326,7 +1436,7 @@
     },
     {
       "id": "p100",
-      "rank": 101,
+      "rank": 111,
       "name": "Dominic Santarelli",
       "pos": "OF",
       "tier": "HIT",
